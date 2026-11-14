@@ -2,7 +2,7 @@
 """Sinh ban ve ky thuat khu lang mo ho Vo (2 trang A3 ngang, SVG don vi mm).
 Chay: python3 gen.py  -> trang1.svg, trang2.svg, ban-ve.html
 """
-import math, os
+import math, os, re
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 FONT = "DejaVu Sans, Liberation Sans, Arial, sans-serif"
@@ -62,6 +62,26 @@ def esc(s):
 class SVG:
     def __init__(self):
         self.e = []
+        self.nclip = 0
+
+    def _hatch(self, kind, clip_inner, bx, by, bw, bh):
+        """To ky hieu vat lieu bang hinh hoc that, cat theo clipPath (khong dung pattern de tranh dut net)."""
+        tw_, th_, bg, inner = TILES[kind]
+        self.nclip += 1
+        cid = f"c{self.nclip}"
+        out = [f'<clipPath id="{cid}">{clip_inner}</clipPath><g clip-path="url(#{cid})">',
+               f'<rect x="{bx:.3f}" y="{by:.3f}" width="{bw:.3f}" height="{bh:.3f}" fill="{bg}"/>']
+        x0 = math.floor(bx / tw_) * tw_
+        y0 = math.floor(by / th_) * th_
+        y = y0
+        while y < by + bh:
+            x = x0
+            while x < bx + bw:
+                out.append(f'<use href="#t_{kind}" x="{x:.3f}" y="{y:.3f}"/>')
+                x += tw_
+            y += th_
+        out.append("</g>")
+        self.add("".join(out))
 
     def add(self, s):
         self.e.append(s)
@@ -73,6 +93,9 @@ class SVG:
     def rect(self, x, y, w, h, fill="none", sw=0.25, col="#000", dash=None, extra=""):
         d = f' stroke-dasharray="{dash}"' if dash else ""
         st = f'stroke="{col}" stroke-width="{sw}"' if sw else 'stroke="none"'
+        if fill.startswith("url(#"):
+            self._hatch(fill[5:-1], f'<rect x="{x:.3f}" y="{y:.3f}" width="{w:.3f}" height="{h:.3f}"/>', x, y, w, h)
+            fill = "none"
         self.add(f'<rect x="{x:.3f}" y="{y:.3f}" width="{w:.3f}" height="{h:.3f}" fill="{fill}" {st}{d} {extra}/>')
 
     def poly(self, pts, fill="none", sw=0.25, col="#000", closed=True, dash=None):
@@ -85,6 +108,11 @@ class SVG:
     def path(self, d, fill="none", sw=0.25, col="#000", rule="nonzero", dash=None):
         da = f' stroke-dasharray="{dash}"' if dash else ""
         st = f'stroke="{col}" stroke-width="{sw}"' if sw else 'stroke="none"'
+        if fill.startswith("url(#"):
+            nums = [float(v) for v in re.findall(r"-?\d+\.?\d*", d)]
+            xs_, ys_ = nums[0::2], nums[1::2]
+            self._hatch(fill[5:-1], f'<path d="{d}" clip-rule="{rule}"/>', min(xs_), min(ys_), max(xs_) - min(xs_), max(ys_) - min(ys_))
+            fill = "none"
         self.add(f'<path d="{d}" fill="{fill}" fill-rule="{rule}" {st}{da}/>')
 
     def circle(self, cx, cy, r, fill="none", sw=0.25, col="#000", dash=None):
@@ -126,10 +154,10 @@ def tw(s, size):
 
 
 DEFS = """<defs>
-<pattern id="brick" patternUnits="userSpaceOnUse" width="1.3" height="1.3" patternTransform="rotate(45)">
- <rect width="1.3" height="1.3" fill="#f2c9b6"/><line x1="0" y1="0" x2="0" y2="1.3" stroke="#9c3b1f" stroke-width="0.22"/></pattern>
-<pattern id="brick2" patternUnits="userSpaceOnUse" width="2.4" height="2.4" patternTransform="rotate(45)">
- <rect width="2.4" height="2.4" fill="#f2c9b6"/><line x1="0" y1="0" x2="0" y2="2.4" stroke="#9c3b1f" stroke-width="0.25"/></pattern>
+<pattern id="brick" patternUnits="userSpaceOnUse" width="1.4" height="1.4">
+ <rect width="1.4" height="1.4" fill="#f2c9b6"/><path d="M0 1.4 L1.4 0 M-0.7 0.7 L0.7 -0.7 M0.7 2.0999999999999996 L2.0999999999999996 0.7" stroke="#9c3b1f" stroke-width="0.2"/></pattern>
+<pattern id="brick2" patternUnits="userSpaceOnUse" width="2.2" height="2.2">
+ <rect width="2.2" height="2.2" fill="#f2c9b6"/><path d="M0 2.2 L2.2 0 M-1.1 1.1 L1.1 -1.1 M1.1 3.3000000000000003 L3.3000000000000003 1.1" stroke="#9c3b1f" stroke-width="0.25"/></pattern>
 <pattern id="brickthe" patternUnits="userSpaceOnUse" width="4" height="2">
  <rect width="4" height="2" fill="#efbfa5"/><path d="M0 0H4M0 1H4M1 0V1M3 1V2" stroke="#8a2f14" stroke-width="0.2"/>
  <line x1="0" y1="2" x2="2" y2="0" stroke="#8a2f14" stroke-width="0.15"/></pattern>
@@ -143,11 +171,15 @@ DEFS = """<defs>
  <circle cx="4.2" cy="1" r="0.18" fill="#7b5a2c"/><circle cx="0.8" cy="4.2" r="0.18" fill="#7b5a2c"/></pattern>
 <pattern id="render" patternUnits="userSpaceOnUse" width="0.8" height="0.8">
  <rect width="0.8" height="0.8" fill="#f6e27a"/><circle cx="0.4" cy="0.4" r="0.12" fill="#8a7300"/></pattern>
-<pattern id="solid" patternUnits="userSpaceOnUse" width="1.6" height="1.6" patternTransform="rotate(45)">
- <rect width="1.6" height="1.6" fill="#4a4a4a"/><path d="M0 0V1.6M0 0H1.6" stroke="#bdbdbd" stroke-width="0.18"/></pattern>
-<pattern id="solid2" patternUnits="userSpaceOnUse" width="3" height="3" patternTransform="rotate(45)">
- <rect width="3" height="3" fill="#4a4a4a"/><path d="M0 0V3M0 0H3" stroke="#c8c8c8" stroke-width="0.25"/></pattern>
+<pattern id="solid" patternUnits="userSpaceOnUse" width="1.6" height="1.6">
+ <rect width="1.6" height="1.6" fill="#4a4a4a"/><path d="M0 1.6 L1.6 0 M-0.8 0.8 L0.8 -0.8 M0.8 2.4000000000000004 L2.4000000000000004 0.8 M0 0 L1.6 1.6 M-0.8 0.8 L0.8 2.4000000000000004 M0.8 -0.8 L2.4000000000000004 0.8" stroke="#bdbdbd" stroke-width="0.16"/></pattern>
+<pattern id="solid2" patternUnits="userSpaceOnUse" width="3.0" height="3.0">
+ <rect width="3.0" height="3.0" fill="#4a4a4a"/><path d="M0 3.0 L3.0 0 M-1.5 1.5 L1.5 -1.5 M1.5 4.5 L4.5 1.5 M0 0 L3.0 3.0 M-1.5 1.5 L1.5 4.5 M1.5 -1.5 L4.5 1.5" stroke="#c8c8c8" stroke-width="0.22"/></pattern>
 </defs>"""
+TILES = {}
+for _m in re.finditer(r'<pattern id="(\w+)"[^>]*width="([\d.]+)" height="([\d.]+)">\s*<rect [^>]*fill="([^"]+)"/>(.*?)</pattern>', DEFS, re.S):
+    TILES[_m.group(1)] = (float(_m.group(2)), float(_m.group(3)), _m.group(4), _m.group(5))
+DEFS = "<defs>" + "".join(f'<g id="t_{k}">{v[3]}</g>' for k, v in TILES.items()) + "</defs>"
 TILE = "#2f62a8"
 PATHFILL = "#eef3e6"
 
@@ -366,7 +398,11 @@ def page1():
     inn = [(0, 0), (L_TOTAL, 0), (L_TOTAL, W_IN), (L_OUT, W_IN), (L_OUT, W_OUT), (0, W_OUT)]
     def pd(pts):
         return "M" + " L".join(f"{P(*p)[0]:.3f},{P(*p)[1]:.3f}" for p in pts) + " Z"
-    s.path(pd(out) + " " + pd(inn), fill="url(#brick)", sw=0.45, rule="evenodd")
+    for (X1, Y1, X2, Y2) in ((-t, -t, L_TOTAL + t, 0), (-t, 0, 0, W_OUT + t), (0, W_OUT, L_OUT + t, W_OUT + t),
+                             (L_TOTAL, 0, L_TOTAL + t, W_IN + t), (L_OUT, W_IN, L_TOTAL, W_IN + t), (L_OUT, W_IN, L_OUT + t, W_OUT + t)):
+        a1, a2 = P(X1, Y1), P(X2, Y2)
+        s.rect(a1[0], a1[1], a2[0] - a1[0], a2[1] - a1[1], fill="url(#brick)", sw=0)
+    s.path(pd(out) + " " + pd(inn), fill="none", sw=0.45)
     # o cong
     gx0, gy0 = P(-t - 20, GATE_Y1)
     gx1, gy1 = P(20, GATE_Y2)
@@ -575,7 +611,7 @@ def page2():
     s.text(14, 17.5, "MẶT BẰNG CHI TIẾT 1 BLOCK (6 HỘC) – TL 1/10", size=4.6, anchor="start", weight="bold")
     s.text(343, 16.5, "MỌI KÍCH THƯỚC BỐ TRÍ ĐO THEO MÉP NGOÀI PHẦN NỔI ĐÃ TÔ, ỐP", size=2.6, anchor="end", weight="bold", col="#c00000")
     s.text(343, 21, "Đế BTCT, phần chìm: chỉ thể hiện ở mặt cắt kết cấu", size=2.2, anchor="end", col="#c00000")
-    s.text(14, 23, "(Block xoay nằm ngang để thể hiện; chiều 6 hộc ⟂ lối đi giữa)", size=2.3, anchor="start", italic=True)
+    s.text(14, 23, "(Block xoay nằm ngang để thể hiện; chiều 6 hộc vuông góc lối đi giữa)", size=2.3, anchor="start", italic=True)
 
     # mong/de 2 dau
     for u0, left in ((0, True), (BLK - BASE, False)):
@@ -812,7 +848,7 @@ def page2():
     textblock(s, xs_ + 3, yy + 10.5, notes, size=2.05, lh=2.85, nchar=48)
     # huong bac nho
     north_arrow(s, xs_ + 42, 188, 4.5, label_axis=False)
-    s.text(xs_ + 3, 186, "Chiều 6 hộc ⟂", size=2.0, anchor="start")
+    s.text(xs_ + 3, 186, "Chiều 6 hộc vuông góc", size=2.0, anchor="start")
     s.text(xs_ + 3, 189, "trục B9°", size=2.0, anchor="start")
     title_block(s, xs_, 198, 60, 89, "MẶT BẰNG CHI TIẾT\nBLOCK & MẶT CẮT", "1/10", "02/02", "LM-02", vertical=True)
     return s.svg()
