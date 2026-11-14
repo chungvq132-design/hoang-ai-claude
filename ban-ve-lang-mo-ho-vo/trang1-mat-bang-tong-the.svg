@@ -1,0 +1,637 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 420 297"><defs>
+<pattern id="brick" patternUnits="userSpaceOnUse" width="1.3" height="1.3" patternTransform="rotate(45)">
+ <rect width="1.3" height="1.3" fill="#f2c9b6"/><line x1="0" y1="0" x2="0" y2="1.3" stroke="#9c3b1f" stroke-width="0.22"/></pattern>
+<pattern id="brick2" patternUnits="userSpaceOnUse" width="2.4" height="2.4" patternTransform="rotate(45)">
+ <rect width="2.4" height="2.4" fill="#f2c9b6"/><line x1="0" y1="0" x2="0" y2="2.4" stroke="#9c3b1f" stroke-width="0.25"/></pattern>
+<pattern id="brickthe" patternUnits="userSpaceOnUse" width="4" height="2">
+ <rect width="4" height="2" fill="#efbfa5"/><path d="M0 0H4M0 1H4M1 0V1M3 1V2" stroke="#8a2f14" stroke-width="0.2"/>
+ <line x1="0" y1="2" x2="2" y2="0" stroke="#8a2f14" stroke-width="0.15"/></pattern>
+<pattern id="concrete" patternUnits="userSpaceOnUse" width="4" height="4">
+ <rect width="4" height="4" fill="#d6d9de"/>
+ <path d="M0.6 1.2 L1.5 0.5 L1.7 1.5 Z M2.6 2.6 L3.5 2.3 L3.0 3.4 Z" fill="none" stroke="#333" stroke-width="0.15"/>
+ <circle cx="2.8" cy="0.9" r="0.22" fill="#333"/><circle cx="0.9" cy="3.1" r="0.22" fill="#333"/><circle cx="2.0" cy="1.9" r="0.15" fill="#333"/></pattern>
+<pattern id="soil" patternUnits="userSpaceOnUse" width="5" height="5">
+ <rect width="5" height="5" fill="#f1e7cf"/>
+ <path d="M0.5 2 L2 0.5 M1.2 2.4 L2.7 0.9 M1.9 2.8 L3.4 1.3 M2.5 4.8 L4.0 3.3" stroke="#7b5a2c" stroke-width="0.2"/>
+ <circle cx="4.2" cy="1" r="0.18" fill="#7b5a2c"/><circle cx="0.8" cy="4.2" r="0.18" fill="#7b5a2c"/></pattern>
+<pattern id="render" patternUnits="userSpaceOnUse" width="0.8" height="0.8">
+ <rect width="0.8" height="0.8" fill="#f6e27a"/><circle cx="0.4" cy="0.4" r="0.12" fill="#8a7300"/></pattern>
+<pattern id="solid" patternUnits="userSpaceOnUse" width="1.6" height="1.6" patternTransform="rotate(45)">
+ <rect width="1.6" height="1.6" fill="#4a4a4a"/><path d="M0 0V1.6M0 0H1.6" stroke="#bdbdbd" stroke-width="0.18"/></pattern>
+<pattern id="solid2" patternUnits="userSpaceOnUse" width="3" height="3" patternTransform="rotate(45)">
+ <rect width="3" height="3" fill="#4a4a4a"/><path d="M0 0V3M0 0H3" stroke="#c8c8c8" stroke-width="0.25"/></pattern>
+</defs><rect x="0" y="0" width="420" height="297" fill="#fff"/><rect x="5.000" y="5.000" width="410.000" height="287.000" fill="none" stroke="#000" stroke-width="0.25" />
+<rect x="10.000" y="10.000" width="400.000" height="277.000" fill="none" stroke="#000" stroke-width="0.7" />
+<text x="14.000" y="21.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="5.5" text-anchor="start" font-weight="bold" fill="#000">MẶT BẰNG TỔNG THỂ KHU LĂNG MỘ HỌ VÕ</text>
+<text x="14.000" y="27.500" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="3.4" text-anchor="start" font-weight="bold" fill="#000">TỶ LỆ 1/60  –  22 BLOCK × 6 HỘC = 132 HỘC</text>
+<rect x="50.000" y="109.833" width="306.667" height="20.000" fill="#eef3e6" stroke="none" />
+<path d="M46.667,48.667 L360.000,48.667 L360.000,186.000 L294.667,186.000 L294.667,192.667 L46.667,192.667 Z M50.000,52.000 L356.667,52.000 L356.667,182.667 L291.333,182.667 L291.333,189.333 L50.000,189.333 Z" fill="url(#brick)" fill-rule="evenodd" stroke="#000" stroke-width="0.45"/>
+<rect x="46.333" y="103.167" width="4.000" height="33.333" fill="#fff" stroke="none" />
+<rect x="50.000" y="103.167" width="0.100" height="0.000" fill="none" stroke="none" />
+<line x1="46.667" y1="103.167" x2="50.000" y2="103.167" stroke="#000" stroke-width="0.45"/>
+<line x1="46.667" y1="136.500" x2="50.000" y2="136.500" stroke="#000" stroke-width="0.45"/>
+<line x1="50.000" y1="103.167" x2="58.333" y2="117.600" stroke="#000" stroke-width="0.3"/>
+<line x1="50.000" y1="136.500" x2="58.333" y2="122.066" stroke="#000" stroke-width="0.3"/>
+<line x1="48.333" y1="103.167" x2="48.333" y2="136.500" stroke="#000" stroke-width="0.18" stroke-dasharray="1,0.7"/>
+<rect x="91.667" y="58.667" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="91.667" y="106.500" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="91.667" y="62.000" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
+<rect x="92.000" y="62.333" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="92.833" y="63.167" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="92.833" y="70.333" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="92.833" y="77.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="92.833" y="84.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="92.833" y="91.833" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="92.833" y="99.000" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="91.667" y="58.667" width="13.667" height="51.167" fill="none" stroke="#000" stroke-width="0.35" />
+<rect x="91.667" y="129.833" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="91.667" y="177.667" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="91.667" y="133.167" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
+<rect x="92.000" y="133.500" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="92.833" y="134.333" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="92.833" y="141.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="92.833" y="148.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="92.833" y="155.833" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="92.833" y="163.000" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="92.833" y="170.167" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="91.667" y="129.833" width="13.667" height="51.167" fill="none" stroke="#000" stroke-width="0.35" />
+<text x="98.500" y="113.333" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">T1</text>
+<text x="98.500" y="128.667" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">P1</text>
+<rect x="114.167" y="58.667" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="114.167" y="106.500" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="114.167" y="62.000" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
+<rect x="114.500" y="62.333" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="115.333" y="63.167" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="115.333" y="70.333" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="115.333" y="77.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="115.333" y="84.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="115.333" y="91.833" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="115.333" y="99.000" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="114.167" y="58.667" width="13.667" height="51.167" fill="none" stroke="#000" stroke-width="0.35" />
+<rect x="114.167" y="129.833" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="114.167" y="177.667" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="114.167" y="133.167" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
+<rect x="114.500" y="133.500" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="115.333" y="134.333" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="115.333" y="141.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="115.333" y="148.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="115.333" y="155.833" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="115.333" y="163.000" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="115.333" y="170.167" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="114.167" y="129.833" width="13.667" height="51.167" fill="none" stroke="#000" stroke-width="0.35" />
+<text x="121.000" y="113.333" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">T2</text>
+<text x="121.000" y="128.667" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">P2</text>
+<rect x="136.667" y="58.667" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="136.667" y="106.500" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="136.667" y="62.000" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
+<rect x="137.000" y="62.333" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="137.833" y="63.167" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="137.833" y="70.333" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="137.833" y="77.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="137.833" y="84.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="137.833" y="91.833" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="137.833" y="99.000" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="136.667" y="58.667" width="13.667" height="51.167" fill="none" stroke="#000" stroke-width="0.35" />
+<rect x="136.667" y="129.833" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="136.667" y="177.667" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="136.667" y="133.167" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
+<rect x="137.000" y="133.500" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="137.833" y="134.333" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="137.833" y="141.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="137.833" y="148.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="137.833" y="155.833" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="137.833" y="163.000" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="137.833" y="170.167" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="136.667" y="129.833" width="13.667" height="51.167" fill="none" stroke="#000" stroke-width="0.35" />
+<text x="143.500" y="113.333" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">T3</text>
+<text x="143.500" y="128.667" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">P3</text>
+<rect x="159.167" y="58.667" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="159.167" y="106.500" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="159.167" y="62.000" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
+<rect x="159.500" y="62.333" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="160.333" y="63.167" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="160.333" y="70.333" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="160.333" y="77.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="160.333" y="84.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="160.333" y="91.833" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="160.333" y="99.000" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="159.167" y="58.667" width="13.667" height="51.167" fill="none" stroke="#000" stroke-width="0.35" />
+<rect x="159.167" y="129.833" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="159.167" y="177.667" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="159.167" y="133.167" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
+<rect x="159.500" y="133.500" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="160.333" y="134.333" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="160.333" y="141.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="160.333" y="148.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="160.333" y="155.833" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="160.333" y="163.000" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="160.333" y="170.167" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="159.167" y="129.833" width="13.667" height="51.167" fill="none" stroke="#000" stroke-width="0.35" />
+<text x="166.000" y="113.333" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">T4</text>
+<text x="166.000" y="128.667" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">P4</text>
+<rect x="181.667" y="58.667" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="181.667" y="106.500" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="181.667" y="62.000" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
+<rect x="182.000" y="62.333" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="182.833" y="63.167" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="182.833" y="70.333" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="182.833" y="77.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="182.833" y="84.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="182.833" y="91.833" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="182.833" y="99.000" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="181.667" y="58.667" width="13.667" height="51.167" fill="none" stroke="#000" stroke-width="0.35" />
+<rect x="181.667" y="129.833" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="181.667" y="177.667" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="181.667" y="133.167" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
+<rect x="182.000" y="133.500" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="182.833" y="134.333" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="182.833" y="141.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="182.833" y="148.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="182.833" y="155.833" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="182.833" y="163.000" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="182.833" y="170.167" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="181.667" y="129.833" width="13.667" height="51.167" fill="none" stroke="#000" stroke-width="0.35" />
+<text x="188.500" y="113.333" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">T5</text>
+<text x="188.500" y="128.667" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">P5</text>
+<rect x="204.167" y="58.667" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="204.167" y="106.500" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="204.167" y="62.000" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
+<rect x="204.500" y="62.333" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="205.333" y="63.167" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="205.333" y="70.333" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="205.333" y="77.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="205.333" y="84.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="205.333" y="91.833" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="205.333" y="99.000" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="204.167" y="58.667" width="13.667" height="51.167" fill="none" stroke="#000" stroke-width="0.35" />
+<rect x="204.167" y="129.833" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="204.167" y="177.667" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="204.167" y="133.167" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
+<rect x="204.500" y="133.500" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="205.333" y="134.333" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="205.333" y="141.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="205.333" y="148.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="205.333" y="155.833" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="205.333" y="163.000" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="205.333" y="170.167" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="204.167" y="129.833" width="13.667" height="51.167" fill="none" stroke="#000" stroke-width="0.35" />
+<text x="211.000" y="113.333" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">T6</text>
+<text x="211.000" y="128.667" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">P6</text>
+<rect x="226.667" y="58.667" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="226.667" y="106.500" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="226.667" y="62.000" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
+<rect x="227.000" y="62.333" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="227.833" y="63.167" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="227.833" y="70.333" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="227.833" y="77.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="227.833" y="84.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="227.833" y="91.833" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="227.833" y="99.000" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="226.667" y="58.667" width="13.667" height="51.167" fill="none" stroke="#000" stroke-width="0.35" />
+<rect x="226.667" y="129.833" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="226.667" y="177.667" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="226.667" y="133.167" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
+<rect x="227.000" y="133.500" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="227.833" y="134.333" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="227.833" y="141.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="227.833" y="148.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="227.833" y="155.833" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="227.833" y="163.000" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="227.833" y="170.167" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="226.667" y="129.833" width="13.667" height="51.167" fill="none" stroke="#000" stroke-width="0.35" />
+<text x="233.500" y="113.333" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">T7</text>
+<text x="233.500" y="128.667" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">P7</text>
+<rect x="249.167" y="58.667" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="249.167" y="106.500" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="249.167" y="62.000" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
+<rect x="249.500" y="62.333" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="250.333" y="63.167" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="250.333" y="70.333" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="250.333" y="77.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="250.333" y="84.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="250.333" y="91.833" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="250.333" y="99.000" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="249.167" y="58.667" width="13.667" height="51.167" fill="none" stroke="#000" stroke-width="0.35" />
+<rect x="249.167" y="129.833" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="249.167" y="177.667" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="249.167" y="133.167" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
+<rect x="249.500" y="133.500" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="250.333" y="134.333" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="250.333" y="141.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="250.333" y="148.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="250.333" y="155.833" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="250.333" y="163.000" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="250.333" y="170.167" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="249.167" y="129.833" width="13.667" height="51.167" fill="none" stroke="#000" stroke-width="0.35" />
+<text x="256.000" y="113.333" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">T8</text>
+<text x="256.000" y="128.667" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">P8</text>
+<rect x="271.667" y="58.667" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="271.667" y="106.500" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="271.667" y="62.000" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
+<rect x="272.000" y="62.333" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="272.833" y="63.167" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="272.833" y="70.333" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="272.833" y="77.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="272.833" y="84.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="272.833" y="91.833" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="272.833" y="99.000" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="271.667" y="58.667" width="13.667" height="51.167" fill="none" stroke="#000" stroke-width="0.35" />
+<rect x="271.667" y="129.833" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="271.667" y="177.667" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="271.667" y="133.167" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
+<rect x="272.000" y="133.500" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="272.833" y="134.333" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="272.833" y="141.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="272.833" y="148.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="272.833" y="155.833" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="272.833" y="163.000" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="272.833" y="170.167" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="271.667" y="129.833" width="13.667" height="51.167" fill="none" stroke="#000" stroke-width="0.35" />
+<text x="278.500" y="113.333" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">T9</text>
+<text x="278.500" y="128.667" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">P9</text>
+<rect x="294.167" y="58.667" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="294.167" y="106.500" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="294.167" y="62.000" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
+<rect x="294.500" y="62.333" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="295.333" y="63.167" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="295.333" y="70.333" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="295.333" y="77.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="295.333" y="84.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="295.333" y="91.833" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="295.333" y="99.000" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="294.167" y="58.667" width="13.667" height="51.167" fill="none" stroke="#000" stroke-width="0.35" />
+<rect x="294.167" y="129.833" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="294.167" y="177.667" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="294.167" y="133.167" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
+<rect x="294.500" y="133.500" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="295.333" y="134.333" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="295.333" y="141.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="295.333" y="148.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="295.333" y="155.833" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="295.333" y="163.000" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="295.333" y="170.167" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="294.167" y="129.833" width="13.667" height="51.167" fill="none" stroke="#000" stroke-width="0.35" />
+<text x="301.000" y="113.333" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">T10</text>
+<text x="301.000" y="128.667" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">P10</text>
+<rect x="316.667" y="58.667" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="316.667" y="106.500" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="316.667" y="62.000" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
+<rect x="317.000" y="62.333" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="317.833" y="63.167" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="317.833" y="70.333" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="317.833" y="77.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="317.833" y="84.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="317.833" y="91.833" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="317.833" y="99.000" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="316.667" y="58.667" width="13.667" height="51.167" fill="none" stroke="#000" stroke-width="0.35" />
+<rect x="316.667" y="129.833" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="316.667" y="177.667" width="13.667" height="3.333" fill="url(#solid)" stroke="#000" stroke-width="0.2" />
+<rect x="316.667" y="133.167" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
+<rect x="317.000" y="133.500" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="317.833" y="134.333" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="317.833" y="141.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="317.833" y="148.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="317.833" y="155.833" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="317.833" y="163.000" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="317.833" y="170.167" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
+<rect x="316.667" y="129.833" width="13.667" height="51.167" fill="none" stroke="#000" stroke-width="0.35" />
+<text x="323.500" y="113.333" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">T11</text>
+<text x="323.500" y="128.667" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">P11</text>
+<rect x="332.667" y="104.000" width="21.667" height="31.667" fill="#fffdf2" stroke="#000" stroke-width="0.4" stroke-dasharray="1.4,0.8" />
+<text x="343.500" y="111.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="3.6" text-anchor="middle" font-weight="bold" fill="#000">AM THỜ</text>
+<text x="343.500" y="116.500" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="normal" fill="#000">– KÍCH THƯỚC</text>
+<text x="343.500" y="119.600" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="normal" fill="#000">CHỜ BỔ SUNG</text>
+<text x="343.500" y="133.667" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.9" text-anchor="middle" font-weight="normal" fill="#555" font-style="italic">(tượng trưng)</text>
+<line x1="39.167" y1="119.833" x2="364.167" y2="119.833" stroke="#c00000" stroke-width="0.35" stroke-dasharray="6,1.2,0.8,1.2"/>
+<text x="203.333" y="118.633" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="3.0" text-anchor="middle" font-weight="bold" fill="#c00000">TRỤC CỔNG – LỐI ĐI – AM THỜ: B9°</text>
+<text x="203.333" y="123.833" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.5" text-anchor="middle" font-weight="normal" fill="#1d4d1d">LỐI ĐI GIỮA – RỘNG THÔNG THỦY 1.200</text>
+<text x="70.833" y="118.633" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000">CỔNG VÀO</text>
+<text x="70.833" y="123.433" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.2" text-anchor="middle" font-weight="normal" fill="#000">→ hướng B9°</text>
+<text x="70.833" y="77.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.2" text-anchor="middle" font-weight="bold" fill="#000">DÃY TRÁI (PHÍA TÂY)</text>
+<text x="70.833" y="80.300" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.2" text-anchor="middle" font-weight="normal" fill="#000">11 BLOCK × 6 HỘC</text>
+<text x="70.833" y="83.600" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.2" text-anchor="middle" font-weight="normal" fill="#000">= 66 HỘC</text>
+<text x="70.833" y="148.667" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.2" text-anchor="middle" font-weight="bold" fill="#000">DÃY PHẢI (PHÍA ĐÔNG)</text>
+<text x="70.833" y="151.967" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.2" text-anchor="middle" font-weight="normal" fill="#000">11 BLOCK × 6 HỘC</text>
+<text x="70.833" y="155.267" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.2" text-anchor="middle" font-weight="normal" fill="#000">= 66 HỘC</text>
+<text x="70.833" y="173.667" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.9" text-anchor="middle" font-weight="normal" fill="#000" font-style="italic">Móng/đế 200 ở 2 đầu</text>
+<text x="70.833" y="176.467" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.9" text-anchor="middle" font-weight="normal" fill="#000" font-style="italic">block – không phải hộc</text>
+<line x1="50.000" y1="47.867" x2="50.000" y2="40.667" stroke="#000" stroke-width="0.18"/>
+<line x1="91.667" y1="47.867" x2="91.667" y2="40.667" stroke="#000" stroke-width="0.18"/>
+<line x1="105.333" y1="47.867" x2="105.333" y2="40.667" stroke="#000" stroke-width="0.18"/>
+<line x1="114.167" y1="47.867" x2="114.167" y2="40.667" stroke="#000" stroke-width="0.18"/>
+<line x1="127.833" y1="47.867" x2="127.833" y2="40.667" stroke="#000" stroke-width="0.18"/>
+<line x1="136.667" y1="47.867" x2="136.667" y2="40.667" stroke="#000" stroke-width="0.18"/>
+<line x1="150.333" y1="47.867" x2="150.333" y2="40.667" stroke="#000" stroke-width="0.18"/>
+<line x1="159.167" y1="47.867" x2="159.167" y2="40.667" stroke="#000" stroke-width="0.18"/>
+<line x1="172.833" y1="47.867" x2="172.833" y2="40.667" stroke="#000" stroke-width="0.18"/>
+<line x1="181.667" y1="47.867" x2="181.667" y2="40.667" stroke="#000" stroke-width="0.18"/>
+<line x1="195.333" y1="47.867" x2="195.333" y2="40.667" stroke="#000" stroke-width="0.18"/>
+<line x1="204.167" y1="47.867" x2="204.167" y2="40.667" stroke="#000" stroke-width="0.18"/>
+<line x1="217.833" y1="47.867" x2="217.833" y2="40.667" stroke="#000" stroke-width="0.18"/>
+<line x1="226.667" y1="47.867" x2="226.667" y2="40.667" stroke="#000" stroke-width="0.18"/>
+<line x1="240.333" y1="47.867" x2="240.333" y2="40.667" stroke="#000" stroke-width="0.18"/>
+<line x1="249.167" y1="47.867" x2="249.167" y2="40.667" stroke="#000" stroke-width="0.18"/>
+<line x1="262.833" y1="47.867" x2="262.833" y2="40.667" stroke="#000" stroke-width="0.18"/>
+<line x1="271.667" y1="47.867" x2="271.667" y2="40.667" stroke="#000" stroke-width="0.18"/>
+<line x1="285.333" y1="47.867" x2="285.333" y2="40.667" stroke="#000" stroke-width="0.18"/>
+<line x1="294.167" y1="47.867" x2="294.167" y2="40.667" stroke="#000" stroke-width="0.18"/>
+<line x1="307.833" y1="47.867" x2="307.833" y2="40.667" stroke="#000" stroke-width="0.18"/>
+<line x1="316.667" y1="47.867" x2="316.667" y2="40.667" stroke="#000" stroke-width="0.18"/>
+<line x1="330.333" y1="47.867" x2="330.333" y2="40.667" stroke="#000" stroke-width="0.18"/>
+<line x1="356.667" y1="47.867" x2="356.667" y2="40.667" stroke="#000" stroke-width="0.18"/>
+<line x1="50.000" y1="42.167" x2="356.667" y2="42.167" stroke="#000" stroke-width="0.18"/>
+<polygon points="50.000,42.167 52.000,41.617 52.000,42.717" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="91.667,42.167 89.667,42.717 89.667,41.617" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="70.833" y="41.467" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000">2.500</text>
+<polygon points="91.667,42.167 93.667,41.617 93.667,42.717" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="105.333,42.167 103.333,42.717 103.333,41.617" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="98.500" y="41.467" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000">820</text>
+<polygon points="105.333,42.167 107.333,41.617 107.333,42.717" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="114.167,42.167 112.167,42.717 112.167,41.617" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="109.750" y="41.467" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000">530</text>
+<polygon points="114.167,42.167 116.167,41.617 116.167,42.717" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="127.833,42.167 125.833,42.717 125.833,41.617" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="121.000" y="41.467" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000">820</text>
+<polygon points="127.833,42.167 129.833,41.617 129.833,42.717" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="136.667,42.167 134.667,42.717 134.667,41.617" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="132.250" y="41.467" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000">530</text>
+<polygon points="136.667,42.167 138.667,41.617 138.667,42.717" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="150.333,42.167 148.333,42.717 148.333,41.617" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="143.500" y="41.467" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000">820</text>
+<polygon points="150.333,42.167 152.333,41.617 152.333,42.717" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="159.167,42.167 157.167,42.717 157.167,41.617" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="154.750" y="41.467" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000">530</text>
+<polygon points="159.167,42.167 161.167,41.617 161.167,42.717" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="172.833,42.167 170.833,42.717 170.833,41.617" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="166.000" y="41.467" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000">820</text>
+<polygon points="172.833,42.167 174.833,41.617 174.833,42.717" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="181.667,42.167 179.667,42.717 179.667,41.617" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="177.250" y="41.467" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000">530</text>
+<polygon points="181.667,42.167 183.667,41.617 183.667,42.717" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="195.333,42.167 193.333,42.717 193.333,41.617" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="188.500" y="41.467" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000">820</text>
+<polygon points="195.333,42.167 197.333,41.617 197.333,42.717" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="204.167,42.167 202.167,42.717 202.167,41.617" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="199.750" y="41.467" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000">530</text>
+<polygon points="204.167,42.167 206.167,41.617 206.167,42.717" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="217.833,42.167 215.833,42.717 215.833,41.617" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="211.000" y="41.467" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000">820</text>
+<polygon points="217.833,42.167 219.833,41.617 219.833,42.717" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="226.667,42.167 224.667,42.717 224.667,41.617" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="222.250" y="41.467" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000">530</text>
+<polygon points="226.667,42.167 228.667,41.617 228.667,42.717" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="240.333,42.167 238.333,42.717 238.333,41.617" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="233.500" y="41.467" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000">820</text>
+<polygon points="240.333,42.167 242.333,41.617 242.333,42.717" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="249.167,42.167 247.167,42.717 247.167,41.617" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="244.750" y="41.467" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000">530</text>
+<polygon points="249.167,42.167 251.167,41.617 251.167,42.717" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="262.833,42.167 260.833,42.717 260.833,41.617" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="256.000" y="41.467" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000">820</text>
+<polygon points="262.833,42.167 264.833,41.617 264.833,42.717" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="271.667,42.167 269.667,42.717 269.667,41.617" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="267.250" y="41.467" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000">530</text>
+<polygon points="271.667,42.167 273.667,41.617 273.667,42.717" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="285.333,42.167 283.333,42.717 283.333,41.617" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="278.500" y="41.467" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000">820</text>
+<polygon points="285.333,42.167 287.333,41.617 287.333,42.717" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="294.167,42.167 292.167,42.717 292.167,41.617" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="289.750" y="41.467" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000">530</text>
+<polygon points="294.167,42.167 296.167,41.617 296.167,42.717" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="307.833,42.167 305.833,42.717 305.833,41.617" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="301.000" y="41.467" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000">820</text>
+<polygon points="307.833,42.167 309.833,41.617 309.833,42.717" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="316.667,42.167 314.667,42.717 314.667,41.617" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="312.250" y="41.467" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000">530</text>
+<polygon points="316.667,42.167 318.667,41.617 318.667,42.717" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="330.333,42.167 328.333,42.717 328.333,41.617" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="323.500" y="41.467" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000">820</text>
+<polygon points="330.333,42.167 332.333,41.617 332.333,42.717" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="356.667,42.167 354.667,42.717 354.667,41.617" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="343.500" y="41.467" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000">1.580</text>
+<line x1="50.000" y1="47.867" x2="50.000" y2="33.167" stroke="#000" stroke-width="0.18"/>
+<line x1="356.667" y1="47.867" x2="356.667" y2="33.167" stroke="#000" stroke-width="0.18"/>
+<line x1="50.000" y1="34.667" x2="356.667" y2="34.667" stroke="#000" stroke-width="0.18"/>
+<polygon points="50.000,34.667 52.000,34.117 52.000,35.217" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="356.667,34.667 354.667,35.217 354.667,34.117" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="203.333" y="33.967" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="3.0" text-anchor="middle" font-weight="bold" fill="#000">18.400 – TỔNG CHIỀU DÀI LỌT LÒNG  (CẠNH TÂY W THẲNG SUỐT)</text>
+<text x="70.833" y="46.467" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.8" text-anchor="middle" font-weight="normal" fill="#000" font-style="italic">khoảng phía cổng</text>
+<text x="343.500" y="46.467" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.8" text-anchor="middle" font-weight="normal" fill="#000" font-style="italic">tường trong → block đầu</text>
+<line x1="50.000" y1="190.133" x2="50.000" y2="201.167" stroke="#000" stroke-width="0.18"/>
+<line x1="291.333" y1="190.133" x2="291.333" y2="201.167" stroke="#000" stroke-width="0.18"/>
+<line x1="356.667" y1="183.467" x2="356.667" y2="201.167" stroke="#000" stroke-width="0.18"/>
+<line x1="50.000" y1="199.667" x2="356.667" y2="199.667" stroke="#000" stroke-width="0.18"/>
+<polygon points="50.000,199.667 52.000,199.117 52.000,200.217" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="291.333,199.667 289.333,200.217 289.333,199.117" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="170.667" y="198.967" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="3.0" text-anchor="middle" font-weight="bold" fill="#000">14.480 – ĐOẠN PHÍA NGOÀI (GẦN CỔNG)</text>
+<polygon points="291.333,199.667 293.333,199.117 293.333,200.217" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="356.667,199.667 354.667,200.217 354.667,199.117" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="324.000" y="198.967" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="3.0" text-anchor="middle" font-weight="bold" fill="#000">3.920 – ĐOẠN TRONG</text>
+<text x="203.333" y="206.167" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.7" text-anchor="middle" font-weight="bold" fill="#000">CẠNH ĐÔNG (E): THẲNG TẠI ĐOẠN NGOÀI 14.480 – TÓP VÀO 400 TẠI ĐOẠN TRONG 3.920 (GẦN AM THỜ)</text>
+<line x1="290.533" y1="182.667" x2="286.667" y2="182.667" stroke="#000" stroke-width="0.18"/>
+<line x1="288.167" y1="182.667" x2="288.167" y2="182.667" stroke="#000" stroke-width="0.18"/>
+<line x1="288.167" y1="189.333" x2="288.167" y2="189.333" stroke="#000" stroke-width="0.18"/>
+<line x1="288.167" y1="182.667" x2="288.167" y2="189.333" stroke="#000" stroke-width="0.18"/>
+<polygon points="288.167,182.667 288.717,184.667 287.617,184.667" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="288.167,189.333 287.617,187.333 288.717,187.333" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="287.467" y="186.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.6" text-anchor="middle" font-weight="bold" fill="#000" transform="rotate(-90 287.467 186.000)">400</text>
+<text x="293.333" y="188.033" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.2" text-anchor="start" font-weight="bold" fill="#c00000">← TÓP 400</text>
+<line x1="45.867" y1="52.000" x2="39.167" y2="52.000" stroke="#000" stroke-width="0.18"/>
+<line x1="45.867" y1="103.167" x2="39.167" y2="103.167" stroke="#000" stroke-width="0.18"/>
+<line x1="45.867" y1="136.500" x2="39.167" y2="136.500" stroke="#000" stroke-width="0.18"/>
+<line x1="45.867" y1="189.333" x2="39.167" y2="189.333" stroke="#000" stroke-width="0.18"/>
+<line x1="40.667" y1="52.000" x2="40.667" y2="189.333" stroke="#000" stroke-width="0.18"/>
+<polygon points="40.667,52.000 41.217,54.000 40.117,54.000" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="40.667,103.167 40.117,101.167 41.217,101.167" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="39.967" y="77.583" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000" transform="rotate(-90 39.967 77.583)">3.070</text>
+<polygon points="40.667,103.167 41.217,105.167 40.117,105.167" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="40.667,136.500 40.117,134.500 41.217,134.500" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="39.967" y="119.833" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000" transform="rotate(-90 39.967 119.833)">2.000 – CỔNG</text>
+<polygon points="40.667,136.500 41.217,138.500 40.117,138.500" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="40.667,189.333 40.117,187.333 41.217,187.333" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="39.967" y="162.917" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000" transform="rotate(-90 39.967 162.917)">3.170</text>
+<line x1="45.867" y1="52.000" x2="31.667" y2="52.000" stroke="#000" stroke-width="0.18"/>
+<line x1="45.867" y1="58.667" x2="31.667" y2="58.667" stroke="#000" stroke-width="0.18"/>
+<line x1="45.867" y1="109.833" x2="31.667" y2="109.833" stroke="#000" stroke-width="0.18"/>
+<line x1="45.867" y1="129.833" x2="31.667" y2="129.833" stroke="#000" stroke-width="0.18"/>
+<line x1="45.867" y1="181.000" x2="31.667" y2="181.000" stroke="#000" stroke-width="0.18"/>
+<line x1="45.867" y1="189.333" x2="31.667" y2="189.333" stroke="#000" stroke-width="0.18"/>
+<line x1="33.167" y1="52.000" x2="33.167" y2="189.333" stroke="#000" stroke-width="0.18"/>
+<polygon points="33.167,52.000 33.717,54.000 32.617,54.000" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="33.167,58.667 32.617,56.667 33.717,56.667" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="32.467" y="55.333" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000" transform="rotate(-90 32.467 55.333)">400</text>
+<polygon points="33.167,58.667 33.717,60.667 32.617,60.667" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="33.167,109.833 32.617,107.833 33.717,107.833" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="32.467" y="84.250" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000" transform="rotate(-90 32.467 84.250)">3.070</text>
+<polygon points="33.167,109.833 33.717,111.833 32.617,111.833" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="33.167,129.833 32.617,127.833 33.717,127.833" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="32.467" y="119.833" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000" transform="rotate(-90 32.467 119.833)">1.200</text>
+<polygon points="33.167,129.833 33.717,131.833 32.617,131.833" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="33.167,181.000 32.617,179.000 33.717,179.000" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="32.467" y="155.417" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000" transform="rotate(-90 32.467 155.417)">3.070</text>
+<polygon points="33.167,181.000 33.717,183.000 32.617,183.000" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="33.167,189.333 32.617,187.333 33.717,187.333" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="32.467" y="185.167" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000" transform="rotate(-90 32.467 185.167)">500</text>
+<line x1="45.867" y1="52.000" x2="24.167" y2="52.000" stroke="#000" stroke-width="0.18"/>
+<line x1="45.867" y1="189.333" x2="24.167" y2="189.333" stroke="#000" stroke-width="0.18"/>
+<line x1="25.667" y1="52.000" x2="25.667" y2="189.333" stroke="#000" stroke-width="0.18"/>
+<polygon points="25.667,52.000 26.217,54.000 25.117,54.000" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="25.667,189.333 25.117,187.333 26.217,187.333" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="24.967" y="120.667" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="3.0" text-anchor="middle" font-weight="bold" fill="#000" transform="rotate(-90 24.967 120.667)">8.240 – RỘNG PHÍA NGOÀI</text>
+<line x1="360.800" y1="52.000" x2="370.500" y2="52.000" stroke="#000" stroke-width="0.18"/>
+<line x1="360.800" y1="58.667" x2="370.500" y2="58.667" stroke="#000" stroke-width="0.18"/>
+<line x1="360.800" y1="109.833" x2="370.500" y2="109.833" stroke="#000" stroke-width="0.18"/>
+<line x1="360.800" y1="129.833" x2="370.500" y2="129.833" stroke="#000" stroke-width="0.18"/>
+<line x1="360.800" y1="181.000" x2="370.500" y2="181.000" stroke="#000" stroke-width="0.18"/>
+<line x1="360.800" y1="182.667" x2="370.500" y2="182.667" stroke="#000" stroke-width="0.18"/>
+<line x1="369.000" y1="52.000" x2="369.000" y2="182.667" stroke="#000" stroke-width="0.18"/>
+<polygon points="369.000,52.000 369.550,54.000 368.450,54.000" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="369.000,58.667 368.450,56.667 369.550,56.667" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="368.300" y="55.333" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000" transform="rotate(-90 368.300 55.333)">400</text>
+<polygon points="369.000,58.667 369.550,60.667 368.450,60.667" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="369.000,109.833 368.450,107.833 369.550,107.833" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="368.300" y="84.250" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000" transform="rotate(-90 368.300 84.250)">3.070</text>
+<polygon points="369.000,109.833 369.550,111.833 368.450,111.833" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="369.000,129.833 368.450,127.833 369.550,127.833" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="368.300" y="119.833" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000" transform="rotate(-90 368.300 119.833)">1.200</text>
+<polygon points="369.000,129.833 369.550,131.833 368.450,131.833" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="369.000,181.000 368.450,179.000 369.550,179.000" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="368.300" y="155.417" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000" transform="rotate(-90 368.300 155.417)">3.070</text>
+<polygon points="369.000,181.000 368.450,179.400 369.550,179.400" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="369.000,182.667 369.550,184.267 368.450,184.267" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<line x1="369.000" y1="182.667" x2="369.000" y2="185.667" stroke="#000" stroke-width="0.18"/>
+<text x="365.500" y="181.833" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000" transform="rotate(-90 365.500 181.833)">100</text>
+<line x1="360.800" y1="52.000" x2="378.500" y2="52.000" stroke="#000" stroke-width="0.18"/>
+<line x1="360.800" y1="182.667" x2="378.500" y2="182.667" stroke="#000" stroke-width="0.18"/>
+<line x1="292.133" y1="189.333" x2="378.500" y2="189.333" stroke="#000" stroke-width="0.18"/>
+<line x1="377.000" y1="52.000" x2="377.000" y2="189.333" stroke="#000" stroke-width="0.18"/>
+<polygon points="377.000,52.000 377.550,54.000 376.450,54.000" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="377.000,182.667 376.450,180.667 377.550,180.667" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="376.300" y="117.333" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="3.0" text-anchor="middle" font-weight="bold" fill="#000" transform="rotate(-90 376.300 117.333)">7.840 – RỘNG PHÍA TRONG</text>
+<polygon points="377.000,182.667 377.550,184.667 376.450,184.667" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="377.000,189.333 376.450,187.333 377.550,187.333" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="376.300" y="186.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="3.0" text-anchor="middle" font-weight="bold" fill="#000" transform="rotate(-90 376.300 186.000)">400</text>
+<text x="382.500" y="186.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.2" text-anchor="middle" font-weight="bold" fill="#c00000" transform="rotate(-90 382.500 186.000)">tóp</text>
+<circle cx="17.000" cy="42.000" r="3.200" fill="none" stroke="#000" stroke-width="0.4"/>
+<text x="17.000" y="43.400" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="3.8" text-anchor="middle" font-weight="bold" fill="#000">W</text>
+<text x="17.000" y="48.600" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.9" text-anchor="middle" font-weight="bold" fill="#000">CẠNH TÂY</text>
+<circle cx="17.000" cy="201.333" r="3.200" fill="none" stroke="#000" stroke-width="0.4"/>
+<text x="17.000" y="202.733" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="3.8" text-anchor="middle" font-weight="bold" fill="#000">E</text>
+<text x="17.000" y="207.933" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.9" text-anchor="middle" font-weight="bold" fill="#000">CẠNH ĐÔNG</text>
+<line x1="10.000" y1="214.000" x2="410.000" y2="214.000" stroke="#000" stroke-width="0.5"/>
+<text x="13.000" y="219.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="3.0" text-anchor="start" font-weight="bold" fill="#000">GHI CHÚ</text>
+<text x="13.000" y="223.600" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.15" text-anchor="start" font-weight="normal" fill="#000">1. Kích thước ghi bằng mm, cao độ ghi bằng m. Kích thước khu đất là kích thước LỌT LÒNG (mặt trong tường biên).</text>
+<text x="13.000" y="226.567" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.15" text-anchor="start" font-weight="normal" fill="#000">   Chiều dày tường biên chưa có số liệu – thể hiện tượng trưng.</text>
+<text x="13.000" y="229.534" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.15" text-anchor="start" font-weight="normal" fill="#000">2. Chuỗi chiều dài theo kích thước HOÀN THIỆN block 820:  1.580 + 11×820 + 10×530 + 2.500 = 18.400. Khoảng 530</text>
+<text x="13.000" y="232.501" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.15" text-anchor="start" font-weight="normal" fill="#000">   đo giữa 2 mép ngoài hoàn thiện. (780 là phần xây – chỉ dùng ở trang 2.)</text>
+<text x="13.000" y="235.468" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.15" text-anchor="start" font-weight="normal" fill="#000">3. Chuỗi ngang tại đoạn rộng 8.240:  500 + 3.070 + 1.200 + 3.070 + 400 = 8.240. Tại đoạn trong:  100 + 3.070 +</text>
+<text x="13.000" y="238.435" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.15" text-anchor="start" font-weight="normal" fill="#000">   1.200 + 3.070 + 400 = 7.840. Lối đi 1.200 đo giữa 2 mép ngoài block.</text>
+<text x="13.000" y="241.402" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.15" text-anchor="start" font-weight="normal" fill="#000">4. Mỗi block 3.070 = móng/đế 200 + phần xây hoàn thiện 6 hộc 2.670 + móng/đế 200. Móng/đế 200 – KHÔNG PHẢI HỘC</text>
+<text x="13.000" y="244.369" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.15" text-anchor="start" font-weight="normal" fill="#000">   MỘ.</text>
+<text x="13.000" y="247.336" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.15" text-anchor="start" font-weight="normal" fill="#000">5. CẦN XÁC NHẬN: theo chuỗi ngang ở mục 3, tim lối đi cách cạnh Tây 4.070, cách cạnh Đông 4.170, lệch 50 về phía</text>
+<text x="13.000" y="250.303" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.15" text-anchor="start" font-weight="normal" fill="#000">   Tây so với điểm giữa cạnh 8.240 (4.120). Bản vẽ giữ tim cổng = tim lối đi = tim am thờ (thẳng trục) nên cổng</text>
+<text x="13.000" y="253.270" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.15" text-anchor="start" font-weight="normal" fill="#000">   cách cạnh Tây 3.070 / cạnh Đông 3.170.</text>
+<text x="13.000" y="256.237" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.15" text-anchor="start" font-weight="normal" fill="#000">6. AM THỜ vẽ tượng trưng (nét đứt), kích thước chờ bổ sung. Phía lệch của góc 9° thể hiện theo giả định B9°Đ –</text>
+<text x="13.000" y="259.204" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.15" text-anchor="start" font-weight="normal" fill="#000">   chờ xác nhận.</text>
+<line x1="150.000" y1="214.000" x2="150.000" y2="287.000" stroke="#000" stroke-width="0.4"/>
+<text x="153.000" y="219.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="3.0" text-anchor="start" font-weight="bold" fill="#000">BẢNG KIỂM TRA</text>
+<text x="153.000" y="225.800" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="start" font-weight="normal" fill="#000">Số block</text>
+<text x="187.000" y="225.800" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="start" font-weight="normal" fill="#000">22 (11 trái + 11 phải)</text>
+<text x="230.000" y="225.800" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="middle" font-weight="bold" fill="#0a6b0a">Đạt</text>
+<line x1="150.000" y1="228.500" x2="238.000" y2="228.500" stroke="#999" stroke-width="0.12"/>
+<text x="153.000" y="232.100" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="start" font-weight="normal" fill="#000">Số hộc / block</text>
+<text x="187.000" y="232.100" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="start" font-weight="normal" fill="#000">6</text>
+<text x="230.000" y="232.100" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="middle" font-weight="bold" fill="#0a6b0a">Đạt</text>
+<line x1="150.000" y1="234.800" x2="238.000" y2="234.800" stroke="#999" stroke-width="0.12"/>
+<text x="153.000" y="238.400" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="start" font-weight="normal" fill="#000">Tổng số hộc</text>
+<text x="187.000" y="238.400" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="start" font-weight="normal" fill="#000">22 × 6 = 132</text>
+<text x="230.000" y="238.400" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="middle" font-weight="bold" fill="#0a6b0a">Đạt</text>
+<line x1="150.000" y1="241.100" x2="238.000" y2="241.100" stroke="#999" stroke-width="0.12"/>
+<text x="153.000" y="244.700" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="start" font-weight="normal" fill="#000">Tổng chiều dài</text>
+<text x="187.000" y="244.700" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="start" font-weight="normal" fill="#000">14.480 + 3.920 = 18.400</text>
+<text x="230.000" y="244.700" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="middle" font-weight="bold" fill="#0a6b0a">Đạt</text>
+<line x1="150.000" y1="247.400" x2="238.000" y2="247.400" stroke="#999" stroke-width="0.12"/>
+<text x="153.000" y="251.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="start" font-weight="normal" fill="#000">Rộng ngoài / trong</text>
+<text x="187.000" y="251.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="start" font-weight="normal" fill="#000">8.240 / 7.840</text>
+<text x="230.000" y="251.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="middle" font-weight="bold" fill="#0a6b0a">Đạt</text>
+<line x1="150.000" y1="253.700" x2="238.000" y2="253.700" stroke="#999" stroke-width="0.12"/>
+<text x="153.000" y="257.300" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="start" font-weight="normal" fill="#000">Cạnh Tây / cạnh Đông</text>
+<text x="187.000" y="257.300" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="start" font-weight="normal" fill="#000">thẳng / tóp 400</text>
+<text x="230.000" y="257.300" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="middle" font-weight="bold" fill="#0a6b0a">Đạt</text>
+<line x1="150.000" y1="260.000" x2="238.000" y2="260.000" stroke="#999" stroke-width="0.12"/>
+<text x="153.000" y="263.600" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="start" font-weight="normal" fill="#000">Cổng – lối đi</text>
+<text x="187.000" y="263.600" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="start" font-weight="normal" fill="#000">2.000 / 1.200, cùng trục</text>
+<text x="230.000" y="263.600" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="middle" font-weight="bold" fill="#0a6b0a">Đạt</text>
+<line x1="150.000" y1="266.300" x2="238.000" y2="266.300" stroke="#999" stroke-width="0.12"/>
+<text x="153.000" y="269.900" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="start" font-weight="normal" fill="#000">Cổng giữa cạnh 8.240</text>
+<text x="187.000" y="269.900" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="start" font-weight="normal" fill="#000">lệch 50 – xem GC 5</text>
+<text x="230.000" y="269.900" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="middle" font-weight="bold" fill="#c00000">Chờ XN</text>
+<line x1="150.000" y1="272.600" x2="238.000" y2="272.600" stroke="#999" stroke-width="0.12"/>
+<text x="153.000" y="276.200" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="start" font-weight="normal" fill="#000">Tên công trình phụ</text>
+<text x="187.000" y="276.200" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="start" font-weight="normal" fill="#000">AM THỜ</text>
+<text x="230.000" y="276.200" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="middle" font-weight="bold" fill="#0a6b0a">Đạt</text>
+<line x1="150.000" y1="278.900" x2="238.000" y2="278.900" stroke="#999" stroke-width="0.12"/>
+<text x="153.000" y="282.500" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="start" font-weight="normal" fill="#000">Chuỗi vượt lọt lòng</text>
+<text x="187.000" y="282.500" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="start" font-weight="normal" fill="#000">không có</text>
+<text x="230.000" y="282.500" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="middle" font-weight="bold" fill="#0a6b0a">Đạt</text>
+<line x1="150.000" y1="285.200" x2="238.000" y2="285.200" stroke="#999" stroke-width="0.12"/>
+<line x1="238.000" y1="214.000" x2="238.000" y2="287.000" stroke="#000" stroke-width="0.4"/>
+<text x="241.000" y="219.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="3.0" text-anchor="start" font-weight="bold" fill="#000">CHÚ THÍCH</text>
+<rect x="241.000" y="222.500" width="9.000" height="4.500" fill="url(#brick2)" stroke="#000" stroke-width="0.25" />
+<text x="251.500" y="225.506" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="start" font-weight="normal" fill="#000">Xây gạch (tường biên, block)</text>
+<rect x="241.000" y="231.600" width="9.000" height="4.500" fill="#2f62a8" stroke="#000" stroke-width="0.25" />
+<rect x="241.800" y="232.400" width="7.400" height="2.900" fill="url(#brick2)" stroke="#000" stroke-width="0.1" />
+<text x="251.500" y="234.606" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="start" font-weight="normal" fill="#000">Hoàn thiện: tô 10 + ốp 10</text>
+<rect x="241.000" y="240.700" width="9.000" height="4.500" fill="url(#solid2)" stroke="#000" stroke-width="0.25" />
+<text x="251.500" y="243.706" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="start" font-weight="normal" fill="#000">Móng/đế đặc 200 (không phải hộc)</text>
+<rect x="241.000" y="249.800" width="9.000" height="4.500" fill="#eef3e6" stroke="#000" stroke-width="0.25" />
+<text x="251.500" y="252.806" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="start" font-weight="normal" fill="#000">Lối đi giữa 1.200</text>
+<line x1="241.000" y1="261.150" x2="250.000" y2="261.150" stroke="#c00000" stroke-width="0.3" stroke-dasharray="3,0.8,0.6,0.8"/>
+<text x="251.500" y="261.906" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="start" font-weight="normal" fill="#000">Đường tim (gạch chấm)</text>
+<rect x="241.000" y="268.000" width="9.000" height="4.500" fill="none" stroke="#000" stroke-width="0.35" stroke-dasharray="1.2,0.7" />
+<text x="251.500" y="271.006" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="start" font-weight="normal" fill="#000">Am thờ – chờ bổ sung</text>
+<rect x="241.000" y="277.100" width="9.000" height="4.500" fill="#fff" stroke="#000" stroke-width="0.25" />
+<circle cx="245.500" cy="279.350" r="1.800" fill="none" stroke="#000" stroke-width="0.3" stroke-dasharray="0.8,0.5"/>
+<line x1="244.200" y1="278.050" x2="246.800" y2="280.650" stroke="#000" stroke-width="0.2"/>
+<line x1="244.200" y1="280.650" x2="246.800" y2="278.050" stroke="#000" stroke-width="0.2"/>
+<text x="251.500" y="280.106" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="start" font-weight="normal" fill="#000">Lỗ âm dương (xem trang 2)</text>
+<line x1="300.000" y1="214.000" x2="300.000" y2="287.000" stroke="#000" stroke-width="0.4"/>
+<text x="311.000" y="219.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000">HƯỚNG</text>
+<circle cx="309.000" cy="244.000" r="5.500" fill="none" stroke="#000" stroke-width="0.35"/>
+<line x1="303.225" y1="244.000" x2="315.875" y2="244.000" stroke="#000" stroke-width="0.25" stroke-dasharray="3,0.8,0.6,0.8"/>
+<polygon points="315.247,243.011 305.167,246.166 309.000,244.000 304.685,243.124" fill="#fff" stroke="#000" stroke-width="0.3" stroke-linejoin="miter"/>
+<polygon points="315.247,243.011 305.167,246.166 309.000,244.000" fill="#000" stroke="#000" stroke-width="0.3" stroke-linejoin="miter"/>
+<text x="314.247" y="240.411" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000">B (N)</text>
+<path d="M314.225,244.000 A5.225,5.225 0 0 0 314.161,243.183" fill="none" fill-rule="nonzero" stroke="#000" stroke-width="0.25"/>
+<text x="311.000" y="256.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.4" text-anchor="middle" font-weight="bold" fill="#000">TRỤC B9°</text>
+<text x="311.000" y="264.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="middle" font-weight="normal" fill="#000">Cổng → Am thờ</text>
+<text x="311.000" y="267.500" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.4" text-anchor="middle" font-weight="bold" fill="#000">hướng B9°</text>
+<text x="311.000" y="272.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="middle" font-weight="normal" fill="#000">W trên – E dưới</text>
+<rect x="322.000" y="214.000" width="88.000" height="73.000" fill="none" stroke="#000" stroke-width="0.6" />
+<text x="323.200" y="218.856" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#444">CÔNG TRÌNH</text>
+<text x="353.120" y="219.056" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="3.6" text-anchor="start" font-weight="bold" fill="#000">KHU LĂNG MỘ HỌ VÕ</text>
+<line x1="322.000" y1="222.111" x2="410.000" y2="222.111" stroke="#000" stroke-width="0.25"/>
+<text x="323.200" y="226.967" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#444">TÊN BẢN VẼ</text>
+<text x="353.120" y="227.167" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.9" text-anchor="start" font-weight="bold" fill="#000">MẶT BẰNG TỔNG THỂ</text>
+<line x1="322.000" y1="230.222" x2="410.000" y2="230.222" stroke="#000" stroke-width="0.25"/>
+<text x="323.200" y="235.078" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#444">TỶ LỆ</text>
+<text x="353.120" y="235.278" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="start" font-weight="normal" fill="#000">1/60</text>
+<line x1="322.000" y1="238.333" x2="410.000" y2="238.333" stroke="#000" stroke-width="0.25"/>
+<text x="323.200" y="243.189" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#444">KHỔ GIẤY / ĐƠN VỊ</text>
+<text x="353.120" y="243.389" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.5" text-anchor="start" font-weight="normal" fill="#000">A3 ngang – mm (cao độ: m)</text>
+<line x1="322.000" y1="246.444" x2="410.000" y2="246.444" stroke="#000" stroke-width="0.25"/>
+<text x="323.200" y="251.300" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#444">KÝ HIỆU / TỜ</text>
+<text x="353.120" y="251.500" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="start" font-weight="bold" fill="#000">LM-01   –   TỜ 01/02</text>
+<line x1="322.000" y1="254.556" x2="410.000" y2="254.556" stroke="#000" stroke-width="0.25"/>
+<text x="323.200" y="259.411" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#444">THIẾT KẾ</text>
+<text x="353.120" y="259.611" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.5" text-anchor="start" font-weight="normal" fill="#000">........................</text>
+<line x1="322.000" y1="262.667" x2="410.000" y2="262.667" stroke="#000" stroke-width="0.25"/>
+<text x="323.200" y="267.522" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#444">KIỂM TRA</text>
+<text x="353.120" y="267.722" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.5" text-anchor="start" font-weight="normal" fill="#000">........................</text>
+<line x1="322.000" y1="270.778" x2="410.000" y2="270.778" stroke="#000" stroke-width="0.25"/>
+<text x="323.200" y="275.633" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#444">CHỦ ĐẦU TƯ</text>
+<text x="353.120" y="275.833" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.5" text-anchor="start" font-weight="normal" fill="#000">........................</text>
+<line x1="322.000" y1="278.889" x2="410.000" y2="278.889" stroke="#000" stroke-width="0.25"/>
+<text x="323.200" y="283.744" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#444">NGÀY</text>
+<text x="353.120" y="283.944" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.5" text-anchor="start" font-weight="normal" fill="#000">14/11/2026</text>
+<line x1="351.920" y1="214.000" x2="351.920" y2="287.000" stroke="#000" stroke-width="0.25"/></svg>
