@@ -11,7 +11,8 @@ FONT = "DejaVu Sans, Liberation Sans, Arial, sans-serif"
 L_TOTAL, L_OUT, L_IN = 18400, 14480, 3920
 W_OUT, W_IN, TOP_E = 8240, 7840, 400
 GATE, PATH = 2000, 1200
-E_GAP, BLK, W_GAP = 500, 3070, 400            # chuoi ngang tai doan 8.240
+BLK = 3070                                     # mep ngoai block gom de 200 hai dau (chi o mat cat)
+E_GAP, W_GAP = 850, 850                        # CACH 1 (tam tinh): tuong -> mep ngoai phan noi 2.670
 HOC_W, HOC_L, WALL, N_HOC = 380, 680, 50, 6
 FIN_TRAT, FIN_OP = 10, 10
 FIN = FIN_TRAT + FIN_OP                        # 20 / mat
@@ -25,15 +26,15 @@ H_NOI, D_AM, SLAB, GIANG, MONG_BAO = 100, 1000, 100, 150, 200
 # ======================= KIEM TRA SO HOC =======================
 assert L_OUT + L_IN == L_TOTAL
 assert W_OUT - TOP_E == W_IN
-assert E_GAP + BLK + PATH + BLK + W_GAP == W_OUT
 assert BLK_CORE == 2670 and BASE + BLK_CORE + BASE == BLK == 3070
+assert E_GAP + BLK_CORE + PATH + BLK_CORE + W_GAP == W_OUT
 assert BLK_XAY == 780 and BLK_HT == 820 and HOC_W + 2 * WALL == 480
 assert D_INNER + N_BLK_ROW * BLK_HT + (N_BLK_ROW - 1) * GAP_BLK + D_GATE == L_TOTAL
 N_BLOCK = 2 * N_BLK_ROW
 assert N_BLOCK == 22 and N_BLOCK * N_HOC == 132
 # Tim loi di (tinh tu canh Tay, Y huong xuong = phia Dong)
-Y_AXIS = W_GAP + BLK + PATH / 2                 # 4.070
-assert Y_AXIS == 4070
+Y_AXIS = W_GAP + BLK_CORE + PATH / 2            # 4.120 = giua canh 8.240
+assert Y_AXIS == 4120 == W_OUT / 2
 GATE_Y1, GATE_Y2 = Y_AXIS - GATE / 2, Y_AXIS + GATE / 2   # 3.070 .. 5.070
 # Block cuoi phia cong khong vuot qua canh ngoai, block dau trong doan tron 3.920 van trong long dat
 BLK_X = []   # (x_trai, x_phai) theo kich thuoc hoan thien, X tinh tu canh ngoai (cong)
@@ -42,11 +43,13 @@ for i in range(N_BLK_ROW):
     BLK_X.append((xr - BLK_HT, xr))
 BLK_X.sort()
 assert BLK_X[0][0] == D_GATE and BLK_X[-1][1] == L_TOTAL - D_INNER
-ROW_W = (W_GAP, W_GAP + BLK)                    # day trai (phia Tay)  400..3470
-ROW_E = (W_GAP + BLK + PATH, W_GAP + 2 * BLK + PATH)   # day phai (phia Dong) 4670..7740
+ROW_W = (W_GAP, W_GAP + BLK_CORE)                         # day trai (phia Tay)  850..3520
+ROW_E = (W_GAP + BLK_CORE + PATH, W_GAP + 2 * BLK_CORE + PATH)   # day phai (phia Dong) 4720..7390
 assert ROW_E[1] <= W_IN  # day phai van nam trong long dat tai doan tron (con 100)
 CLEAR_IN = W_IN - ROW_E[1]                      # 100
-assert CLEAR_IN == 100
+assert CLEAR_IN == 450
+# de 200 (duoi cot nen) van nam trong long dat
+assert ROW_W[0] - BASE > 0 and W_IN - (ROW_E[1] + BASE) > 0
 
 
 def fmt(n):
@@ -386,7 +389,7 @@ def page1():
     s.text(14, 21, "MẶT BẰNG TỔNG THỂ KHU LĂNG MỘ HỌ VÕ", size=5.5, anchor="start", weight="bold")
     s.text(14, 27.5, "TỶ LỆ 1/60  –  22 BLOCK × 6 HỘC = 132 HỘC", size=3.4, anchor="start", weight="bold")
     s.text(405, 20, "MỌI KÍCH THƯỚC BỐ TRÍ ĐO THEO MÉP NGOÀI PHẦN NỔI ĐÃ TÔ, ỐP CỦA BLOCK", size=2.9, anchor="end", weight="bold", col="#c00000")
-    s.text(405, 25, "(block phần nổi 3.070 × 820 – đế BTCT và phần chìm không dùng làm mốc bố trí)", size=2.4, anchor="end", col="#c00000")
+    s.text(405, 25, "(block phần nổi 2.670 × 820 – đế BTCT 200 và phần chìm chỉ thể hiện ở mặt cắt)", size=2.4, anchor="end", col="#c00000")
 
     # ---- nen loi di giua
     x0, y0 = P(0, ROW_W[1])
@@ -425,11 +428,8 @@ def page1():
     def draw_block(xl, yt):
         # xl: X trai (hoan thien), yt: Y tren (mep ngoai block, gom mong/de)
         # mong / de 2 dau
-        for yb, top in ((yt, True), (yt + BASE + BLK_CORE, False)):
-            a = P(xl, yb)
-            s.rect(a[0], a[1], BLK_HT * S, BASE * S, fill=TILE, sw=0)
-            a = P(xl + FIN, yb + (FIN if top else 0))
-            s.rect(a[0], a[1], BLK_XAY * S, (BASE - FIN) * S, fill="url(#solid)", sw=0.1)
+        # chi ve phan noi 2.670 (de BTCT 200 hai dau chi the hien o mat cat)
+        yt = yt - BASE
         a = P(xl, yt + BASE)
         s.rect(a[0], a[1], BLK_HT * S, BLK_CORE * S, fill=TILE, sw=0)
         a = P(xl + FIN, yt + BASE + FIN)
@@ -438,8 +438,8 @@ def page1():
             yy = yt + BASE + FIN + WALL + k * (HOC_W + WALL)
             a = P(xl + FIN + WALL, yy)
             s.rect(a[0], a[1], HOC_L * S, HOC_W * S, fill="#fff", sw=0.08)
-        a = P(xl, yt)
-        s.rect(a[0], a[1], BLK_HT * S, BLK * S, sw=0.35)
+        a = P(xl, yt + BASE)
+        s.rect(a[0], a[1], BLK_HT * S, BLK_CORE * S, sw=0.35)
 
     for j, (xl, xr) in enumerate(BLK_X):
         draw_block(xl, ROW_W[0])
@@ -473,8 +473,8 @@ def page1():
         s.text(px_, py_ + 3.3, "11 BLOCK × 6 HỘC", size=2.2)
         s.text(px_, py_ + 6.6, "= 66 HỘC", size=2.2)
     px_, py_ = P(1250, 7300)
-    s.text(px_, py_, "Đế 200 ở 2 đầu: phần nổi,", size=1.9, italic=True)
-    s.text(px_, py_ + 2.8, "đặc – không phải hộc", size=1.9, italic=True)
+    s.text(px_, py_, "Đế BTCT 200 hai đầu block:", size=1.9, italic=True)
+    s.text(px_, py_ + 2.8, "chỉ thể hiện ở mặt cắt", size=1.9, italic=True)
 
     # ---- KICH THUOC TREN (canh Tay)
     ywall_top = P(0, -t)[1]
@@ -513,13 +513,13 @@ def page1():
     ysg = [P(0, y)[1] for y in (0, GATE_Y1, GATE_Y2, W_OUT)]
     vchain(s, ysg, xw, xw - 6, [fmt(GATE_Y1), "2.000 – CỔNG", fmt(W_OUT - GATE_Y2)], size=2.8, bold=True)
     ysl = [P(0, y)[1] for y in (0, ROW_W[0], ROW_W[1], ROW_E[0], ROW_E[1], W_OUT)]
-    vchain(s, ysl, xw, xw - 13.5, ["400", "3.070", "1.200", "3.070", "500"], size=2.8, bold=True)
+    vchain(s, ysl, xw, xw - 13.5, [fmt(W_GAP), fmt(BLK_CORE), fmt(PATH), fmt(BLK_CORE), fmt(E_GAP)], size=2.8, bold=True)
     vchain(s, [ysl[0], ysl[-1]], xw, xw - 21, ["8.240 – RỘNG PHÍA NGOÀI"], size=3.0, bold=True)
 
     # ---- KICH THUOC PHAI (doan tron)
     xe = P(L_TOTAL + t, 0)[0]
     ysr = [P(0, y)[1] for y in (0, ROW_W[0], ROW_W[1], ROW_E[0], ROW_E[1], W_IN)]
-    vchain(s, ysr, xe, xe + 9, ["400", "3.070", "1.200", "3.070", "100"], size=2.8, bold=True)
+    vchain(s, ysr, xe, xe + 9, [fmt(W_GAP), fmt(BLK_CORE), fmt(PATH), fmt(BLK_CORE), fmt(CLEAR_IN)], size=2.8, bold=True)
     vchain(s, [P(0, 0)[1], P(0, W_IN)[1], P(0, W_OUT)[1]], [xe, xe, P(L_OUT, 0)[0]], xe + 17,
            ["7.840 – RỘNG PHÍA TRONG", "400"], size=3.0, bold=True)
     s.text(xe + 22.5, P(0, W_IN + 200)[1], "tóp", size=2.2, rot=-90, col="#c00000", weight="bold")
@@ -536,11 +536,11 @@ def page1():
     # Ghi chu
     s.text(13, ys0 + 5, "GHI CHÚ", size=3.0, anchor="start", weight="bold")
     notes = [
-        "1. MỌI KÍCH THƯỚC BỐ TRÍ ĐO THEO MÉP NGOÀI PHẦN NỔI ĐÃ TÔ, ỐP CỦA BLOCK (lối đi 1.200, khoảng 530, 400/500 đến tường, 1.580); đế BTCT và phần chìm không dùng làm mốc mặt bằng. Kích thước ghi bằng mm, cao độ ghi bằng m. Kích thước khu đất là kích thước LỌT LÒNG (mặt trong tường biên). Chiều dày tường biên chưa có số liệu – thể hiện tượng trưng.",
+        "1. MỌI KÍCH THƯỚC BỐ TRÍ ĐO THEO MÉP NGOÀI PHẦN NỔI ĐÃ TÔ, ỐP CỦA BLOCK (lối đi 1.200, khoảng 530, 850/850 đến tường, 1.580); đế BTCT 200 và phần chìm chỉ thể hiện ở mặt cắt. Kích thước ghi bằng mm, cao độ ghi bằng m. Kích thước khu đất là kích thước LỌT LÒNG (mặt trong tường biên). Chiều dày tường biên chưa có số liệu – thể hiện tượng trưng.",
         "2. Chuỗi chiều dài theo kích thước HOÀN THIỆN block 820:  1.580 + 11×820 + 10×530 + 2.500 = 18.400. Khoảng 530 đo giữa 2 mép ngoài hoàn thiện. (780 là phần xây – chỉ dùng ở trang 2.)",
-        "3. Chuỗi ngang tại đoạn rộng 8.240:  500 + 3.070 + 1.200 + 3.070 + 400 = 8.240. Tại đoạn trong:  100 + 3.070 + 1.200 + 3.070 + 400 = 7.840. Lối đi 1.200 đo giữa 2 mép ngoài block.",
-        "4. Block phần nổi 3.070 × 820 = đế 200 + phần xây hoàn thiện 6 hộc 2.670 + đế 200. Móng/đế 200 – KHÔNG PHẢI HỘC MỘ (phần nổi, đặc, đã tô/ốp mặt ngoài).",
-        "5. CẦN XÁC NHẬN: theo chuỗi ngang ở mục 3, tim lối đi cách cạnh Tây 4.070, cách cạnh Đông 4.170, lệch 50 về phía Tây so với điểm giữa cạnh 8.240 (4.120). Bản vẽ giữ tim cổng = tim lối đi = tim am thờ (thẳng trục) nên cổng cách cạnh Tây 3.070 / cạnh Đông 3.170.",
+        "3. Chuỗi ngang (TẠM TÍNH – CÁCH 1, chờ đo lại) tại đoạn rộng 8.240:  850 + 2.670 + 1.200 + 2.670 + 850 = 8.240. Tại đoạn trong:  450 + 2.670 + 1.200 + 2.670 + 850 = 7.840. Lối đi 1.200 đo giữa 2 mép ngoài phần nổi.",
+        "4. Block phần nổi 2.670 × 820 (6×380 + 7×50 + 40). Đế BTCT 200 hai đầu block (không phải hộc mộ) nằm dưới cốt nền – không vẽ trên mặt bằng, xem mặt cắt B-B trang 2.",
+        "5. Cổng 2.000 nằm chính giữa cạnh 8.240 (3.120 – 2.000 – 3.120). Tim cổng = tim lối đi = tim am thờ, cách mỗi cạnh 4.120.",
         "6. AM THỜ vẽ tượng trưng (nét đứt), kích thước chờ bổ sung. Phía lệch của góc 9° thể hiện theo giả định B9°Đ – chờ xác nhận.",
     ]
     textblock(s, 13, ys0 + 9.6, notes, size=2.15, nchar=112)
@@ -557,7 +557,7 @@ def page1():
         ("Rộng ngoài / trong", "8.240 / 7.840", "Đạt"),
         ("Cạnh Tây / cạnh Đông", "thẳng / tóp 400", "Đạt"),
         ("Cổng – lối đi", "2.000 / 1.200, cùng trục", "Đạt"),
-        ("Cổng giữa cạnh 8.240", "lệch 50 – xem GC 5", "Chờ XN"),
+        ("Cổng giữa cạnh 8.240", "3.120 / 3.120", "Đạt"),
         ("Tên công trình phụ", "AM THỜ", "Đạt"),
         ("Chuỗi vượt lọt lòng", "không có", "Đạt"),
     ]
@@ -574,7 +574,7 @@ def page1():
     s.line(xl_, ys0, xl_, 287, sw=0.4)
     s.text(xl_ + 3, ys0 + 5, "CHÚ THÍCH", size=3.0, anchor="start", weight="bold")
     items = [("brick", "Xây gạch (tường biên, block)"), ("finish", "Hoàn thiện: tô 10 + ốp 10"),
-             ("solid", "Đế 200 phần nổi, đặc (không phải hộc)"), ("path", "Lối đi giữa 1.200"),
+             ("path", "Lối đi giữa 1.200"),
              ("axis", "Đường tim (gạch chấm)"), ("amtho", "Am thờ – chờ bổ sung"),
              ("hole", "Lỗ âm dương (xem trang 2)")]
     yy = ys0 + 8.5
@@ -614,13 +614,6 @@ def page2():
     s.text(14, 23, "(Block xoay nằm ngang để thể hiện; chiều 6 hộc vuông góc lối đi giữa)", size=2.3, anchor="start", italic=True)
 
     # mong/de 2 dau
-    for u0, left in ((0, True), (BLK - BASE, False)):
-        a = Pu(u0, 0)
-        s.rect(a[0], a[1], BASE * k, BLK_HT * k, fill=TILE, sw=0.35)
-        a = Pu(u0 + (FIN_OP if left else 0), FIN_OP)
-        s.rect(a[0], a[1], (BASE - FIN_OP) * k, (BLK_HT - 2 * FIN_OP) * k, fill="url(#render)", sw=0.1)
-        a = Pu(u0 + (FIN if left else 0), FIN)
-        s.rect(a[0], a[1], (BASE - FIN) * k, BLK_XAY * k, fill="url(#solid2)", sw=0.25)
     # op gach (lop ngoai 10), to trat (10), xay
     a = Pu(BASE, 0)
     s.rect(a[0], a[1], BLK_CORE * k, BLK_HT * k, fill=TILE, sw=0.2)
@@ -646,12 +639,6 @@ def page2():
         s.text(cx, cy + 11.8, "(KT, vị trí chờ XN)", size=1.8, italic=True)
     assert hoc_u[-1] + HOC_W + WALL + FIN == BLK - BASE
     # nhan mong/de
-    for u0 in (0, BLK - BASE):
-        cx = Pu(u0 + BASE / 2, 0)[0]
-        cy = Pu(0, BLK_HT / 2)[1]
-        s.text(cx - 2.3, cy, "MÓNG/ĐẾ 200", size=2.7, rot=-90, weight="bold", col="#fff")
-        s.text(cx + 2.4, cy, "KHÔNG PHẢI HỘC MỘ", size=2.3, rot=-90, weight="bold", col="#fff")
-        s.text(cx + 6.3, cy, "(phần nổi, đặc)", size=2.0, rot=-90, col="#fff")
     # kich thuoc 680 trong hoc 1
     a = Pu(hoc_u[0] + 40, FIN + WALL)
     vchain(s, [a[1], a[1] + HOC_L * k], a[0] + 1, a[0], ["680"], size=2.6, ext=0, gap=-1, bold=True)
@@ -668,7 +655,7 @@ def page2():
     s.line(xa_, yb_, xa_ - 5, yb_, sw=0.3); arrow(s, xa_ - 5, yb_, -1, 0, 1.8)
     s.text(xa_ - 7.8, yb_ + 1.2, "A", size=3.4, weight="bold")
     yBm = Pu(0, BLK_HT / 2)[1]
-    for xB0, xB1 in ((11.5, 15), (Pu(BLK, 0)[0] + 2, Pu(BLK, 0)[0] + 5.5)):
+    for xB0, xB1 in ((Pu(BASE, 0)[0] - 25.5, Pu(BASE, 0)[0] - 22), (Pu(BLK - BASE, 0)[0] + 2, Pu(BLK - BASE, 0)[0] + 5.5)):
         s.line(xB0, yBm, xB1, yBm, sw=0.8)
         xm = (xB0 + xB1) / 2
         s.line(xm, yBm, xm, yBm - 5, sw=0.3); arrow(s, xm, yBm - 5, 0, -1, 1.8)
@@ -676,22 +663,22 @@ def page2():
 
     # chuoi kich thuoc duoi mat bang
     yobj = Y0 + BLK_HT * k
-    us = [0, BASE, BASE + FIN]
+    us = [BASE, BASE + FIN]
     for i in range(N_HOC):
         us += [hoc_u[i], hoc_u[i] + HOC_W]
-    us += [BLK - BASE - FIN, BLK - BASE, BLK]
+    us += [BLK - BASE - FIN, BLK - BASE]
     labs = []
     for i in range(len(us) - 1):
         labs.append(fmt(us[i + 1] - us[i]))
     hchain(s, [Pu(u, 0)[0] for u in us], yobj, yobj + 9.5, labs, size=2.6, bold=True)
-    hchain(s, [Pu(u, 0)[0] for u in (0, BASE, BLK - BASE, BLK)], yobj, yobj + 16.5,
-           ["200", "2.670 = 6×380 + 7×50 + 40 (PHẦN XÂY HOÀN THIỆN)", "200"], size=2.7, bold=True)
-    hchain(s, [Pu(0, 0)[0], Pu(BLK, 0)[0]], yobj, yobj + 23.5, ["3.070 – MÉP NGOÀI BLOCK = 200 + 2.670 + 200"], size=2.9, bold=True)
+    hchain(s, [Pu(BASE, 0)[0], Pu(BLK - BASE, 0)[0]], yobj, yobj + 16.5,
+           ["2.670 = 6×380 + 7×50 + 40 – MÉP NGOÀI PHẦN NỔI ĐÃ TÔ, ỐP"], size=2.9, bold=True)
+    s.text(Pu(BLK / 2, 0)[0], yobj + 22.5, "Đế BTCT 200 hai đầu block không thể hiện trên mặt bằng – xem mặt cắt B-B", size=2.4, italic=True, col="#c00000")
     # chuoi doc ben trai
     vs = [0, FIN, FIN + WALL, FIN + WALL + HOC_L, FIN + 2 * WALL + HOC_L, BLK_HT]
-    vchain(s, [Pu(0, v)[1] for v in vs], X0, X0 - 5.5, ["20", "50", "680", "50", "20"], size=2.5, bold=True)
-    vchain(s, [Pu(0, FIN)[1], Pu(0, FIN + BLK_XAY)[1]], X0, X0 - 12, ["780 XÂY"], size=2.6, bold=True)
-    vchain(s, [Pu(0, 0)[1], Pu(0, BLK_HT)[1]], X0, X0 - 18.5, ["820 HOÀN THIỆN"], size=2.6, bold=True)
+    vchain(s, [Pu(0, v)[1] for v in vs], X0 + BASE * k, X0 + BASE * k - 5.5, ["20", "50", "680", "50", "20"], size=2.5, bold=True)
+    vchain(s, [Pu(0, FIN)[1], Pu(0, FIN + BLK_XAY)[1]], X0 + BASE * k, X0 + BASE * k - 12, ["780 XÂY"], size=2.6, bold=True)
+    vchain(s, [Pu(0, 0)[1], Pu(0, BLK_HT)[1]], X0 + BASE * k, X0 + BASE * k - 18.5, ["820 HOÀN THIỆN"], size=2.6, bold=True)
 
     # ---------------- MAT CAT A-A ----------------
     zt, z0 = 100, 0
@@ -791,13 +778,9 @@ def page2():
     # mong bao gach the + giang BTCT
     s.rect(Ub(0), Zy(-GIANG), MONG_BAO * k, (D_AM - GIANG) * k, fill="url(#brickthe)", sw=0.35)
     s.rect(Ub(0), Zy(0), MONG_BAO * k, GIANG * k, fill="url(#concrete)", sw=0.35)
-    s.text(Ub(100) - 1.2, Zy(-575), "MÓNG BAO GẠCH THẺ", size=2.6, rot=-90, weight="bold", bg=True)
-    s.text(Ub(100) + 3.0, Zy(-575), "RỘNG 200", size=2.6, rot=-90, weight="bold", bg=True)
+    s.text(Ub(100) - 1.2, Zy(-575), "ĐẾ 200 – MÓNG BAO GẠCH THẺ", size=2.4, rot=-90, weight="bold", bg=True)
+    s.text(Ub(100) + 3.0, Zy(-575), "(chỉ thể hiện ở mặt cắt)", size=2.2, rot=-90, weight="bold", bg=True)
     s.text(Ub(100), Zy(-95), "GIẰNG BTCT", size=2.1, weight="bold", bg=True)
-    # dau block phan noi (dac) 0 -> +0.100: op gach 10 + to trat 10 mat ngoai
-    s.rect(Ub(0), Zy(H_NOI), FIN_OP * k, H_NOI * k, fill=TILE, sw=0.15)
-    s.rect(Ub(FIN_OP), Zy(H_NOI), FIN_TRAT * k, H_NOI * k, fill="url(#render)", sw=0.15)
-    s.rect(Ub(FIN), Zy(H_NOI), (BASE - FIN) * k, H_NOI * k, fill="url(#brick2)", sw=0.35)
     # tuong + hoan thien phan noi o dau
     for u in (BASE + FIN, BASE + FIN + WALL + HOC_W, BASE + FIN + 2 * (WALL + HOC_W)):
         w = WALL if u + WALL <= ubrk else ubrk - u
@@ -819,7 +802,7 @@ def page2():
     # kich thuoc B-B
     hchain(s, [Ub(u) for u in (0, BASE, BASE + FIN, hu[0], hu[0] + HOC_W, hu[1], hu[1] + HOC_W, hu[2])], Zy(H_NOI), 152.5,
            ["200", "20", "50", "380", "50", "380", "50"], size=2.6, bold=True)
-    vchain(s, [Zy(H_NOI), Zy(0), Zy(-GIANG)], Ub(0), Ub(0) - 7, ["100", "150"], size=2.5, bold=True)
+    vchain(s, [Zy(0), Zy(-GIANG)], Ub(0), Ub(0) - 7, ["150"], size=2.5, bold=True)
 
     # ---------------- DAI PHAI: chu thich, ghi chu, khung ten ----------------
     xs_ = 350
@@ -827,7 +810,7 @@ def page2():
     s.text(xs_ + 3, 16, "CHÚ THÍCH VẬT LIỆU", size=2.9, anchor="start", weight="bold")
     items = [("soil", "Đất nền"), ("brick", "Tường xây gạch 50"), ("brickthe", "Móng bao gạch thẻ 200"),
              ("concrete", "Bê tông cốt thép (tấm, giằng)"), ("render", "Lớp tô trát 10"), ("tile", "Lớp ốp gạch 10"),
-             ("solid", "Đế 200 phần nổi, đặc (mặt bằng)"), ("hole", "Lỗ âm dương (chờ XN)")]
+             ("hole", "Lỗ âm dương (chờ XN)")]
     yy = 19.5
     for kk, lab in items:
         legend_item(s, xs_ + 3, yy, kk, lab, size=2.15)
@@ -837,10 +820,10 @@ def page2():
     notes = [
         "1. Hộc lọt lòng 680×380; tường gạch 50; phủ bì xây 1 hộc 780×480.",
         "2. Chiều 680: 680 + 2×50 = 780 (xây) + 2×20 = 820 (hoàn thiện).",
-        "3. Chiều 6 hộc: 6×380 + 7×50 + 40 = 2.670; 200 + 2.670 + 200 = 3.070.",
+        "3. Chiều 6 hộc (phần nổi): 6×380 + 7×50 + 40 = 2.670. Kể cả đế 2 đầu (dưới cốt nền): 200 + 2.670 + 200 = 3.070.",
         "4. Hoàn thiện 20/mặt = tô trát 10 + ốp gạch 10, chỉ ở phần nổi (±0.000 → +0.100). Phần tường dưới cốt nền không tô trát.",
         "5. Tấm BTCT chống lún dày 100 dưới mỗi block; mỗi hộc 1 lỗ âm dương xuyên tấm (6 lỗ/block), không đổ bê tông kín vị trí lỗ. Kích thước và vị trí lỗ âm dương chờ xác nhận.",
-        "6. Đế 200 hai đầu block là phần nổi (±0.000 → +0.100), đặc, tô 10 + ốp 10 mặt ngoài; bên dưới là móng bao gạch thẻ rộng 200 và giằng BTCT ~150. Cao độ giằng, chiều sâu móng và khe 20 sát tường: tạm thể hiện – chờ xác nhận.",
+        "6. Đế 200 hai đầu block nằm dưới cốt nền: móng bao gạch thẻ rộng 200, trên có giằng BTCT ~150. Chỉ thể hiện ở mặt cắt, không vẽ và không làm mốc trên mặt bằng. Cao độ giằng, chiều sâu móng, khe 20: tạm thể hiện – chờ XN.",
         "7. 780 là KT phần xây, 820 là KT sau hoàn thiện – không dùng lẫn trong cùng một chuỗi kích thước mặt bằng.",
         "8. Chiều sâu hộc ~1.000, cốt đáy dự kiến ~-1.000.",
         "9. Mọi kích thước bố trí mặt bằng đo theo mép ngoài phần nổi đã tô, ốp; đế BTCT và phần chìm không dùng làm mốc bố trí.",
