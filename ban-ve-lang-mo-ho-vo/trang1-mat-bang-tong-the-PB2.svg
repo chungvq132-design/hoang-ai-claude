@@ -89,6 +89,7 @@
 <rect x="125.333" y="159.222" width="13.167" height="7.389" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="125.333" y="167.444" width="13.167" height="7.389" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="124.167" y="125.167" width="15.500" height="50.833" fill="none" stroke="#000" stroke-width="0.35" />
+<text x="131.917" y="171.751" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">Gia Bảo</text>
 <text x="131.917" y="109.333" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">T3</text>
 <text x="131.917" y="124.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">P3</text>
 <rect x="148.000" y="55.000" width="15.500" height="50.833" fill="#2f62a8" stroke="none" />
@@ -109,6 +110,9 @@
 <rect x="149.167" y="159.222" width="13.167" height="7.389" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="149.167" y="167.444" width="13.167" height="7.389" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="148.000" y="125.167" width="15.500" height="50.833" fill="none" stroke="#000" stroke-width="0.35" />
+<text x="155.750" y="138.863" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">H.Hoàng</text>
+<text x="155.750" y="155.307" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">Q.Vinh</text>
+<text x="155.750" y="171.751" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">Nhật</text>
 <text x="155.750" y="109.333" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">T4</text>
 <text x="155.750" y="124.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">P4</text>
 <rect x="171.833" y="55.000" width="15.500" height="50.833" fill="#2f62a8" stroke="none" />
@@ -129,6 +133,12 @@
 <rect x="173.000" y="159.222" width="13.167" height="7.389" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="173.000" y="167.444" width="13.167" height="7.389" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="171.833" y="125.167" width="15.500" height="50.833" fill="none" stroke="#000" stroke-width="0.35" />
+<text x="179.583" y="101.585" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">Hiếu</text>
+<text x="179.583" y="138.863" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">Đức</text>
+<text x="179.583" y="147.085" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">Uyên</text>
+<text x="179.583" y="155.307" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">Cường</text>
+<text x="179.583" y="163.529" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">Hương</text>
+<text x="179.583" y="171.751" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">An</text>
 <text x="179.583" y="109.333" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">T5</text>
 <text x="179.583" y="124.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">P5</text>
 <rect x="195.667" y="55.000" width="15.500" height="50.833" fill="#2f62a8" stroke="none" />
@@ -149,6 +159,15 @@
 <rect x="196.833" y="159.222" width="13.167" height="7.389" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="196.833" y="167.444" width="13.167" height="7.389" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="195.667" y="125.167" width="15.500" height="50.833" fill="none" stroke="#000" stroke-width="0.35" />
+<text x="203.417" y="68.696" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">Kiên</text>
+<text x="203.417" y="85.140" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">Khang</text>
+<text x="203.417" y="101.585" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">Đại</text>
+<text x="203.417" y="130.640" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">Huệ</text>
+<text x="203.417" y="138.863" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">Giang</text>
+<text x="203.417" y="147.085" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">B.Bích</text>
+<text x="203.417" y="155.307" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#000">B.Minh</text>
+<text x="203.417" y="163.529" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">B.Thuận</text>
+<text x="203.417" y="171.751" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#000">B.Thung</text>
 <text x="203.417" y="109.333" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">T6</text>
 <text x="203.417" y="124.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">P6</text>
 <rect x="219.500" y="55.000" width="15.500" height="50.833" fill="#2f62a8" stroke="none" />
@@ -169,6 +188,16 @@
 <rect x="220.667" y="159.222" width="13.167" height="7.389" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="220.667" y="167.444" width="13.167" height="7.389" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="219.500" y="125.167" width="15.500" height="50.833" fill="none" stroke="#000" stroke-width="0.35" />
+<text x="227.250" y="68.696" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">Khôi</text>
+<text x="227.250" y="85.140" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">Vương</text>
+<text x="227.250" y="93.362" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">Nhi</text>
+<text x="227.250" y="101.585" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">Sơn</text>
+<text x="227.250" y="130.640" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">B.Tý</text>
+<text x="227.250" y="138.863" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#000">B.Dũng</text>
+<text x="227.250" y="147.085" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">Vợ</text>
+<text x="227.250" y="155.307" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">A.Giáp</text>
+<text x="227.250" y="163.529" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">Vợ</text>
+<text x="227.250" y="171.751" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">Hoan</text>
 <text x="227.250" y="109.333" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">T7</text>
 <text x="227.250" y="124.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">P7</text>
 <rect x="243.333" y="55.000" width="15.500" height="50.833" fill="#2f62a8" stroke="none" />
@@ -189,6 +218,19 @@
 <rect x="244.500" y="159.222" width="13.167" height="7.389" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="244.500" y="167.444" width="13.167" height="7.389" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="243.333" y="125.167" width="15.500" height="50.833" fill="none" stroke="#000" stroke-width="0.35" />
+<text x="251.083" y="60.474" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">Hạnh</text>
+<text x="251.083" y="68.696" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">Chung</text>
+<text x="251.083" y="76.918" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">Quỳnh</text>
+<text x="251.083" y="85.140" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">Vĩnh</text>
+<text x="251.083" y="93.362" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">B.Nguyệt</text>
+<text x="251.083" y="101.585" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">Ô.Long</text>
+<text x="251.083" y="130.640" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">Hậu</text>
+<text x="251.083" y="137.900" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#000">Con Ô</text>
+<text x="251.083" y="140.050" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#000">Danh (N)</text>
+<text x="251.083" y="147.085" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">Lê Na</text>
+<text x="251.083" y="155.307" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">Thắng</text>
+<text x="251.083" y="163.529" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">B.Cúc</text>
+<text x="251.083" y="171.751" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">B.Toàn</text>
 <text x="251.083" y="109.333" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">T8</text>
 <text x="251.083" y="124.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">P8</text>
 <rect x="267.167" y="55.000" width="15.500" height="50.833" fill="#2f62a8" stroke="none" />
@@ -209,6 +251,20 @@
 <rect x="268.333" y="159.222" width="13.167" height="7.389" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="268.333" y="167.444" width="13.167" height="7.389" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="267.167" y="125.167" width="15.500" height="50.833" fill="none" stroke="#000" stroke-width="0.35" />
+<text x="274.917" y="59.511" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#000">Con Chú</text>
+<text x="274.917" y="61.661" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#000">Hưng (C)</text>
+<text x="274.917" y="67.733" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#000">Cô (D)</text>
+<text x="274.917" y="69.883" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#000">Phượng</text>
+<text x="274.917" y="76.918" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">B.Thơm</text>
+<text x="274.917" y="85.140" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">Ô.Trường</text>
+<text x="274.917" y="93.362" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">B.Tình</text>
+<text x="274.917" y="101.585" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">Ô.Lộng</text>
+<text x="274.917" y="130.640" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">B.Cúc</text>
+<text x="274.917" y="138.863" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">B.Hùng</text>
+<text x="274.917" y="147.085" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#000">B.Minh</text>
+<text x="274.917" y="155.307" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">B.Tuấn</text>
+<text x="274.917" y="163.529" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#000">B.Thuần</text>
+<text x="274.917" y="171.751" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#000">Ô.Tường</text>
 <text x="274.917" y="109.333" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">T9</text>
 <text x="274.917" y="124.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">P9</text>
 <rect x="291.000" y="55.000" width="15.500" height="50.833" fill="#2f62a8" stroke="none" />
@@ -229,6 +285,16 @@
 <rect x="292.167" y="159.222" width="13.167" height="7.389" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="292.167" y="167.444" width="13.167" height="7.389" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="291.000" y="125.167" width="15.500" height="50.833" fill="none" stroke="#000" stroke-width="0.35" />
+<text x="298.750" y="76.918" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">B.Cúc</text>
+<text x="298.750" y="85.140" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">Ô Toàn</text>
+<text x="298.750" y="93.362" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#000">B.Liệu</text>
+<text x="298.750" y="101.585" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#000">Ô Châu</text>
+<text x="298.750" y="130.640" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">B.Qúy</text>
+<text x="298.750" y="138.863" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#000">Ô Nguyên</text>
+<text x="298.750" y="147.085" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#000">B.Manh</text>
+<text x="298.750" y="155.307" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">B.Bàng</text>
+<text x="298.750" y="163.529" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#000">Ô Danh</text>
+<text x="298.750" y="171.751" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#000">B.Liên</text>
 <text x="298.750" y="109.333" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">T10</text>
 <text x="298.750" y="124.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">P10</text>
 <rect x="314.833" y="55.000" width="15.500" height="50.833" fill="#2f62a8" stroke="none" />
@@ -249,8 +315,46 @@
 <rect x="316.000" y="159.222" width="13.167" height="7.389" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="316.000" y="167.444" width="13.167" height="7.389" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="314.833" y="125.167" width="15.500" height="50.833" fill="none" stroke="#000" stroke-width="0.35" />
+<text x="322.583" y="60.474" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#000">Chú Cháu Em</text>
+<text x="322.583" y="68.696" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#000">Chú Phượng</text>
+<text x="322.583" y="76.918" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#000">Bà Bớt</text>
+<text x="322.583" y="85.140" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#000">Ô Tớm</text>
+<text x="322.583" y="93.362" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#000">Bà Hoe</text>
+<text x="322.583" y="101.585" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#000">Ô Bính</text>
+<text x="322.583" y="129.678" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#000">Chị Ô</text>
+<text x="322.583" y="131.828" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#000">Danh (E)</text>
+<text x="322.583" y="138.863" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#000">B</text>
+<text x="322.583" y="146.122" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">Bà Tín</text>
+<text x="322.583" y="148.272" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#c00000">(triệu hồn)</text>
+<text x="322.583" y="155.307" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#000">Ô Tính</text>
+<text x="322.583" y="163.529" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#000">Bà Em</text>
+<text x="322.583" y="171.751" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.75" text-anchor="middle" font-weight="bold" fill="#000">Ô Thành</text>
 <text x="322.583" y="109.333" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">T11</text>
 <text x="322.583" y="124.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">P11</text>
+<circle cx="351.167" cy="60.833" r="3.200" fill="#dcefd6" stroke="#2e6b2e" stroke-width="0.35"/>
+<line x1="351.167" y1="60.833" x2="353.767" y2="60.833" stroke="#2e6b2e" stroke-width="0.2"/>
+<line x1="351.167" y1="60.833" x2="353.005" y2="62.672" stroke="#2e6b2e" stroke-width="0.2"/>
+<line x1="351.167" y1="60.833" x2="351.167" y2="63.433" stroke="#2e6b2e" stroke-width="0.2"/>
+<line x1="351.167" y1="60.833" x2="349.328" y2="62.672" stroke="#2e6b2e" stroke-width="0.2"/>
+<line x1="351.167" y1="60.833" x2="348.567" y2="60.833" stroke="#2e6b2e" stroke-width="0.2"/>
+<line x1="351.167" y1="60.833" x2="349.328" y2="58.995" stroke="#2e6b2e" stroke-width="0.2"/>
+<line x1="351.167" y1="60.833" x2="351.167" y2="58.233" stroke="#2e6b2e" stroke-width="0.2"/>
+<line x1="351.167" y1="60.833" x2="353.005" y2="58.995" stroke="#2e6b2e" stroke-width="0.2"/>
+<text x="346.667" y="61.833" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.9" text-anchor="end" font-weight="bold" fill="#2e6b2e">Cây Tùng</text>
+<rect x="348.167" y="72.667" width="6.000" height="23.000" fill="#fbe3ec" stroke="#b0507a" stroke-width="0.25" stroke-dasharray="0.8,0.5" />
+<text x="350.967" y="84.167" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.6" text-anchor="middle" font-weight="normal" fill="#2e6b2e" transform="rotate(-90 350.967 84.167)">Hoa mười giờ / Sống đời</text>
+<circle cx="351.167" cy="170.833" r="3.200" fill="#dcefd6" stroke="#2e6b2e" stroke-width="0.35"/>
+<line x1="351.167" y1="170.833" x2="353.767" y2="170.833" stroke="#2e6b2e" stroke-width="0.2"/>
+<line x1="351.167" y1="170.833" x2="353.005" y2="172.672" stroke="#2e6b2e" stroke-width="0.2"/>
+<line x1="351.167" y1="170.833" x2="351.167" y2="173.433" stroke="#2e6b2e" stroke-width="0.2"/>
+<line x1="351.167" y1="170.833" x2="349.328" y2="172.672" stroke="#2e6b2e" stroke-width="0.2"/>
+<line x1="351.167" y1="170.833" x2="348.567" y2="170.833" stroke="#2e6b2e" stroke-width="0.2"/>
+<line x1="351.167" y1="170.833" x2="349.328" y2="168.995" stroke="#2e6b2e" stroke-width="0.2"/>
+<line x1="351.167" y1="170.833" x2="351.167" y2="168.233" stroke="#2e6b2e" stroke-width="0.2"/>
+<line x1="351.167" y1="170.833" x2="353.005" y2="168.995" stroke="#2e6b2e" stroke-width="0.2"/>
+<text x="346.667" y="171.833" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.9" text-anchor="end" font-weight="bold" fill="#2e6b2e">Cây Tùng</text>
+<rect x="348.167" y="136.000" width="6.000" height="23.000" fill="#fbe3ec" stroke="#b0507a" stroke-width="0.25" stroke-dasharray="0.8,0.5" />
+<text x="350.967" y="147.500" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.6" text-anchor="middle" font-weight="normal" fill="#2e6b2e" transform="rotate(-90 350.967 147.500)">Hoa mười giờ / Sống đời</text>
 <rect x="346.167" y="103.667" width="10.500" height="23.667" fill="#f6e7c8" stroke="#000" stroke-width="0.45" />
 <text x="352.317" y="109.067" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.4" text-anchor="middle" font-weight="bold" fill="#000" transform="rotate(-90 352.317 109.067)">AM THỜ</text>
 <text x="352.117" y="121.733" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.9" text-anchor="middle" font-weight="normal" fill="#000" transform="rotate(-90 352.117 121.733)">1.420×630</text>
@@ -538,6 +642,7 @@
 <line x1="150.000" y1="285.200" x2="238.000" y2="285.200" stroke="#999" stroke-width="0.12"/>
 <line x1="238.000" y1="214.000" x2="238.000" y2="287.000" stroke="#000" stroke-width="0.4"/>
 <text x="241.000" y="219.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="3.0" text-anchor="start" font-weight="bold" fill="#000">CHÚ THÍCH</text>
+<text x="241.000" y="282.500" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="bold" fill="#c00000">TÊN NGÔI: chữ đỏ = quy hoạch người đang sống</text>
 <clipPath id="c7"><rect x="241.000" y="222.500" width="9.000" height="4.500"/></clipPath><g clip-path="url(#c7)"><rect x="241.000" y="222.500" width="9.000" height="4.500" fill="#f2c9b6"/><use href="#t_brick2" x="239.800" y="222.200"/><use href="#t_brick2" x="242.000" y="222.200"/><use href="#t_brick2" x="244.200" y="222.200"/><use href="#t_brick2" x="246.400" y="222.200"/><use href="#t_brick2" x="248.600" y="222.200"/><use href="#t_brick2" x="239.800" y="224.400"/><use href="#t_brick2" x="242.000" y="224.400"/><use href="#t_brick2" x="244.200" y="224.400"/><use href="#t_brick2" x="246.400" y="224.400"/><use href="#t_brick2" x="248.600" y="224.400"/><use href="#t_brick2" x="239.800" y="226.600"/><use href="#t_brick2" x="242.000" y="226.600"/><use href="#t_brick2" x="244.200" y="226.600"/><use href="#t_brick2" x="246.400" y="226.600"/><use href="#t_brick2" x="248.600" y="226.600"/></g>
 <rect x="241.000" y="222.500" width="9.000" height="4.500" fill="none" stroke="#000" stroke-width="0.25" />
 <text x="251.500" y="225.506" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="start" font-weight="normal" fill="#000">Xây gạch (tường biên, hộc)</text>

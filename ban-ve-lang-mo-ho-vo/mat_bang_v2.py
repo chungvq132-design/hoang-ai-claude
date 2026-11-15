@@ -102,13 +102,58 @@ def page():
         a = P(xl, yt)
         s.rect(a[0], a[1], BT * S, BL * S, sw=0.35)
 
+    import ten_ngoi
+    from gen import tw
+
+    def names(xl, yt, side, row):
+        for kk in range(N_HOC):
+            c = ten_ngoi.cell(row, side, kk)
+            if not c:
+                continue
+            ten, do = c
+            cx = P(xl + FIN + W_SIDE + HOC_Y / 2, 0)[0]
+            cy = P(0, yt + FIN + W_END + kk * (HOC_X + WALL) + HOC_X / 2)[1]
+            col = "#c00000" if do else "#000"
+            sz = 1.75
+            maxw = HOC_Y * S - 1.0
+            if tw(ten, sz) <= maxw:
+                s.text(cx, cy + sz * 0.35, ten, size=sz, col=col, weight="bold")
+            else:
+                w = ten.split(" ")
+                best = None
+                for i in range(1, len(w)):
+                    a1, a2 = " ".join(w[:i]), " ".join(w[i:])
+                    m = max(tw(a1, sz), tw(a2, sz))
+                    if best is None or m < best[0]:
+                        best = (m, a1, a2)
+                if best is None:
+                    s.text(cx, cy + 0.6, ten, size=1.45, col=col, weight="bold")
+                else:
+                    z = sz if best[0] <= maxw else 1.45
+                    s.text(cx, cy - 0.35, best[1], size=z, col=col, weight="bold")
+                    s.text(cx, cy + z + 0.05, best[2], size=z, col=col, weight="bold")
+
     for j, (xl, xr) in enumerate(BX):
         block(xl, ROW_W[0])
         block(xl, ROW_E[0])
+        row = N_ROW - j          # hang 1 = block sat am tho (j = 10)
+        names(xl, ROW_W[0], "W", row)
+        names(xl, ROW_E[0], "E", row)
         cx = P((xl + xr) / 2, 0)[0]
         s.text(cx, P(0, ROW_W[1] + 210)[1], f"T{j + 1}", size=2.3, weight="bold", col="#333")
         s.text(cx, P(0, ROW_E[0] - 70)[1], f"P{j + 1}", size=2.3, weight="bold", col="#333")
 
+    # ---- cay tung (2 goc phia am tho) & hoa muoi gio / song doi (theo bang ten ngoi)
+    for (yy_, yh) in ((650, 2050), (W_I - 650, W_I - 2050)):
+        c = P(L - 330, yy_)
+        s.circle(c[0], c[1], 3.2, fill="#dcefd6", sw=0.35, col="#2e6b2e")
+        for ang in range(0, 360, 45):
+            import math as _m
+            s.line(c[0], c[1], c[0] + 2.6 * _m.cos(_m.radians(ang)), c[1] + 2.6 * _m.sin(_m.radians(ang)), sw=0.2, col="#2e6b2e")
+        s.text(c[0] - 4.5, c[1] + 1, "Cây Tùng", size=1.9, anchor="end", weight="bold", col="#2e6b2e")
+        h = P(L - 330, yh)
+        s.rect(h[0] - 3, h[1] - 11.5, 6, 23, fill="#fbe3ec", sw=0.25, col="#b0507a", dash="0.8,0.5")
+        s.text(h[0] - 0.2, h[1], "Hoa mười giờ / Sống đời", size=1.6, rot=-90, col="#2e6b2e")
     # ---- am tho 1.420 x 630, tim trung tim loi di
     ax0, ax1 = L - AM_D, L
     a, b = P(ax0, Y_AX - AM_W / 2), P(ax1, Y_AX + AM_W / 2)
@@ -204,6 +249,7 @@ def page():
     xl_ = 238
     s.line(xl_, ys0, xl_, 287, sw=0.4)
     s.text(xl_ + 3, ys0 + 5, "CHÚ THÍCH", size=3.0, anchor="start", weight="bold")
+    s.text(xl_ + 3, 287 - 4.5, "TÊN NGÔI: chữ đỏ = quy hoạch người đang sống", size=2.0, anchor="start", col="#c00000", weight="bold")
     items = [("brick", "Xây gạch (tường biên, hộc)"), ("finish", "Hoàn thiện: tô 10 + ốp 10"),
              ("path", "Lối đi giữa 1.160"), ("axis", "Đường tim (gạch chấm)"), ("amtho", "Am thờ rộng 1.420 – sâu 630")]
     yy = ys0 + 8.5
