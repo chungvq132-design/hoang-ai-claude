@@ -319,7 +319,7 @@ def title_block(svg, x, y, w, h, ten_bv, tyle, to, kyhieu, vertical=False):
 
 
 def north_arrow(svg, cx, cy, r, label_axis=True):
-    """Gia dinh truc cong->am tho la B9°D: huong Bac lech 9° nguoc chieu kim dong ho so voi truc (+x)."""
+    """Truc cong->am tho la B9°D (phuong vi 9°, theo la ban do tai hien truong): huong Bac lech 9° nguoc chieu kim dong ho so voi truc (+x)."""
     a = math.radians(9)
     ux, uy = math.cos(a), -math.sin(a)       # huong Bac tren giay
     svg.circle(cx, cy, r, sw=0.35)
@@ -541,7 +541,7 @@ def page1():
         "3. Chuỗi ngang (TẠM TÍNH – CÁCH 1, chờ đo lại) tại đoạn rộng 8.240:  850 + 2.670 + 1.200 + 2.670 + 850 = 8.240. Tại đoạn trong:  450 + 2.670 + 1.200 + 2.670 + 850 = 7.840. Lối đi 1.200 đo giữa 2 mép ngoài phần nổi.",
         "4. Block phần nổi 2.670 × 820 (6×380 + 7×50 + 40). Đế BTCT 200 hai đầu block (không phải hộc mộ) nằm dưới cốt nền – không vẽ trên mặt bằng, xem mặt cắt B-B trang 2.",
         "5. Cổng 2.000 nằm chính giữa cạnh 8.240 (3.120 – 2.000 – 3.120). Tim cổng = tim lối đi = tim am thờ, cách mỗi cạnh 4.120.",
-        "6. AM THỜ vẽ tượng trưng (nét đứt), kích thước chờ bổ sung. Phía lệch của góc 9° thể hiện theo giả định B9°Đ – chờ xác nhận.",
+        "6. AM THỜ vẽ tượng trưng (nét đứt), kích thước chờ bổ sung. Hướng trục cổng → am thờ: B9° lệch Đông (phương vị 9°), theo la bàn đo tại hiện trường.",
     ]
     textblock(s, 13, ys0 + 9.6, notes, size=2.15, nchar=112)
 
@@ -590,7 +590,9 @@ def page1():
     s.text(xn + 11, ys0 + 42, "TRỤC B9°", size=2.4, weight="bold")
     s.text(xn + 11, ys0 + 50, "Cổng → Am thờ", size=2.0)
     s.text(xn + 11, ys0 + 53.5, "hướng B9°", size=2.4, weight="bold")
-    s.text(xn + 11, ys0 + 58, "W trên – E dưới", size=2.0)
+    s.text(xn + 11, ys0 + 57.5, "phương vị 9°", size=1.9)
+    s.text(xn + 11, ys0 + 60.5, "lệch Đông (B9°Đ)", size=1.9)
+    s.text(xn + 11, ys0 + 64.5, "W trên – E dưới", size=2.0)
 
     # Khung ten
     title_block(s, 322, ys0, 88, 287 - ys0, "MẶT BẰNG TỔNG THỂ", "1/60", "01/02", "LM-01")
