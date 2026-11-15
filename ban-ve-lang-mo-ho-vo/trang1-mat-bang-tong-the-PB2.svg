@@ -30,9 +30,8 @@
 <line x1="46.667" y1="126.083" x2="50.000" y2="126.083" stroke="#000" stroke-width="0.45"/>
 <line x1="50.000" y1="126.083" x2="55.292" y2="116.918" stroke="#000" stroke-width="0.3"/>
 <line x1="48.333" y1="104.917" x2="48.333" y2="126.083" stroke="#000" stroke-width="0.18" stroke-dasharray="1,0.7"/>
-<rect x="76.500" y="55.000" width="15.500" height="50.833" fill="#d8d2c4" stroke="none" />
-<rect x="77.417" y="58.167" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
-<rect x="77.750" y="58.500" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="76.500" y="55.000" width="15.500" height="50.833" fill="#2f62a8" stroke="none" />
+<rect x="76.833" y="55.333" width="14.833" height="50.167" fill="#c4563a" stroke="none" />
 <rect x="78.583" y="59.333" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="78.583" y="66.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="78.583" y="73.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
@@ -40,9 +39,8 @@
 <rect x="78.583" y="88.000" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="78.583" y="95.167" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="76.500" y="55.000" width="15.500" height="50.833" fill="none" stroke="#000" stroke-width="0.35" />
-<rect x="76.500" y="125.167" width="15.500" height="50.833" fill="#d8d2c4" stroke="none" />
-<rect x="77.417" y="128.333" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
-<rect x="77.750" y="128.667" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="76.500" y="125.167" width="15.500" height="50.833" fill="#2f62a8" stroke="none" />
+<rect x="76.833" y="125.500" width="14.833" height="50.167" fill="#c4563a" stroke="none" />
 <rect x="78.583" y="129.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="78.583" y="136.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="78.583" y="143.833" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
@@ -52,9 +50,8 @@
 <rect x="76.500" y="125.167" width="15.500" height="50.833" fill="none" stroke="#000" stroke-width="0.35" />
 <text x="84.250" y="109.333" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">T1</text>
 <text x="84.250" y="124.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">P1</text>
-<rect x="100.333" y="55.000" width="15.500" height="50.833" fill="#d8d2c4" stroke="none" />
-<rect x="101.250" y="58.167" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
-<rect x="101.583" y="58.500" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="100.333" y="55.000" width="15.500" height="50.833" fill="#2f62a8" stroke="none" />
+<rect x="100.667" y="55.333" width="14.833" height="50.167" fill="#c4563a" stroke="none" />
 <rect x="102.417" y="59.333" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="102.417" y="66.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="102.417" y="73.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
@@ -62,9 +59,8 @@
 <rect x="102.417" y="88.000" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="102.417" y="95.167" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="100.333" y="55.000" width="15.500" height="50.833" fill="none" stroke="#000" stroke-width="0.35" />
-<rect x="100.333" y="125.167" width="15.500" height="50.833" fill="#d8d2c4" stroke="none" />
-<rect x="101.250" y="128.333" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
-<rect x="101.583" y="128.667" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="100.333" y="125.167" width="15.500" height="50.833" fill="#2f62a8" stroke="none" />
+<rect x="100.667" y="125.500" width="14.833" height="50.167" fill="#c4563a" stroke="none" />
 <rect x="102.417" y="129.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="102.417" y="136.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="102.417" y="143.833" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
@@ -74,9 +70,8 @@
 <rect x="100.333" y="125.167" width="15.500" height="50.833" fill="none" stroke="#000" stroke-width="0.35" />
 <text x="108.083" y="109.333" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">T2</text>
 <text x="108.083" y="124.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">P2</text>
-<rect x="124.167" y="55.000" width="15.500" height="50.833" fill="#d8d2c4" stroke="none" />
-<rect x="125.083" y="58.167" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
-<rect x="125.417" y="58.500" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="124.167" y="55.000" width="15.500" height="50.833" fill="#2f62a8" stroke="none" />
+<rect x="124.500" y="55.333" width="14.833" height="50.167" fill="#c4563a" stroke="none" />
 <rect x="126.250" y="59.333" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="126.250" y="66.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="126.250" y="73.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
@@ -84,9 +79,8 @@
 <rect x="126.250" y="88.000" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="126.250" y="95.167" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="124.167" y="55.000" width="15.500" height="50.833" fill="none" stroke="#000" stroke-width="0.35" />
-<rect x="124.167" y="125.167" width="15.500" height="50.833" fill="#d8d2c4" stroke="none" />
-<rect x="125.083" y="128.333" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
-<rect x="125.417" y="128.667" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="124.167" y="125.167" width="15.500" height="50.833" fill="#2f62a8" stroke="none" />
+<rect x="124.500" y="125.500" width="14.833" height="50.167" fill="#c4563a" stroke="none" />
 <rect x="126.250" y="129.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="126.250" y="136.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="126.250" y="143.833" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
@@ -96,9 +90,8 @@
 <rect x="124.167" y="125.167" width="15.500" height="50.833" fill="none" stroke="#000" stroke-width="0.35" />
 <text x="131.917" y="109.333" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">T3</text>
 <text x="131.917" y="124.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">P3</text>
-<rect x="148.000" y="55.000" width="15.500" height="50.833" fill="#d8d2c4" stroke="none" />
-<rect x="148.917" y="58.167" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
-<rect x="149.250" y="58.500" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="148.000" y="55.000" width="15.500" height="50.833" fill="#2f62a8" stroke="none" />
+<rect x="148.333" y="55.333" width="14.833" height="50.167" fill="#c4563a" stroke="none" />
 <rect x="150.083" y="59.333" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="150.083" y="66.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="150.083" y="73.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
@@ -106,9 +99,8 @@
 <rect x="150.083" y="88.000" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="150.083" y="95.167" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="148.000" y="55.000" width="15.500" height="50.833" fill="none" stroke="#000" stroke-width="0.35" />
-<rect x="148.000" y="125.167" width="15.500" height="50.833" fill="#d8d2c4" stroke="none" />
-<rect x="148.917" y="128.333" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
-<rect x="149.250" y="128.667" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="148.000" y="125.167" width="15.500" height="50.833" fill="#2f62a8" stroke="none" />
+<rect x="148.333" y="125.500" width="14.833" height="50.167" fill="#c4563a" stroke="none" />
 <rect x="150.083" y="129.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="150.083" y="136.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="150.083" y="143.833" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
@@ -118,9 +110,8 @@
 <rect x="148.000" y="125.167" width="15.500" height="50.833" fill="none" stroke="#000" stroke-width="0.35" />
 <text x="155.750" y="109.333" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">T4</text>
 <text x="155.750" y="124.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">P4</text>
-<rect x="171.833" y="55.000" width="15.500" height="50.833" fill="#d8d2c4" stroke="none" />
-<rect x="172.750" y="58.167" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
-<rect x="173.083" y="58.500" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="171.833" y="55.000" width="15.500" height="50.833" fill="#2f62a8" stroke="none" />
+<rect x="172.167" y="55.333" width="14.833" height="50.167" fill="#c4563a" stroke="none" />
 <rect x="173.917" y="59.333" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="173.917" y="66.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="173.917" y="73.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
@@ -128,9 +119,8 @@
 <rect x="173.917" y="88.000" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="173.917" y="95.167" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="171.833" y="55.000" width="15.500" height="50.833" fill="none" stroke="#000" stroke-width="0.35" />
-<rect x="171.833" y="125.167" width="15.500" height="50.833" fill="#d8d2c4" stroke="none" />
-<rect x="172.750" y="128.333" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
-<rect x="173.083" y="128.667" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="171.833" y="125.167" width="15.500" height="50.833" fill="#2f62a8" stroke="none" />
+<rect x="172.167" y="125.500" width="14.833" height="50.167" fill="#c4563a" stroke="none" />
 <rect x="173.917" y="129.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="173.917" y="136.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="173.917" y="143.833" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
@@ -140,9 +130,8 @@
 <rect x="171.833" y="125.167" width="15.500" height="50.833" fill="none" stroke="#000" stroke-width="0.35" />
 <text x="179.583" y="109.333" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">T5</text>
 <text x="179.583" y="124.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">P5</text>
-<rect x="195.667" y="55.000" width="15.500" height="50.833" fill="#d8d2c4" stroke="none" />
-<rect x="196.583" y="58.167" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
-<rect x="196.917" y="58.500" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="195.667" y="55.000" width="15.500" height="50.833" fill="#2f62a8" stroke="none" />
+<rect x="196.000" y="55.333" width="14.833" height="50.167" fill="#c4563a" stroke="none" />
 <rect x="197.750" y="59.333" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="197.750" y="66.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="197.750" y="73.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
@@ -150,9 +139,8 @@
 <rect x="197.750" y="88.000" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="197.750" y="95.167" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="195.667" y="55.000" width="15.500" height="50.833" fill="none" stroke="#000" stroke-width="0.35" />
-<rect x="195.667" y="125.167" width="15.500" height="50.833" fill="#d8d2c4" stroke="none" />
-<rect x="196.583" y="128.333" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
-<rect x="196.917" y="128.667" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="195.667" y="125.167" width="15.500" height="50.833" fill="#2f62a8" stroke="none" />
+<rect x="196.000" y="125.500" width="14.833" height="50.167" fill="#c4563a" stroke="none" />
 <rect x="197.750" y="129.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="197.750" y="136.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="197.750" y="143.833" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
@@ -162,9 +150,8 @@
 <rect x="195.667" y="125.167" width="15.500" height="50.833" fill="none" stroke="#000" stroke-width="0.35" />
 <text x="203.417" y="109.333" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">T6</text>
 <text x="203.417" y="124.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">P6</text>
-<rect x="219.500" y="55.000" width="15.500" height="50.833" fill="#d8d2c4" stroke="none" />
-<rect x="220.417" y="58.167" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
-<rect x="220.750" y="58.500" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="219.500" y="55.000" width="15.500" height="50.833" fill="#2f62a8" stroke="none" />
+<rect x="219.833" y="55.333" width="14.833" height="50.167" fill="#c4563a" stroke="none" />
 <rect x="221.583" y="59.333" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="221.583" y="66.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="221.583" y="73.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
@@ -172,9 +159,8 @@
 <rect x="221.583" y="88.000" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="221.583" y="95.167" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="219.500" y="55.000" width="15.500" height="50.833" fill="none" stroke="#000" stroke-width="0.35" />
-<rect x="219.500" y="125.167" width="15.500" height="50.833" fill="#d8d2c4" stroke="none" />
-<rect x="220.417" y="128.333" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
-<rect x="220.750" y="128.667" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="219.500" y="125.167" width="15.500" height="50.833" fill="#2f62a8" stroke="none" />
+<rect x="219.833" y="125.500" width="14.833" height="50.167" fill="#c4563a" stroke="none" />
 <rect x="221.583" y="129.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="221.583" y="136.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="221.583" y="143.833" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
@@ -184,9 +170,8 @@
 <rect x="219.500" y="125.167" width="15.500" height="50.833" fill="none" stroke="#000" stroke-width="0.35" />
 <text x="227.250" y="109.333" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">T7</text>
 <text x="227.250" y="124.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">P7</text>
-<rect x="243.333" y="55.000" width="15.500" height="50.833" fill="#d8d2c4" stroke="none" />
-<rect x="244.250" y="58.167" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
-<rect x="244.583" y="58.500" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="243.333" y="55.000" width="15.500" height="50.833" fill="#2f62a8" stroke="none" />
+<rect x="243.667" y="55.333" width="14.833" height="50.167" fill="#c4563a" stroke="none" />
 <rect x="245.417" y="59.333" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="245.417" y="66.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="245.417" y="73.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
@@ -194,9 +179,8 @@
 <rect x="245.417" y="88.000" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="245.417" y="95.167" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="243.333" y="55.000" width="15.500" height="50.833" fill="none" stroke="#000" stroke-width="0.35" />
-<rect x="243.333" y="125.167" width="15.500" height="50.833" fill="#d8d2c4" stroke="none" />
-<rect x="244.250" y="128.333" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
-<rect x="244.583" y="128.667" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="243.333" y="125.167" width="15.500" height="50.833" fill="#2f62a8" stroke="none" />
+<rect x="243.667" y="125.500" width="14.833" height="50.167" fill="#c4563a" stroke="none" />
 <rect x="245.417" y="129.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="245.417" y="136.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="245.417" y="143.833" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
@@ -206,9 +190,8 @@
 <rect x="243.333" y="125.167" width="15.500" height="50.833" fill="none" stroke="#000" stroke-width="0.35" />
 <text x="251.083" y="109.333" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">T8</text>
 <text x="251.083" y="124.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">P8</text>
-<rect x="267.167" y="55.000" width="15.500" height="50.833" fill="#d8d2c4" stroke="none" />
-<rect x="268.083" y="58.167" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
-<rect x="268.417" y="58.500" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="267.167" y="55.000" width="15.500" height="50.833" fill="#2f62a8" stroke="none" />
+<rect x="267.500" y="55.333" width="14.833" height="50.167" fill="#c4563a" stroke="none" />
 <rect x="269.250" y="59.333" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="269.250" y="66.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="269.250" y="73.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
@@ -216,9 +199,8 @@
 <rect x="269.250" y="88.000" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="269.250" y="95.167" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="267.167" y="55.000" width="15.500" height="50.833" fill="none" stroke="#000" stroke-width="0.35" />
-<rect x="267.167" y="125.167" width="15.500" height="50.833" fill="#d8d2c4" stroke="none" />
-<rect x="268.083" y="128.333" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
-<rect x="268.417" y="128.667" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="267.167" y="125.167" width="15.500" height="50.833" fill="#2f62a8" stroke="none" />
+<rect x="267.500" y="125.500" width="14.833" height="50.167" fill="#c4563a" stroke="none" />
 <rect x="269.250" y="129.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="269.250" y="136.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="269.250" y="143.833" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
@@ -228,9 +210,8 @@
 <rect x="267.167" y="125.167" width="15.500" height="50.833" fill="none" stroke="#000" stroke-width="0.35" />
 <text x="274.917" y="109.333" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">T9</text>
 <text x="274.917" y="124.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">P9</text>
-<rect x="291.000" y="55.000" width="15.500" height="50.833" fill="#d8d2c4" stroke="none" />
-<rect x="291.917" y="58.167" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
-<rect x="292.250" y="58.500" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="291.000" y="55.000" width="15.500" height="50.833" fill="#2f62a8" stroke="none" />
+<rect x="291.333" y="55.333" width="14.833" height="50.167" fill="#c4563a" stroke="none" />
 <rect x="293.083" y="59.333" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="293.083" y="66.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="293.083" y="73.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
@@ -238,9 +219,8 @@
 <rect x="293.083" y="88.000" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="293.083" y="95.167" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="291.000" y="55.000" width="15.500" height="50.833" fill="none" stroke="#000" stroke-width="0.35" />
-<rect x="291.000" y="125.167" width="15.500" height="50.833" fill="#d8d2c4" stroke="none" />
-<rect x="291.917" y="128.333" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
-<rect x="292.250" y="128.667" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="291.000" y="125.167" width="15.500" height="50.833" fill="#2f62a8" stroke="none" />
+<rect x="291.333" y="125.500" width="14.833" height="50.167" fill="#c4563a" stroke="none" />
 <rect x="293.083" y="129.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="293.083" y="136.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="293.083" y="143.833" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
@@ -250,9 +230,8 @@
 <rect x="291.000" y="125.167" width="15.500" height="50.833" fill="none" stroke="#000" stroke-width="0.35" />
 <text x="298.750" y="109.333" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">T10</text>
 <text x="298.750" y="124.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#333">P10</text>
-<rect x="314.833" y="55.000" width="15.500" height="50.833" fill="#d8d2c4" stroke="none" />
-<rect x="315.750" y="58.167" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
-<rect x="316.083" y="58.500" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="314.833" y="55.000" width="15.500" height="50.833" fill="#2f62a8" stroke="none" />
+<rect x="315.167" y="55.333" width="14.833" height="50.167" fill="#c4563a" stroke="none" />
 <rect x="316.917" y="59.333" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="316.917" y="66.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="316.917" y="73.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
@@ -260,9 +239,8 @@
 <rect x="316.917" y="88.000" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="316.917" y="95.167" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="314.833" y="55.000" width="15.500" height="50.833" fill="none" stroke="#000" stroke-width="0.35" />
-<rect x="314.833" y="125.167" width="15.500" height="50.833" fill="#d8d2c4" stroke="none" />
-<rect x="315.750" y="128.333" width="13.667" height="44.500" fill="#2f62a8" stroke="none" />
-<rect x="316.083" y="128.667" width="13.000" height="43.833" fill="#c4563a" stroke="none" />
+<rect x="314.833" y="125.167" width="15.500" height="50.833" fill="#2f62a8" stroke="none" />
+<rect x="315.167" y="125.500" width="14.833" height="50.167" fill="#c4563a" stroke="none" />
 <rect x="316.917" y="129.500" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="316.917" y="136.667" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
 <rect x="316.917" y="143.833" width="11.333" height="6.333" fill="#fff" stroke="#000" stroke-width="0.08" />
@@ -509,8 +487,8 @@
 <text x="13.000" y="235.468" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.15" text-anchor="start" font-weight="normal" fill="#000">   = 7.900.</text>
 <text x="13.000" y="238.435" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.15" text-anchor="start" font-weight="normal" fill="#000">4. Cạnh Tây thẳng suốt 18.400; cạnh Đông tóp vào 540 tại đoạn trong 3.920 gần am thờ (rộng 8.440 → 7.900). Đoạn</text>
 <text x="13.000" y="241.402" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.15" text-anchor="start" font-weight="normal" fill="#000">   ngoài 14.480.</text>
-<text x="13.000" y="244.369" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.15" text-anchor="start" font-weight="normal" fill="#000">5. Block hoàn thiện 3.050 × 930 = lõi 6 hộc 2.670 × 820 (hộc 680×380, tường 50, tô 10 + ốp 10) + viền ngoài 190</text>
-<text x="13.000" y="247.336" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.15" text-anchor="start" font-weight="normal" fill="#000">   mỗi đầu, 55 mỗi bên (cấu tạo viền chờ xác nhận).</text>
+<text x="13.000" y="244.369" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.15" text-anchor="start" font-weight="normal" fill="#000">5. Thân block hoàn thiện 3.050 × 930 (mốc mọi kích thước bố trí). Hộc 680×380; tường ngăn 50, tường dọc 105,</text>
+<text x="13.000" y="247.336" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.15" text-anchor="start" font-weight="normal" fill="#000">   tường đầu 240; tô 10 + ốp 10. Tấm BTCT rộng hơn block 150 mỗi bên – chỉ ở mặt cắt.</text>
 <text x="13.000" y="250.303" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.15" text-anchor="start" font-weight="normal" fill="#000">6. Cổng 1.270 đặt trùng tim lối đi (cách tường Tây 3.295, tường Đông 3.875); tim cổng = tim lối đi = tim am thờ,</text>
 <text x="13.000" y="253.270" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.15" text-anchor="start" font-weight="normal" fill="#000">   hướng B9°Đ.</text>
 <text x="13.000" y="256.237" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.15" text-anchor="start" font-weight="normal" fill="#000">7. AM THỜ rộng 1.420 (ngang trục), tim trùng tim lối đi; từ mép ngoài am thờ đến mặt trong tường phía trong 630</text>
@@ -572,8 +550,6 @@
 <text x="251.500" y="252.806" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="start" font-weight="normal" fill="#000">Đường tim (gạch chấm)</text>
 <rect x="241.000" y="258.900" width="9.000" height="4.500" fill="none" stroke="#000" stroke-width="0.35" stroke-dasharray="1.2,0.7" />
 <text x="251.500" y="261.906" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="start" font-weight="normal" fill="#000">Am thờ rộng 1.420 – sâu 630</text>
-<rect x="241.000" y="268.000" width="9.000" height="4.500" fill="#d8d2c4" stroke="#000" stroke-width="0.25" />
-<text x="251.500" y="271.100" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="start" font-weight="normal" fill="#000">Viền ngoài block (phần nổi)</text>
 <line x1="300.000" y1="214.000" x2="300.000" y2="287.000" stroke="#000" stroke-width="0.4"/>
 <text x="311.000" y="219.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000">HƯỚNG</text>
 <circle cx="309.000" cy="244.000" r="5.500" fill="none" stroke="#000" stroke-width="0.35"/>

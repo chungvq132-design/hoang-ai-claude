@@ -27,10 +27,11 @@ GAP = 500            # 13 khoang giua 2 block
 N_ROW = 11           # 15
 BL = 3050            # 16 block dai (theo chieu 6 hoc, vuong goc loi di)
 BT = 930             # 17 block day (doc loi di)
-CORE_L = N_HOC * HOC_W + (N_HOC + 1) * WALL + 2 * FIN   # 2.670 (cau tao cu)
-CORE_T = HOC_L + 2 * WALL + 2 * FIN                     # 820
-RIM_END = (BL - CORE_L) / 2                             # 190
-RIM_SIDE = (BT - CORE_T) / 2                            # 55
+# Than block hoan thien = 3.050 x 930 (khong co vien). Hoc 680x380, tuong ngan 50, hoan thien 20/mat.
+W_SIDE = (BT - 2 * FIN - HOC_L) / 2                               # tuong doc 2 ben = 105
+W_END = (BL - 2 * FIN - N_HOC * HOC_W - (N_HOC - 1) * WALL) / 2   # tuong dau block = 240
+XAY_L, XAY_T = BL - 2 * FIN, BT - 2 * FIN                         # 3.010 x 890 (phan xay)
+SLAB_OV = 150        # tam BTCT chong lun rong hon block 150 moi ben (chi the hien o mat cat)
 
 D_GATE = L - D_IN - N_ROW * BT - (N_ROW - 1) * GAP      # 14 -> 1.590
 GAP_E = W_G - GAP_W - 2 * BL - PATH                     # 10 -> 880
@@ -40,7 +41,7 @@ G1, G2 = Y_AX - GATE / 2, Y_AX + GATE / 2               # 3.295 .. 4.565
 ROW_W = (GAP_W, GAP_W + BL)
 ROW_E = (GAP_W + BL + PATH, GAP_W + 2 * BL + PATH)
 
-assert (CORE_L, CORE_T, RIM_END, RIM_SIDE) == (2670, 820, 190, 55)
+assert (W_SIDE, W_END, XAY_L, XAY_T) == (105, 240, 3010, 890)
 assert D_GATE == 1590 and GAP_E == 880 and GAP_E_IN == 340
 assert D_IN + N_ROW * BT + (N_ROW - 1) * GAP + D_GATE == L
 assert GAP_W + BL + PATH + BL + GAP_E == W_G
@@ -91,14 +92,11 @@ def page():
     # ---- block
     def block(xl, yt):
         a = P(xl, yt)
-        s.rect(a[0], a[1], BT * S, BL * S, fill="#d8d2c4", sw=0)                  # vien ngoai (phan noi)
-        c0x, c0y = xl + RIM_SIDE, yt + RIM_END
-        a = P(c0x, c0y)
-        s.rect(a[0], a[1], CORE_T * S, CORE_L * S, fill=TILE, sw=0)               # op + to
-        a = P(c0x + FIN, c0y + FIN)
-        s.rect(a[0], a[1], (CORE_T - 2 * FIN) * S, (CORE_L - 2 * FIN) * S, fill="#c4563a", sw=0)
+        s.rect(a[0], a[1], BT * S, BL * S, fill=TILE, sw=0)                        # op + to (20)
+        a = P(xl + FIN, yt + FIN)
+        s.rect(a[0], a[1], XAY_T * S, XAY_L * S, fill="#c4563a", sw=0)             # phan xay
         for k in range(N_HOC):
-            a = P(c0x + FIN + WALL, c0y + FIN + WALL + k * (HOC_W + WALL))
+            a = P(xl + FIN + W_SIDE, yt + FIN + W_END + k * (HOC_W + WALL))
             s.rect(a[0], a[1], HOC_L * S, HOC_W * S, fill="#fff", sw=0.08)
         a = P(xl, yt)
         s.rect(a[0], a[1], BT * S, BL * S, sw=0.35)
@@ -182,7 +180,7 @@ def page():
         "2. Chiều dài: 1.590 + 11×930 + 10×500 + 1.580 = 18.400.",
         "3. Chiều ngang phía cổng: 300 + 3.050 + 1.160 + 3.050 + 880 = 8.440. Đoạn tóp: 300 + 3.050 + 1.160 + 3.050 + 340 = 7.900.",
         "4. Cạnh Tây thẳng suốt 18.400; cạnh Đông tóp vào 540 tại đoạn trong 3.920 gần am thờ (rộng 8.440 → 7.900). Đoạn ngoài 14.480.",
-        "5. Block hoàn thiện 3.050 × 930 = lõi 6 hộc 2.670 × 820 (hộc 680×380, tường 50, tô 10 + ốp 10) + viền ngoài 190 mỗi đầu, 55 mỗi bên (cấu tạo viền chờ xác nhận).",
+        "5. Thân block hoàn thiện 3.050 × 930 (mốc mọi kích thước bố trí). Hộc 680×380; tường ngăn 50, tường dọc 105, tường đầu 240; tô 10 + ốp 10. Tấm BTCT rộng hơn block 150 mỗi bên – chỉ ở mặt cắt.",
         "6. Cổng 1.270 đặt trùng tim lối đi (cách tường Tây 3.295, tường Đông 3.875); tim cổng = tim lối đi = tim am thờ, hướng B9°Đ.",
         "7. AM THỜ rộng 1.420 (ngang trục), tim trùng tim lối đi; từ mép ngoài am thờ đến mặt trong tường phía trong 630 (am thờ sát tường); cách block đầu 950 (950 + 630 = 1.580).",
     ]
@@ -211,8 +209,6 @@ def page():
     for k, lab in items:
         legend_item(s, xl_ + 3, yy, k, lab, size=2.1)
         yy += 9.1
-    s.rect(xl_ + 3, yy, 9, 4.5, fill="#d8d2c4", sw=0.25)
-    s.text(xl_ + 13.5, yy + 3.1, "Viền ngoài block (phần nổi)", size=2.1, anchor="start")
     xn = 300
     s.line(xn, ys0, xn, 287, sw=0.4)
     s.text(xn + 11, ys0 + 5, "HƯỚNG", size=2.8, weight="bold")
