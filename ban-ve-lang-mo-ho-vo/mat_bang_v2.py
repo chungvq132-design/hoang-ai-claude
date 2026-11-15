@@ -28,8 +28,9 @@ N_ROW = 11           # 15
 BL = 3050            # 16 block dai (theo chieu 6 hoc, vuong goc loi di)
 BT = 930             # 17 block day (doc loi di)
 # Than block hoan thien = 3.050 x 930 (khong co vien). Hoc 680x380, tuong ngan 50, hoan thien 20/mat.
-W_SIDE = (BT - 2 * FIN - HOC_L) / 2                               # tuong doc 2 ben = 105
-W_END = (BL - 2 * FIN - N_HOC * HOC_W - (N_HOC - 1) * WALL) / 2   # tuong dau block = 240
+W_SIDE = W_END = WALL                                             # tat ca tuong day 50
+HOC_Y = BT - 2 * FIN - 2 * WALL                                   # hoc thuc te doc loi di = 790 (>= 680)
+HOC_X = (BL - 2 * FIN - (N_HOC + 1) * WALL) / N_HOC               # hoc thuc te ngang ~443 (>= 380)
 XAY_L, XAY_T = BL - 2 * FIN, BT - 2 * FIN                         # 3.010 x 890 (phan xay)
 SLAB_OV = 100        # tam BTCT chong lun rong hon block 100 moi ben (chi the hien o mat cat)
 
@@ -41,7 +42,7 @@ G1, G2 = Y_AX - GATE / 2, Y_AX + GATE / 2               # 3.295 .. 4.565
 ROW_W = (GAP_W, GAP_W + BL)
 ROW_E = (GAP_W + BL + PATH, GAP_W + 2 * BL + PATH)
 
-assert (W_SIDE, W_END, XAY_L, XAY_T) == (105, 240, 3010, 890)
+assert HOC_Y >= HOC_L and HOC_X >= HOC_W and (XAY_L, XAY_T) == (3010, 890)
 assert D_GATE == 1590 and GAP_E == 880 and GAP_E_IN == 340
 assert D_IN + N_ROW * BT + (N_ROW - 1) * GAP + D_GATE == L
 assert GAP_W + BL + PATH + BL + GAP_E == W_G
@@ -96,8 +97,8 @@ def page():
         a = P(xl + FIN, yt + FIN)
         s.rect(a[0], a[1], XAY_T * S, XAY_L * S, fill="#c4563a", sw=0)             # phan xay
         for k in range(N_HOC):
-            a = P(xl + FIN + W_SIDE, yt + FIN + W_END + k * (HOC_W + WALL))
-            s.rect(a[0], a[1], HOC_L * S, HOC_W * S, fill="#fff", sw=0.08)
+            a = P(xl + FIN + W_SIDE, yt + FIN + W_END + k * (HOC_X + WALL))
+            s.rect(a[0], a[1], HOC_Y * S, HOC_X * S, fill="#fff", sw=0.08)
         a = P(xl, yt)
         s.rect(a[0], a[1], BT * S, BL * S, sw=0.35)
 

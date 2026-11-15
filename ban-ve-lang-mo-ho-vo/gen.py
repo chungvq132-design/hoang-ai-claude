@@ -168,6 +168,9 @@ DEFS = """<defs>
  <rect width="4" height="4" fill="#d6d9de"/>
  <path d="M0.6 1.2 L1.5 0.5 L1.7 1.5 Z M2.6 2.6 L3.5 2.3 L3.0 3.4 Z" fill="none" stroke="#333" stroke-width="0.15"/>
  <circle cx="2.8" cy="0.9" r="0.22" fill="#333"/><circle cx="0.9" cy="3.1" r="0.22" fill="#333"/><circle cx="2.0" cy="1.9" r="0.15" fill="#333"/></pattern>
+<pattern id="sand" patternUnits="userSpaceOnUse" width="3" height="3">
+ <rect width="3" height="3" fill="#fbf1c7"/>
+ <circle cx="0.6" cy="0.7" r="0.18" fill="#9a7b2f"/><circle cx="2.1" cy="1.2" r="0.14" fill="#9a7b2f"/><circle cx="1.2" cy="2.3" r="0.2" fill="#9a7b2f"/><circle cx="2.6" cy="2.6" r="0.12" fill="#9a7b2f"/></pattern>
 <pattern id="soil" patternUnits="userSpaceOnUse" width="5" height="5">
  <rect width="5" height="5" fill="#f1e7cf"/>
  <path d="M0.5 2 L2 0.5 M1.2 2.4 L2.7 0.9 M1.9 2.8 L3.4 1.3 M2.5 4.8 L4.0 3.3" stroke="#7b5a2c" stroke-width="0.2"/>
@@ -350,6 +353,8 @@ def legend_item(svg, x, y, kind, label, size=2.3):
         svg.rect(x, y, w, h, fill="url(#brickthe)", sw=0.25)
     elif kind == "concrete":
         svg.rect(x, y, w, h, fill="url(#concrete)", sw=0.25)
+    elif kind == "sand":
+        svg.rect(x, y, w, h, fill="url(#sand)", sw=0.25)
     elif kind == "soil":
         svg.rect(x, y, w, h, fill="url(#soil)", sw=0.25)
     elif kind == "render":
