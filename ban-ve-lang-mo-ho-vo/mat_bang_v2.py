@@ -20,8 +20,9 @@ GATE = 1270          # 6
 PATH = 1160          # 8
 GAP_W = 300          # 9  tuong Tay -> mep block day trai
 D_IN = 1580          # 12 tuong am tho -> block dau
-AM_D, AM_W = 630, 1420   # 29/30 am tho: dai 630 (doc truc), rong 1.420 (ngang truc), tim trung tim loi di
-AM_GAP = (D_IN - AM_D) / 2   # 31 tam dat giua khoang 1.580 -> 475 moi phia (cho xac nhan)
+AM_W = 1420          # 30 am tho rong 1.420 (ngang truc), tim trung tim loi di
+AM_D = 630           # 31 mep ngoai am tho (phia cong) -> mat trong tuong phia trong = 630 (am tho sat tuong)
+AM_FRONT = D_IN - AM_D   # khoang trong block dau -> mep ngoai am tho = 950
 GAP = 500            # 13 khoang giua 2 block
 N_ROW = 11           # 15
 BL = 3050            # 16 block dai (theo chieu 6 hoc, vuong goc loi di)
@@ -110,14 +111,14 @@ def page():
         s.text(cx, P(0, ROW_E[0] - 70)[1], f"P{j + 1}", size=2.3, weight="bold", col="#333")
 
     # ---- am tho 1.420 x 630, tim trung tim loi di
-    ax0, ax1 = L - AM_GAP - AM_D, L - AM_GAP
+    ax0, ax1 = L - AM_D, L
     a, b = P(ax0, Y_AX - AM_W / 2), P(ax1, Y_AX + AM_W / 2)
     s.rect(a[0], a[1], b[0] - a[0], b[1] - a[1], fill="#f6e7c8", sw=0.45)
     cx = (a[0] + b[0]) / 2
     s.text(cx + 0.9, a[1] + 5.4, "AM THỜ", size=2.4, weight="bold", rot=-90)
     s.text(cx + 0.7, b[1] - 5.6, "1.420×630", size=1.9, rot=-90)
-    hchain(s, [P(x, 0)[0] for x in (L - D_IN, ax0, ax1, L)], b[1], b[1] + 5.5,
-           [fmt(AM_GAP), fmt(AM_D), fmt(AM_GAP)], size=2.3, bold=True)
+    hchain(s, [P(x, 0)[0] for x in (L - D_IN, ax0, L)], b[1], b[1] + 5.5,
+           [fmt(AM_FRONT), fmt(AM_D)], size=2.3, bold=True)
     vchain(s, [a[1], b[1]], a[0], a[0] - 2.5, [fmt(AM_W)], size=2.3, bold=True)
 
     # ---- truc
@@ -183,7 +184,7 @@ def page():
         "4. Cạnh Tây thẳng suốt 18.400; cạnh Đông tóp vào 540 tại đoạn trong 3.920 gần am thờ (rộng 8.440 → 7.900). Đoạn ngoài 14.480.",
         "5. Block hoàn thiện 3.050 × 930 = lõi 6 hộc 2.670 × 820 (hộc 680×380, tường 50, tô 10 + ốp 10) + viền ngoài 190 mỗi đầu, 55 mỗi bên (cấu tạo viền chờ xác nhận).",
         "6. Cổng 1.270 đặt trùng tim lối đi (cách tường Tây 3.295, tường Đông 3.875); tim cổng = tim lối đi = tim am thờ, hướng B9°Đ.",
-        "7. AM THỜ 1.420 (rộng, ngang trục) × 630 (dài, dọc trục); tim am thờ trùng tim lối đi. Tạm đặt giữa khoảng 1.580 (cách block đầu và tường trong 475) – chờ xác nhận.",
+        "7. AM THỜ rộng 1.420 (ngang trục), tim trùng tim lối đi; từ mép ngoài am thờ đến mặt trong tường phía trong 630 (am thờ sát tường); cách block đầu 950 (950 + 630 = 1.580).",
     ]
     textblock(s, 13, ys0 + 9.6, notes, size=2.15, nchar=112)
     xk = 150
@@ -193,7 +194,7 @@ def page():
               ("Tổng chiều dài", "18.400"), ("Rộng ngoài / trong", "8.440 / 7.900"),
               ("Block hoàn thiện", "3.050 × 930"), ("Lối đi / giữa block", "1.160 / 500"),
               ("Cổng", "1.270, trùng tim lối đi"), ("Tường Tây → block", "300"),
-              ("Am thờ", "1.420 × 630, trùng tim"), ("Chuỗi vượt lọt lòng", "không có")]
+              ("Am thờ", "rộng 1.420, sâu 630, trùng tim"), ("Chuỗi vượt lọt lòng", "không có")]
     yy = ys0 + 9
     for k, v in checks:
         s.text(xk + 3, yy + 2.8, k, size=2.1, anchor="start")
@@ -205,7 +206,7 @@ def page():
     s.line(xl_, ys0, xl_, 287, sw=0.4)
     s.text(xl_ + 3, ys0 + 5, "CHÚ THÍCH", size=3.0, anchor="start", weight="bold")
     items = [("brick", "Xây gạch (tường biên, hộc)"), ("finish", "Hoàn thiện: tô 10 + ốp 10"),
-             ("path", "Lối đi giữa 1.160"), ("axis", "Đường tim (gạch chấm)"), ("amtho", "Am thờ 1.420 × 630")]
+             ("path", "Lối đi giữa 1.160"), ("axis", "Đường tim (gạch chấm)"), ("amtho", "Am thờ rộng 1.420 – sâu 630")]
     yy = ys0 + 8.5
     for k, lab in items:
         legend_item(s, xl_ + 3, yy, k, lab, size=2.1)
