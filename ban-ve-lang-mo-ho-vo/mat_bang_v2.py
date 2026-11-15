@@ -12,9 +12,10 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 # ===================== SO LIEU CHOT (mm, hoan thien) =====================
 L = 18400            # 1  chieu dai khu dat (canh Tay thang)
 W_G = 8440           # 2  rong phia cong
-W_IN_MEAS = 8870     # 3  do xien tai hien truong (chi ghi chu)
-TAPER = 40           #    canh Dong vat vao 40 o phia am tho
-W_I = W_G - TAPER    #    rong vuong goc phia am tho = 8.400
+W_I = 7900           # 3  rong doan trong (phia am tho, cho top) - chot lai
+L_IN = 3920          # 4  doan top dai 3.920 tinh tu tuong am tho (giu nhu ban dau)
+L_OUT = 18400 - L_IN #    14.480
+TAPER = W_G - W_I    #    canh Dong top vao 540 (canh Tay thang)
 GATE = 1270          # 6
 PATH = 1160          # 8
 GAP_W = 300          # 9  tuong Tay -> mep block day trai
@@ -30,21 +31,20 @@ RIM_SIDE = (BT - CORE_T) / 2                            # 55
 
 D_GATE = L - D_IN - N_ROW * BT - (N_ROW - 1) * GAP      # 14 -> 1.590
 GAP_E = W_G - GAP_W - 2 * BL - PATH                     # 10 -> 880
-GAP_E_IN = W_I - GAP_W - 2 * BL - PATH                  # 11 -> 840
+GAP_E_IN = W_I - GAP_W - 2 * BL - PATH                  # 11 -> 340
 Y_AX = GAP_W + BL + PATH / 2                            # 3.930
 G1, G2 = Y_AX - GATE / 2, Y_AX + GATE / 2               # 3.295 .. 4.565
 ROW_W = (GAP_W, GAP_W + BL)
 ROW_E = (GAP_W + BL + PATH, GAP_W + 2 * BL + PATH)
 
 assert (CORE_L, CORE_T, RIM_END, RIM_SIDE) == (2670, 820, 190, 55)
-assert D_GATE == 1590 and GAP_E == 880 and GAP_E_IN == 840
+assert D_GATE == 1590 and GAP_E == 880 and GAP_E_IN == 340
 assert D_IN + N_ROW * BT + (N_ROW - 1) * GAP + D_GATE == L
 assert GAP_W + BL + PATH + BL + GAP_E == W_G
 assert G1 == 3295 and W_G - G2 == 3875
 BX = sorted((L - D_IN - i * (BT + GAP) - BT, L - D_IN - i * (BT + GAP)) for i in range(N_ROW))
 assert BX[0][0] == D_GATE
-east_y = lambda x: W_G - TAPER * x / L                  # canh Dong vat thang
-assert east_y(BX[-1][1]) - ROW_E[1] > 800              # block van trong long dat
+assert TAPER == 540 and GAP_E_IN == 340 and GAP_E_IN > 0   # block van trong long dat tai doan top
 
 
 def page():
@@ -66,13 +66,12 @@ def page():
     a, b = P(0, ROW_W[1]), P(L, ROW_E[0])
     s.rect(a[0], a[1], b[0] - a[0], b[1] - a[1], fill=PATHFILL, sw=0)
     # ---- tuong bien (tuong trung, day 200)
-    inner = [(0, 0), (L, 0), (L, W_I), (0, W_G)]
-    outer = [(-t, -t), (L + t, -t), (L + t, W_I + t), (-t, W_G + t)]
-    for (X1, Y1, X2, Y2) in ((-t, -t, L + t, 0), (-t, 0, 0, W_G + t), (L, 0, L + t, W_I + t)):
+    inner = [(0, 0), (L, 0), (L, W_I), (L_OUT, W_I), (L_OUT, W_G), (0, W_G)]
+    outer = [(-t, -t), (L + t, -t), (L + t, W_I + t), (L_OUT + t, W_I + t), (L_OUT + t, W_G + t), (-t, W_G + t)]
+    for (X1, Y1, X2, Y2) in ((-t, -t, L + t, 0), (-t, 0, 0, W_G + t), (0, W_G, L_OUT + t, W_G + t),
+                             (L, 0, L + t, W_I + t), (L_OUT, W_I, L, W_I + t), (L_OUT, W_I, L_OUT + t, W_G + t)):
         a1, a2 = P(X1, Y1), P(X2, Y2)
         s.rect(a1[0], a1[1], a2[0] - a1[0], a2[1] - a1[1], fill="url(#brick)", sw=0)
-    q = [P(0, W_G), P(L, W_I), P(L + t, W_I), P(L + t, W_I + t), P(-t, W_G + t), P(-t, W_G)]
-    s.poly(q, fill="#f2c9b6", sw=0)
     s.poly([P(*p) for p in inner], sw=0.45)
     s.poly([P(*p) for p in outer], sw=0.45)
     # cong
@@ -142,8 +141,14 @@ def page():
 
     # ---- kich thuoc duoi
     yb = P(0, W_G + t)[1] + 6.5
-    hchain(s, [P(0, 0)[0], P(L, 0)[0]], [P(0, W_G)[1], P(0, W_I)[1]], yb,
-           ["18.400 (hình chiếu) – CẠNH ĐÔNG VÁT VÀO 40 VỀ PHÍA AM THỜ"], size=2.8, bold=True)
+    hchain(s, [P(0, 0)[0], P(L_OUT, 0)[0], P(L, 0)[0]], [P(0, W_G)[1], P(0, W_G)[1], P(0, W_I)[1]], yb,
+           ["14.480 – ĐOẠN PHÍA NGOÀI (GẦN CỔNG)", "3.920 – ĐOẠN TÓP"], size=2.8, bold=True)
+    s.text(P(L / 2, 0)[0], yb + 5.5, "CẠNH ĐÔNG (E): TÓP VÀO 540 TẠI ĐOẠN TRONG 3.920 (GẦN AM THỜ) – CẠNH TÂY THẲNG",
+           size=2.6, weight="bold")
+    xj = P(L_OUT - 160, 0)[0]
+    s.line(P(L_OUT, 0)[0] - 0.8, P(0, W_I)[1], xj - 1.5, P(0, W_I)[1], sw=0.18)
+    vchain(s, [P(0, W_I)[1], P(0, W_G)[1]], [xj + 3, xj + 3], xj, ["540"], size=2.5, bold=True, ext=0, gap=3)
+    s.text(P(L_OUT + 120, 0)[0], P(0, W_G)[1] - 1.3, "← TÓP 540", size=2.2, anchor="start", weight="bold", col="#c00000")
 
     # ---- trai (phia cong)
     xw = P(-t, 0)[0]
@@ -155,8 +160,8 @@ def page():
     xe = P(L + t, 0)[0]
     vchain(s, [P(0, y)[1] for y in (0, ROW_W[0], ROW_W[1], ROW_E[0], ROW_E[1], W_I)], xe, xe + 8,
            [fmt(GAP_W), fmt(BL), fmt(PATH), fmt(BL), fmt(GAP_E_IN)], size=2.7, bold=True)
-    vchain(s, [P(0, 0)[1], P(0, W_I)[1]], xe, xe + 16, ["8.400 – RỘNG PHÍA AM THỜ (VUÔNG GÓC)"], size=2.8, bold=True)
-    s.text(xe + 21, P(0, W_I / 2)[1], "(đo xiên hiện trường: 8.870)", size=2.1, rot=-90, col="#c00000")
+    vchain(s, [P(0, 0)[1], P(0, W_I)[1], P(0, W_G)[1]], [xe, xe, P(L_OUT, 0)[0]], xe + 16,
+           ["7.900 – RỘNG PHÍA TRONG (CHỖ TÓP)", "540"], size=2.8, bold=True)
 
     for (yy, ch, txt) in ((oy - 10, "W", "CẠNH TÂY"), (P(0, W_G)[1] + 13, "E", "CẠNH ĐÔNG")):
         s.circle(17, yy, 3.2, sw=0.4)
@@ -170,8 +175,8 @@ def page():
     notes = [
         "1. Kích thước mm, đo theo mép ngoài phần nổi đã hoàn thiện (trên cốt nền). Khu đất: kích thước lọt lòng; tường biên vẽ tượng trưng (chiều dày chờ bổ sung).",
         "2. Chiều dài: 1.590 + 11×930 + 10×500 + 1.580 = 18.400.",
-        "3. Chiều ngang phía cổng: 300 + 3.050 + 1.160 + 3.050 + 880 = 8.440. Phía am thờ: 300 + 3.050 + 1.160 + 3.050 + 840 = 8.400.",
-        "4. Khu đất xiên: cạnh Tây thẳng; cạnh Đông vát vào 40 về phía am thờ (rộng vuông góc 8.400; đo xiên tại hiện trường 8.870).",
+        "3. Chiều ngang phía cổng: 300 + 3.050 + 1.160 + 3.050 + 880 = 8.440. Đoạn tóp: 300 + 3.050 + 1.160 + 3.050 + 340 = 7.900.",
+        "4. Cạnh Tây thẳng suốt 18.400; cạnh Đông tóp vào 540 tại đoạn trong 3.920 gần am thờ (rộng 8.440 → 7.900). Đoạn ngoài 14.480.",
         "5. Block hoàn thiện 3.050 × 930 = lõi 6 hộc 2.670 × 820 (hộc 680×380, tường 50, tô 10 + ốp 10) + viền ngoài 190 mỗi đầu, 55 mỗi bên (cấu tạo viền chờ xác nhận).",
         "6. Cổng 1.270 đặt trùng tim lối đi (cách tường Tây 3.295, tường Đông 3.875); tim cổng = tim lối đi = tim am thờ, hướng B9°Đ.",
         "7. AM THỜ vẽ tượng trưng – kích thước chờ bổ sung.",
@@ -181,7 +186,7 @@ def page():
     s.line(xk, ys0, xk, 287, sw=0.4)
     s.text(xk + 3, ys0 + 5, "BẢNG KIỂM TRA", size=3.0, anchor="start", weight="bold")
     checks = [("Số block", "22 (11 trái + 11 phải)"), ("Hộc / block – tổng", "6 – 132 hộc"),
-              ("Tổng chiều dài", "18.400"), ("Rộng cổng / am thờ", "8.440 / 8.400"),
+              ("Tổng chiều dài", "18.400"), ("Rộng ngoài / trong", "8.440 / 7.900"),
               ("Block hoàn thiện", "3.050 × 930"), ("Lối đi / giữa block", "1.160 / 500"),
               ("Cổng", "1.270, trùng tim lối đi"), ("Tường Tây → block", "300"),
               ("Tên công trình phụ", "AM THỜ"), ("Chuỗi vượt lọt lòng", "không có")]
