@@ -14,8 +14,8 @@
 <rect x="40.000" y="30.000" width="301.000" height="89.000" fill="none" stroke="#000" stroke-width="0.3" />
 <rect x="64.000" y="40.500" width="38.000" height="68.000" fill="#fff" stroke="#000" stroke-width="0.3" />
 <text x="83.000" y="49.500" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="3.2" text-anchor="middle" font-weight="bold" fill="#000">HỘC 1</text>
-<text x="83.000" y="55.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.6" text-anchor="middle" font-weight="normal" fill="#000">680 × 380</text>
-<text x="83.000" y="58.500" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="middle" font-weight="normal" fill="#000">lọt lòng</text>
+<text x="83.000" y="55.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="normal" fill="#000">đặt tiểu</text>
+<text x="83.000" y="58.500" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="middle" font-weight="normal" fill="#000">(≥ 680 × 380)</text>
 <rect x="78.000" y="69.500" width="10.000" height="10.000" fill="#fff" stroke="#000" stroke-width="0.3" stroke-dasharray="1,0.6" />
 <line x1="78.000" y1="69.500" x2="88.000" y2="79.500" stroke="#000" stroke-width="0.2"/>
 <line x1="78.000" y1="79.500" x2="88.000" y2="69.500" stroke="#000" stroke-width="0.2"/>
@@ -23,8 +23,8 @@
 <text x="83.000" y="86.300" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.8" text-anchor="middle" font-weight="normal" fill="#000">100 × 100 (giữa hộc)</text>
 <rect x="107.000" y="40.500" width="38.000" height="68.000" fill="#fff" stroke="#000" stroke-width="0.3" />
 <text x="126.000" y="49.500" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="3.2" text-anchor="middle" font-weight="bold" fill="#000">HỘC 2</text>
-<text x="126.000" y="55.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.6" text-anchor="middle" font-weight="normal" fill="#000">680 × 380</text>
-<text x="126.000" y="58.500" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="middle" font-weight="normal" fill="#000">lọt lòng</text>
+<text x="126.000" y="55.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="normal" fill="#000">đặt tiểu</text>
+<text x="126.000" y="58.500" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="middle" font-weight="normal" fill="#000">(≥ 680 × 380)</text>
 <rect x="121.000" y="69.500" width="10.000" height="10.000" fill="#fff" stroke="#000" stroke-width="0.3" stroke-dasharray="1,0.6" />
 <line x1="121.000" y1="69.500" x2="131.000" y2="79.500" stroke="#000" stroke-width="0.2"/>
 <line x1="121.000" y1="79.500" x2="131.000" y2="69.500" stroke="#000" stroke-width="0.2"/>
@@ -32,8 +32,8 @@
 <text x="126.000" y="86.300" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.8" text-anchor="middle" font-weight="normal" fill="#000">100 × 100 (giữa hộc)</text>
 <rect x="150.000" y="40.500" width="38.000" height="68.000" fill="#fff" stroke="#000" stroke-width="0.3" />
 <text x="169.000" y="49.500" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="3.2" text-anchor="middle" font-weight="bold" fill="#000">HỘC 3</text>
-<text x="169.000" y="55.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.6" text-anchor="middle" font-weight="normal" fill="#000">680 × 380</text>
-<text x="169.000" y="58.500" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="middle" font-weight="normal" fill="#000">lọt lòng</text>
+<text x="169.000" y="55.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="normal" fill="#000">đặt tiểu</text>
+<text x="169.000" y="58.500" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="middle" font-weight="normal" fill="#000">(≥ 680 × 380)</text>
 <rect x="164.000" y="69.500" width="10.000" height="10.000" fill="#fff" stroke="#000" stroke-width="0.3" stroke-dasharray="1,0.6" />
 <line x1="164.000" y1="69.500" x2="174.000" y2="79.500" stroke="#000" stroke-width="0.2"/>
 <line x1="164.000" y1="79.500" x2="174.000" y2="69.500" stroke="#000" stroke-width="0.2"/>
@@ -41,8 +41,8 @@
 <text x="169.000" y="86.300" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.8" text-anchor="middle" font-weight="normal" fill="#000">100 × 100 (giữa hộc)</text>
 <rect x="193.000" y="40.500" width="38.000" height="68.000" fill="#fff" stroke="#000" stroke-width="0.3" />
 <text x="212.000" y="49.500" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="3.2" text-anchor="middle" font-weight="bold" fill="#000">HỘC 4</text>
-<text x="212.000" y="55.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.6" text-anchor="middle" font-weight="normal" fill="#000">680 × 380</text>
-<text x="212.000" y="58.500" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="middle" font-weight="normal" fill="#000">lọt lòng</text>
+<text x="212.000" y="55.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="normal" fill="#000">đặt tiểu</text>
+<text x="212.000" y="58.500" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="middle" font-weight="normal" fill="#000">(≥ 680 × 380)</text>
 <rect x="207.000" y="69.500" width="10.000" height="10.000" fill="#fff" stroke="#000" stroke-width="0.3" stroke-dasharray="1,0.6" />
 <line x1="207.000" y1="69.500" x2="217.000" y2="79.500" stroke="#000" stroke-width="0.2"/>
 <line x1="207.000" y1="79.500" x2="217.000" y2="69.500" stroke="#000" stroke-width="0.2"/>
@@ -50,8 +50,8 @@
 <text x="212.000" y="86.300" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.8" text-anchor="middle" font-weight="normal" fill="#000">100 × 100 (giữa hộc)</text>
 <rect x="236.000" y="40.500" width="38.000" height="68.000" fill="#fff" stroke="#000" stroke-width="0.3" />
 <text x="255.000" y="49.500" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="3.2" text-anchor="middle" font-weight="bold" fill="#000">HỘC 5</text>
-<text x="255.000" y="55.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.6" text-anchor="middle" font-weight="normal" fill="#000">680 × 380</text>
-<text x="255.000" y="58.500" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="middle" font-weight="normal" fill="#000">lọt lòng</text>
+<text x="255.000" y="55.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="normal" fill="#000">đặt tiểu</text>
+<text x="255.000" y="58.500" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="middle" font-weight="normal" fill="#000">(≥ 680 × 380)</text>
 <rect x="250.000" y="69.500" width="10.000" height="10.000" fill="#fff" stroke="#000" stroke-width="0.3" stroke-dasharray="1,0.6" />
 <line x1="250.000" y1="69.500" x2="260.000" y2="79.500" stroke="#000" stroke-width="0.2"/>
 <line x1="250.000" y1="79.500" x2="260.000" y2="69.500" stroke="#000" stroke-width="0.2"/>
@@ -59,8 +59,8 @@
 <text x="255.000" y="86.300" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.8" text-anchor="middle" font-weight="normal" fill="#000">100 × 100 (giữa hộc)</text>
 <rect x="279.000" y="40.500" width="38.000" height="68.000" fill="#fff" stroke="#000" stroke-width="0.3" />
 <text x="298.000" y="49.500" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="3.2" text-anchor="middle" font-weight="bold" fill="#000">HỘC 6</text>
-<text x="298.000" y="55.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.6" text-anchor="middle" font-weight="normal" fill="#000">680 × 380</text>
-<text x="298.000" y="58.500" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="middle" font-weight="normal" fill="#000">lọt lòng</text>
+<text x="298.000" y="55.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="normal" fill="#000">đặt tiểu</text>
+<text x="298.000" y="58.500" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="middle" font-weight="normal" fill="#000">(≥ 680 × 380)</text>
 <rect x="293.000" y="69.500" width="10.000" height="10.000" fill="#fff" stroke="#000" stroke-width="0.3" stroke-dasharray="1,0.6" />
 <line x1="293.000" y1="69.500" x2="303.000" y2="79.500" stroke="#000" stroke-width="0.2"/>
 <line x1="293.000" y1="79.500" x2="303.000" y2="69.500" stroke="#000" stroke-width="0.2"/>
@@ -70,12 +70,6 @@
 <text x="52.000" y="74.500" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#5a1f10" transform="rotate(-90 52.000 74.500)">TƯỜNG GẠCH THẺ</text>
 <rect x="318.388" y="72.545" width="21.224" height="2.415" fill="#fff" transform="rotate(-90 329.000 74.500)"/>
 <text x="329.000" y="74.500" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="bold" fill="#5a1f10" transform="rotate(-90 329.000 74.500)">TƯỜNG GẠCH THẺ</text>
-<line x1="70.000" y1="40.500" x2="68.000" y2="40.500" stroke="#000" stroke-width="0.18"/>
-<line x1="70.000" y1="108.500" x2="68.000" y2="108.500" stroke="#000" stroke-width="0.18"/>
-<line x1="68.000" y1="40.500" x2="68.000" y2="108.500" stroke="#000" stroke-width="0.18"/>
-<polygon points="68.000,40.500 68.550,42.500 67.450,42.500" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<polygon points="68.000,108.500 67.450,106.500 68.550,106.500" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<text x="67.300" y="74.500" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.6" text-anchor="middle" font-weight="bold" fill="#000" transform="rotate(-90 67.300 74.500)">680</text>
 <line x1="212.000" y1="121.500" x2="212.000" y2="124.000" stroke="#000" stroke-width="0.8"/>
 <line x1="212.000" y1="124.000" x2="208.000" y2="124.000" stroke="#000" stroke-width="0.3"/>
 <polygon points="208.000,124.000 209.600,123.450 209.600,124.550" fill="#000" stroke="none" stroke-linejoin="miter"/>
@@ -88,64 +82,12 @@
 <line x1="346.250" y1="74.500" x2="346.250" y2="69.500" stroke="#000" stroke-width="0.3"/>
 <polygon points="346.250,69.500 346.800,71.100 345.700,71.100" fill="#000" stroke="none" stroke-linejoin="miter"/>
 <text x="346.250" y="67.300" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="3.2" text-anchor="middle" font-weight="bold" fill="#000">B</text>
-<line x1="64.000" y1="121.800" x2="64.000" y2="129.500" stroke="#000" stroke-width="0.18"/>
-<line x1="102.000" y1="121.800" x2="102.000" y2="129.500" stroke="#000" stroke-width="0.18"/>
-<line x1="107.000" y1="121.800" x2="107.000" y2="129.500" stroke="#000" stroke-width="0.18"/>
-<line x1="145.000" y1="121.800" x2="145.000" y2="129.500" stroke="#000" stroke-width="0.18"/>
-<line x1="150.000" y1="121.800" x2="150.000" y2="129.500" stroke="#000" stroke-width="0.18"/>
-<line x1="188.000" y1="121.800" x2="188.000" y2="129.500" stroke="#000" stroke-width="0.18"/>
-<line x1="193.000" y1="121.800" x2="193.000" y2="129.500" stroke="#000" stroke-width="0.18"/>
-<line x1="231.000" y1="121.800" x2="231.000" y2="129.500" stroke="#000" stroke-width="0.18"/>
-<line x1="236.000" y1="121.800" x2="236.000" y2="129.500" stroke="#000" stroke-width="0.18"/>
-<line x1="274.000" y1="121.800" x2="274.000" y2="129.500" stroke="#000" stroke-width="0.18"/>
-<line x1="279.000" y1="121.800" x2="279.000" y2="129.500" stroke="#000" stroke-width="0.18"/>
-<line x1="317.000" y1="121.800" x2="317.000" y2="129.500" stroke="#000" stroke-width="0.18"/>
-<line x1="64.000" y1="128.000" x2="317.000" y2="128.000" stroke="#000" stroke-width="0.18"/>
-<polygon points="64.000,128.000 66.000,127.450 66.000,128.550" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<polygon points="102.000,128.000 100.000,128.550 100.000,127.450" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<text x="83.000" y="127.300" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.5" text-anchor="middle" font-weight="bold" fill="#000">380 LỌT LÒNG</text>
-<polygon points="102.000,128.000 104.000,127.450 104.000,128.550" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<polygon points="107.000,128.000 105.000,128.550 105.000,127.450" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<text x="104.500" y="127.300" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.5" text-anchor="middle" font-weight="bold" fill="#000">50</text>
-<polygon points="107.000,128.000 109.000,127.450 109.000,128.550" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<polygon points="145.000,128.000 143.000,128.550 143.000,127.450" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<text x="126.000" y="127.300" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.5" text-anchor="middle" font-weight="bold" fill="#000">380 LỌT LÒNG</text>
-<polygon points="145.000,128.000 147.000,127.450 147.000,128.550" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<polygon points="150.000,128.000 148.000,128.550 148.000,127.450" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<text x="147.500" y="127.300" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.5" text-anchor="middle" font-weight="bold" fill="#000">50</text>
-<polygon points="150.000,128.000 152.000,127.450 152.000,128.550" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<polygon points="188.000,128.000 186.000,128.550 186.000,127.450" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<text x="169.000" y="127.300" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.5" text-anchor="middle" font-weight="bold" fill="#000">380 LỌT LÒNG</text>
-<polygon points="188.000,128.000 190.000,127.450 190.000,128.550" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<polygon points="193.000,128.000 191.000,128.550 191.000,127.450" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<text x="190.500" y="127.300" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.5" text-anchor="middle" font-weight="bold" fill="#000">50</text>
-<polygon points="193.000,128.000 195.000,127.450 195.000,128.550" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<polygon points="231.000,128.000 229.000,128.550 229.000,127.450" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<text x="212.000" y="127.300" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.5" text-anchor="middle" font-weight="bold" fill="#000">380 LỌT LÒNG</text>
-<polygon points="231.000,128.000 233.000,127.450 233.000,128.550" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<polygon points="236.000,128.000 234.000,128.550 234.000,127.450" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<text x="233.500" y="127.300" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.5" text-anchor="middle" font-weight="bold" fill="#000">50</text>
-<polygon points="236.000,128.000 238.000,127.450 238.000,128.550" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<polygon points="274.000,128.000 272.000,128.550 272.000,127.450" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<text x="255.000" y="127.300" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.5" text-anchor="middle" font-weight="bold" fill="#000">380 LỌT LÒNG</text>
-<polygon points="274.000,128.000 276.000,127.450 276.000,128.550" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<polygon points="279.000,128.000 277.000,128.550 277.000,127.450" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<text x="276.500" y="127.300" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.5" text-anchor="middle" font-weight="bold" fill="#000">50</text>
-<polygon points="279.000,128.000 281.000,127.450 281.000,128.550" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<polygon points="317.000,128.000 315.000,128.550 315.000,127.450" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<text x="298.000" y="127.300" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.5" text-anchor="middle" font-weight="bold" fill="#000">380 LỌT LÒNG</text>
-<line x1="38.000" y1="121.800" x2="38.000" y2="135.500" stroke="#000" stroke-width="0.18"/>
-<line x1="343.000" y1="121.800" x2="343.000" y2="135.500" stroke="#000" stroke-width="0.18"/>
-<line x1="38.000" y1="134.000" x2="343.000" y2="134.000" stroke="#000" stroke-width="0.18"/>
-<polygon points="38.000,134.000 40.000,133.450 40.000,134.550" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<polygon points="343.000,134.000 341.000,134.550 341.000,133.450" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<text x="190.500" y="133.300" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000">3.050 – MÉP NGOÀI BLOCK HOÀN THIỆN</text>
-<line x1="37.200" y1="40.500" x2="28.500" y2="40.500" stroke="#000" stroke-width="0.18"/>
-<line x1="37.200" y1="108.500" x2="28.500" y2="108.500" stroke="#000" stroke-width="0.18"/>
-<line x1="30.000" y1="40.500" x2="30.000" y2="108.500" stroke="#000" stroke-width="0.18"/>
-<polygon points="30.000,40.500 30.550,42.500 29.450,42.500" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<polygon points="30.000,108.500 29.450,106.500 30.550,106.500" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<text x="29.300" y="74.500" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.4" text-anchor="middle" font-weight="bold" fill="#000" transform="rotate(-90 29.300 74.500)">680 LỌT LÒNG</text>
+<line x1="38.000" y1="121.800" x2="38.000" y2="130.500" stroke="#000" stroke-width="0.18"/>
+<line x1="343.000" y1="121.800" x2="343.000" y2="130.500" stroke="#000" stroke-width="0.18"/>
+<line x1="38.000" y1="129.000" x2="343.000" y2="129.000" stroke="#000" stroke-width="0.18"/>
+<polygon points="38.000,129.000 40.000,128.450 40.000,129.550" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<polygon points="343.000,129.000 341.000,129.550 341.000,128.450" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<text x="190.500" y="128.300" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.8" text-anchor="middle" font-weight="bold" fill="#000">3.050 – MÉP NGOÀI BLOCK HOÀN THIỆN</text>
 <line x1="37.200" y1="28.000" x2="18.000" y2="28.000" stroke="#000" stroke-width="0.18"/>
 <line x1="37.200" y1="121.000" x2="18.000" y2="121.000" stroke="#000" stroke-width="0.18"/>
 <line x1="19.500" y1="28.000" x2="19.500" y2="121.000" stroke="#000" stroke-width="0.18"/>
@@ -181,7 +123,7 @@
 <rect x="173.000" y="160.000" width="1.000" height="10.000" fill="none" stroke="#000" stroke-width="0.15" />
 <rect x="174.000" y="160.000" width="1.000" height="10.000" fill="#2f62a8" stroke="#000" stroke-width="0.15" />
 <text x="128.500" y="195.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="3.2" text-anchor="middle" font-weight="bold" fill="#000">HỘC MỘ</text>
-<text x="128.500" y="203.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.5" text-anchor="middle" font-weight="normal" fill="#000">lọt lòng 680</text>
+<text x="128.500" y="203.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="normal" fill="#000">(đặt tiểu, lọt lòng ≥ 680)</text>
 <text x="128.500" y="212.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.2" text-anchor="middle" font-weight="normal" fill="#000">(không tô trát</text>
 <text x="128.500" y="217.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.2" text-anchor="middle" font-weight="normal" fill="#000">phần dưới cốt nền)</text>
 <text x="128.500" y="250.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.4" text-anchor="middle" font-weight="bold" fill="#000">LỖ ÂM DƯƠNG</text>
@@ -191,26 +133,18 @@
 <polygon points="128.500,275.000 127.950,273.400 129.050,273.400" fill="#000" stroke="none" stroke-linejoin="miter"/>
 <line x1="82.000" y1="159.200" x2="82.000" y2="155.000" stroke="#000" stroke-width="0.18"/>
 <line x1="84.000" y1="159.200" x2="84.000" y2="155.000" stroke="#000" stroke-width="0.18"/>
-<line x1="94.500" y1="159.200" x2="94.500" y2="155.000" stroke="#000" stroke-width="0.18"/>
-<line x1="162.500" y1="159.200" x2="162.500" y2="155.000" stroke="#000" stroke-width="0.18"/>
-<line x1="173.000" y1="159.200" x2="173.000" y2="155.000" stroke="#000" stroke-width="0.18"/>
-<line x1="175.000" y1="159.200" x2="175.000" y2="155.000" stroke="#000" stroke-width="0.18"/>
-<line x1="82.000" y1="156.500" x2="175.000" y2="156.500" stroke="#000" stroke-width="0.18"/>
+<line x1="82.000" y1="156.500" x2="84.000" y2="156.500" stroke="#000" stroke-width="0.18"/>
 <polygon points="82.000,156.500 80.400,157.050 80.400,155.950" fill="#000" stroke="none" stroke-linejoin="miter"/>
 <polygon points="84.000,156.500 85.600,155.950 85.600,157.050" fill="#000" stroke="none" stroke-linejoin="miter"/>
 <line x1="79.000" y1="156.500" x2="82.000" y2="156.500" stroke="#000" stroke-width="0.18"/>
+<line x1="84.000" y1="156.500" x2="87.000" y2="156.500" stroke="#000" stroke-width="0.18"/>
 <text x="83.000" y="153.400" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.4" text-anchor="middle" font-weight="bold" fill="#000">20</text>
-<polygon points="84.000,156.500 86.000,155.950 86.000,157.050" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<polygon points="94.500,156.500 92.500,157.050 92.500,155.950" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<text x="89.250" y="155.800" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.4" text-anchor="middle" font-weight="bold" fill="#000"></text>
-<polygon points="94.500,156.500 96.500,155.950 96.500,157.050" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<polygon points="162.500,156.500 160.500,157.050 160.500,155.950" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<text x="128.500" y="155.800" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.4" text-anchor="middle" font-weight="bold" fill="#000">680 LỌT LÒNG</text>
-<polygon points="162.500,156.500 164.500,155.950 164.500,157.050" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<polygon points="173.000,156.500 171.000,157.050 171.000,155.950" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<text x="167.750" y="155.800" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.4" text-anchor="middle" font-weight="bold" fill="#000"></text>
+<line x1="173.000" y1="159.200" x2="173.000" y2="155.000" stroke="#000" stroke-width="0.18"/>
+<line x1="175.000" y1="159.200" x2="175.000" y2="155.000" stroke="#000" stroke-width="0.18"/>
+<line x1="173.000" y1="156.500" x2="175.000" y2="156.500" stroke="#000" stroke-width="0.18"/>
 <polygon points="173.000,156.500 171.400,157.050 171.400,155.950" fill="#000" stroke="none" stroke-linejoin="miter"/>
 <polygon points="175.000,156.500 176.600,155.950 176.600,157.050" fill="#000" stroke="none" stroke-linejoin="miter"/>
+<line x1="170.000" y1="156.500" x2="173.000" y2="156.500" stroke="#000" stroke-width="0.18"/>
 <line x1="175.000" y1="156.500" x2="178.000" y2="156.500" stroke="#000" stroke-width="0.18"/>
 <text x="174.000" y="153.400" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.4" text-anchor="middle" font-weight="bold" fill="#000">20</text>
 <line x1="82.000" y1="159.200" x2="82.000" y2="143.000" stroke="#000" stroke-width="0.18"/>
@@ -303,7 +237,7 @@
 <rect x="254.944" y="217.960" width="22.112" height="2.520" fill="#fff" transform="rotate(-90 266.000 220.000)"/>
 <text x="266.000" y="220.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.4" text-anchor="middle" font-weight="bold" fill="#000" transform="rotate(-90 266.000 220.000)">TƯỜNG GẠCH THẺ</text>
 <text x="297.000" y="200.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="3.0" text-anchor="middle" font-weight="bold" fill="#000">HỘC 1</text>
-<text x="297.000" y="207.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="normal" fill="#000">lọt lòng 380</text>
+<text x="297.000" y="207.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.3" text-anchor="middle" font-weight="normal" fill="#000">(≥ 380)</text>
 <text x="297.000" y="256.000" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.1" text-anchor="middle" font-weight="bold" fill="#000">LỖ ÂM DƯƠNG</text>
 <text x="297.000" y="260.500" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="1.9" text-anchor="middle" font-weight="normal" fill="#000">100×100</text>
 <line x1="297.000" y1="262.000" x2="297.000" y2="275.000" stroke="#000" stroke-width="0.25"/>
@@ -311,23 +245,12 @@
 <polyline points="336.000,157.000 336.000,210.000 337.800,213.000 334.200,217.000 336.000,220.000 336.000,285.000" fill="none" stroke="#000" stroke-width="0.3" stroke-linejoin="miter"/>
 <line x1="252.000" y1="159.200" x2="252.000" y2="155.000" stroke="#000" stroke-width="0.18"/>
 <line x1="254.000" y1="159.200" x2="254.000" y2="155.000" stroke="#000" stroke-width="0.18"/>
-<line x1="278.000" y1="159.200" x2="278.000" y2="155.000" stroke="#000" stroke-width="0.18"/>
-<line x1="316.000" y1="159.200" x2="316.000" y2="155.000" stroke="#000" stroke-width="0.18"/>
-<line x1="321.000" y1="159.200" x2="321.000" y2="155.000" stroke="#000" stroke-width="0.18"/>
-<line x1="252.000" y1="156.500" x2="321.000" y2="156.500" stroke="#000" stroke-width="0.18"/>
+<line x1="252.000" y1="156.500" x2="254.000" y2="156.500" stroke="#000" stroke-width="0.18"/>
 <polygon points="252.000,156.500 250.400,157.050 250.400,155.950" fill="#000" stroke="none" stroke-linejoin="miter"/>
 <polygon points="254.000,156.500 255.600,155.950 255.600,157.050" fill="#000" stroke="none" stroke-linejoin="miter"/>
 <line x1="249.000" y1="156.500" x2="252.000" y2="156.500" stroke="#000" stroke-width="0.18"/>
+<line x1="254.000" y1="156.500" x2="257.000" y2="156.500" stroke="#000" stroke-width="0.18"/>
 <text x="253.000" y="153.300" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.5" text-anchor="middle" font-weight="bold" fill="#000">20</text>
-<polygon points="254.000,156.500 256.000,155.950 256.000,157.050" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<polygon points="278.000,156.500 276.000,157.050 276.000,155.950" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<text x="266.000" y="155.800" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.5" text-anchor="middle" font-weight="bold" fill="#000"></text>
-<polygon points="278.000,156.500 280.000,155.950 280.000,157.050" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<polygon points="316.000,156.500 314.000,157.050 314.000,155.950" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<text x="297.000" y="155.800" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.5" text-anchor="middle" font-weight="bold" fill="#000">380</text>
-<polygon points="316.000,156.500 318.000,155.950 318.000,157.050" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<polygon points="321.000,156.500 319.000,157.050 319.000,155.950" fill="#000" stroke="none" stroke-linejoin="miter"/>
-<text x="318.500" y="155.800" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.5" text-anchor="middle" font-weight="bold" fill="#000">50</text>
 <line x1="242.000" y1="280.800" x2="242.000" y2="286.000" stroke="#000" stroke-width="0.18"/>
 <line x1="252.000" y1="280.800" x2="252.000" y2="286.000" stroke="#000" stroke-width="0.18"/>
 <line x1="242.000" y1="284.500" x2="252.000" y2="284.500" stroke="#000" stroke-width="0.18"/>
@@ -360,19 +283,21 @@
 <text x="353.000" y="68.900" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#000">1. Kích thước mm. Thân block hoàn thiện 3.050 ×</text>
 <text x="353.000" y="71.700" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#000">   930 (phần nổi, trên cốt nền) là mốc mọi kích</text>
 <text x="353.000" y="74.500" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#000">   thước bố trí.</text>
-<text x="353.000" y="77.300" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#000">2. Hộc lọt lòng 680 × 380 (danh định). Tường xây</text>
-<text x="353.000" y="80.100" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#000">   gạch thẻ dày 50, không có giằng phía trên.</text>
-<text x="353.000" y="82.900" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#000">3. Kích thước tổng thể block 3.050 × 930 theo đo</text>
-<text x="353.000" y="85.700" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#000">   thực tế; chênh lệch với cấu tạo hộc do sai số</text>
-<text x="353.000" y="88.500" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#000">   thi công giữa các block.</text>
-<text x="353.000" y="91.300" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#000">4. Tấm BTCT dày 70÷100 (vẽ 100), lưới thép Ø6 a400</text>
-<text x="353.000" y="94.100" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#000">   đan 2 chiều; 22 block – 22 tấm.</text>
-<text x="353.000" y="96.900" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#000">5. Tô 10 + ốp 10 chỉ ở phần nổi (±0.000 → +0.100);</text>
-<text x="353.000" y="99.700" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#000">   dưới cốt nền không tô.</text>
-<text x="353.000" y="102.500" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#000">6. Tấm BTCT rộng hơn block 100 mỗi bên (3.250 ×</text>
-<text x="353.000" y="105.300" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#000">   1.130); chỉ thể hiện ở mặt cắt.</text>
-<text x="353.000" y="108.100" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#000">7. 6 lỗ âm dương 100×100/block, giữa hộc, xuyên</text>
-<text x="353.000" y="110.900" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#000">   tấm; không đổ bê tông kín vị trí lỗ.</text>
+<text x="353.000" y="77.300" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#000">2. Hộc: lọt lòng dự phòng tối thiểu 680 × 380 để</text>
+<text x="353.000" y="80.100" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#000">   đặt vừa tiểu (kích thước mô tả, không phải KT</text>
+<text x="353.000" y="82.900" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#000">   thi công chính xác). Tường gạch thẻ dày 50,</text>
+<text x="353.000" y="85.700" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#000">   không giằng phía trên.</text>
+<text x="353.000" y="88.500" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#000">3. Kích thước tổng thể block 3.050 × 930 theo đo</text>
+<text x="353.000" y="91.300" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#000">   thực tế; chênh lệch với cấu tạo hộc do sai số</text>
+<text x="353.000" y="94.100" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#000">   thi công giữa các block.</text>
+<text x="353.000" y="96.900" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#000">4. Tấm BTCT dày 70÷100 (vẽ 100), lưới thép Ø6 a400</text>
+<text x="353.000" y="99.700" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#000">   đan 2 chiều; 22 block – 22 tấm.</text>
+<text x="353.000" y="102.500" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#000">5. Tô 10 + ốp 10 chỉ ở phần nổi (±0.000 → +0.100);</text>
+<text x="353.000" y="105.300" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#000">   dưới cốt nền không tô.</text>
+<text x="353.000" y="108.100" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#000">6. Tấm BTCT rộng hơn block 100 mỗi bên (3.250 ×</text>
+<text x="353.000" y="110.900" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#000">   1.130); chỉ thể hiện ở mặt cắt.</text>
+<text x="353.000" y="113.700" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#000">7. 6 lỗ âm dương 100×100/block, giữa hộc, xuyên</text>
+<text x="353.000" y="116.500" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="2.0" text-anchor="start" font-weight="normal" fill="#000">   tấm; không đổ bê tông kín vị trí lỗ.</text>
 <circle cx="392.000" cy="188.000" r="4.500" fill="none" stroke="#000" stroke-width="0.35"/>
 <line x1="387.275" y1="188.000" x2="397.625" y2="188.000" stroke="#000" stroke-width="0.25" stroke-dasharray="3,0.8,0.6,0.8"/>
 <polygon points="397.111,187.190 388.864,189.772 392.000,188.000 388.469,187.283" fill="#fff" stroke="#000" stroke-width="0.3" stroke-linejoin="miter"/>

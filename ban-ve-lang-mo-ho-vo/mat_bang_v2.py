@@ -180,7 +180,7 @@ def page():
         "2. Chiều dài: 1.590 + 11×930 + 10×500 + 1.580 = 18.400.",
         "3. Chiều ngang phía cổng: 300 + 3.050 + 1.160 + 3.050 + 880 = 8.440. Đoạn tóp: 300 + 3.050 + 1.160 + 3.050 + 340 = 7.900.",
         "4. Cạnh Tây thẳng suốt 18.400; cạnh Đông tóp vào 540 tại đoạn trong 3.920 gần am thờ (rộng 8.440 → 7.900). Đoạn ngoài 14.480.",
-        "5. Block 3.050 × 930 (mốc mọi kích thước bố trí); hộc lọt lòng 680 × 380; tường gạch thẻ 50; tô 10 + ốp 10. Tấm BTCT Ø6 a400 rộng hơn block 100 mỗi bên – chỉ ở mặt cắt.",
+        "5. Block 3.050 × 930 (mốc mọi kích thước bố trí); hộc lọt lòng dự phòng ≥ 680 × 380 (để đặt tiểu); tường gạch thẻ 50; tô 10 + ốp 10. Tấm BTCT Ø6 a400 rộng hơn block 100 mỗi bên – chỉ ở mặt cắt.",
         "6. Cổng 1.270 đặt trùng tim lối đi (cách tường Tây 3.295, tường Đông 3.875); tim cổng = tim lối đi = tim am thờ, hướng B9°Đ.",
         "7. AM THỜ rộng 1.420 (ngang trục), tim trùng tim lối đi; từ mép ngoài am thờ đến mặt trong tường phía trong 630 (am thờ sát tường); cách block đầu 950 (950 + 630 = 1.580).",
     ]
