@@ -41,11 +41,12 @@ def page2():
         s.text(cx, a[1] + 14.5, "680 × 380", size=2.6)
         s.text(cx, a[1] + 18, "lọt lòng", size=2.1)
         cy = a[1] + HOC_L * k / 2 + 4
-        s.circle(cx, cy, 5, sw=0.3, dash="1,0.6")
-        s.line(cx - 3.5, cy - 3.5, cx + 3.5, cy + 3.5, sw=0.2)
-        s.line(cx - 3.5, cy + 3.5, cx + 3.5, cy - 3.5, sw=0.2)
+        cy = a[1] + HOC_L * k / 2
+        s.rect(cx - 5, cy - 5, 10, 10, fill="#fff", sw=0.3, dash="1,0.6")
+        s.line(cx - 5, cy - 5, cx + 5, cy + 5, sw=0.2)
+        s.line(cx - 5, cy + 5, cx + 5, cy - 5, sw=0.2)
         s.text(cx, cy + 9, "LỖ ÂM DƯƠNG", size=2.0, weight="bold")
-        s.text(cx, cy + 11.8, "(KT, vị trí chờ XN)", size=1.8)
+        s.text(cx, cy + 11.8, "100 × 100 (giữa hộc)", size=1.8)
     assert hoc_u[-1] + HOC_W + WALL + FIN == BL - RIM_END
     for u0 in (0, BL - RIM_END):
         cx = Pu(u0 + RIM_END / 2, 0)[0]
@@ -113,7 +114,7 @@ def page2():
     s.text(Wa(wc), Zy(-470), "phần dưới cốt nền)", size=2.2)
     s.text(Wa(wc), Zy(-800), "LỖ ÂM DƯƠNG", size=2.4, weight="bold")
     s.text(Wa(wc), Zy(-850), "XUYÊN TẤM BTCT", size=2.4, weight="bold")
-    s.text(Wa(wc), Zy(-900), "(KT, vị trí chờ XN)", size=2.1)
+    s.text(Wa(wc), Zy(-900), "100 × 100, giữa hộc", size=2.1)
     s.line(Wa(wc), Zy(-915), Wa(wc), Zy(-D_AM - 50), sw=0.25)
     arrow(s, Wa(wc), Zy(-D_AM - 50), 0, 1, 1.6)
     yt = Zy(H_NOI)
@@ -182,7 +183,7 @@ def page2():
         s.text(c, Zy(-300), f"HỘC {i + 1}", size=3.0, weight="bold")
         s.text(c, Zy(-370), "lọt lòng 380", size=2.3)
         s.text(c, Zy(-860), "LỖ ÂM DƯƠNG", size=2.1, weight="bold")
-        s.text(c, Zy(-905), "(chờ XN)", size=1.9)
+        s.text(c, Zy(-905), "100×100", size=1.9)
         s.line(c, Zy(-920), c, Zy(-D_AM - 50), sw=0.25)
         arrow(s, c, Zy(-D_AM - 50), 0, 1, 1.6)
     xbk = Ub(ubrk)
@@ -197,7 +198,7 @@ def page2():
     s.text(xs_ + 3, 16, "CHÚ THÍCH VẬT LIỆU", size=2.9, anchor="start", weight="bold")
     items = [("soil", "Đất nền"), ("brick", "Tường xây gạch 50"), ("brickthe", "Móng bao gạch thẻ"),
              ("concrete", "Bê tông cốt thép"), ("render", "Lớp tô trát 10"), ("tile", "Lớp ốp gạch 10"),
-             ("hole", "Lỗ âm dương (chờ XN)")]
+             ("hole", "Lỗ âm dương 100×100")]
     yy = 19.5
     for kk, lab in items:
         legend_item(s, xs_ + 3, yy, kk, lab, size=2.15)
@@ -212,7 +213,7 @@ def page2():
         "2. Block hoàn thiện 3.050 × 930 = lõi 6 hộc 2.670 × 820 + viền 190 mỗi đầu, 55 mỗi bên.",
         "3. Lõi: 6×380 + 7×50 + 2×20 = 2.670; 680 + 2×50 = 780 (xây) + 2×20 = 820.",
         "4. Hộc lọt lòng 680×380; tường gạch 50; tô 10 + ốp 10 chỉ ở phần nổi (±0.000 → +0.100); dưới cốt nền không tô.",
-        "5. Tấm BTCT chống lún 100 dưới mỗi block; 6 lỗ âm dương/block xuyên tấm, không đổ kín. KT, vị trí lỗ chờ XN.",
+        "5. Tấm BTCT chống lún 100 dưới mỗi block; 6 lỗ âm dương 100×100/block xuyên tấm (giữa hộc), không đổ kín.",
         "6. Đế/viền: móng bao gạch thẻ + giằng BTCT ~150. Cấu tạo, cao độ viền 190/55 và khe 20: tạm thể hiện – chờ XN.",
         "7. 780 là KT xây; 820, 930, 3.050 là KT hoàn thiện – không dùng lẫn trong một chuỗi.",
     ]
@@ -220,14 +221,112 @@ def page2():
     north_arrow(s, xs_ + 42, 188, 4.5, label_axis=False)
     s.text(xs_ + 3, 186, "Chiều 6 hộc vuông góc", size=2.0, anchor="start")
     s.text(xs_ + 3, 189, "trục B9°", size=2.0, anchor="start")
-    title_block(s, xs_, 198, 60, 89, "MẶT BẰNG CHI TIẾT\nBLOCK & MẶT CẮT", "1/10", "02/02", "LM-02", vertical=True, ngay="15/11/2026")
+    title_block(s, xs_, 198, 60, 89, "MẶT BẰNG CHI TIẾT\nBLOCK & MẶT CẮT", "1/10", "02/03", "LM-02", vertical=True, ngay="15/11/2026")
+    return s.svg()
+
+
+def page3():
+    s = SVG()
+    frame(s)
+    k = 0.1
+    s.text(14, 17, "CHI TIẾT MÓNG TƯỜNG BIÊN – TL 1/10", size=4.4, anchor="start", weight="bold")
+    s.text(14, 22.5, "Móng xây gạch thẻ 50 × 100, giằng móng BTCT dày 150", size=2.4, anchor="start")
+    # ---- mat cat mong tuong bien
+    cxm = 150
+    Zy = lambda z: 95 - z * k
+    X = lambda x: cxm + x * k           # x tinh tu tim tuong
+    H_G, H_TR, H_DU = 150, 500, 500     # giang, bac tren, bac duoi
+    B_TR, B_DU, B_TUONG = 200, 300, 200
+    z_g0, z_g1 = 0, -H_G
+    z_t1 = z_g1 - H_TR                  # -0.650
+    z_d1 = z_t1 - H_DU                  # -1.150
+    s.rect(X(-650), Zy(0), 1300 * k, (-z_d1 + 200) * k, fill="url(#soil)", sw=0)
+    s.line(X(-700), Zy(0), X(700), Zy(0), sw=0.6)
+    s.rect(X(-B_DU / 2), Zy(z_t1), B_DU * k, H_DU * k, fill="url(#brickthe)", sw=0.4)
+    s.rect(X(-B_TR / 2), Zy(z_g1), B_TR * k, H_TR * k, fill="url(#brickthe)", sw=0.4)
+    s.rect(X(-B_TR / 2), Zy(z_g0), B_TR * k, H_G * k, fill="url(#concrete)", sw=0.4)
+    # tuong bien phia tren (the hien doan ngan)
+    s.rect(X(-B_TUONG / 2), Zy(450), B_TUONG * k, 450 * k, fill="url(#brick2)", sw=0.4)
+    xa, xb = X(-B_TUONG / 2), X(B_TUONG / 2)
+    s.poly([(xa - 2, Zy(450)), (xa + 6, Zy(450)), (xa + 8, Zy(450) - 2.2), (xa + 12, Zy(450) + 2.2), (xa + 14, Zy(450)), (xb + 2, Zy(450))], closed=False, sw=0.3)
+    s.text(X(0), Zy(250), "TƯỜNG BIÊN", size=2.6, rot=-90, weight="bold", bg=True)
+    s.text(X(0) + 4.2, Zy(250), "(dày, cao chờ XN)", size=2.1, rot=-90, bg=True)
+    s.text(X(0), Zy(-75) + 1, "GIẰNG BTCT", size=2.2, weight="bold", bg=True)
+    s.text(X(0), Zy(-400), "GẠCH THẺ", size=2.3, weight="bold", bg=True)
+    s.text(X(0), Zy(-900), "GẠCH THẺ", size=2.3, weight="bold", bg=True)
+    # kich thuoc
+    hchain(s, [X(-B_TR / 2), X(B_TR / 2)], Zy(450), Zy(450) - 6, ["200 (tạm)"], size=2.4, bold=True)
+    hchain(s, [X(-B_DU / 2), X(-B_TR / 2), X(B_TR / 2), X(B_DU / 2)], Zy(z_d1), Zy(z_d1) + 8, ["50", "200", "50"], size=2.6, bold=True)
+    hchain(s, [X(-B_DU / 2), X(B_DU / 2)], Zy(z_d1), Zy(z_d1) + 15, ["300 – MÓNG BẬC DƯỚI"], size=2.6, bold=True)
+    vchain(s, [Zy(z) for z in (z_g0, z_g1, z_t1, z_d1)], [X(B_TR / 2), X(B_TR / 2), X(B_DU / 2), X(B_DU / 2)], X(B_DU / 2) + 12,
+           ["150", "500", "500"], size=2.6, bold=True)
+    vchain(s, [Zy(z_g0), Zy(z_d1)], X(B_DU / 2), X(B_DU / 2) + 20, ["1.150"], size=2.6, bold=True)
+
+    def callout(x_from, y, label, x_to):
+        s.line(x_from, y, x_to + (1 if x_to < x_from else -1) * 0.5, y, sw=0.18)
+        s.circle(x_from, y, 0.35, fill="#000", sw=0)
+        s.text(x_to, y + 0.8, label, size=2.3, anchor="end" if x_to < x_from else "start")
+    callout(X(-B_TR / 2) + 1, Zy(-75), "GIẰNG MÓNG BTCT 200 × 150", X(-660))
+    callout(X(-B_TR / 2) + 1, Zy(-400), "BẬC TRÊN: GẠCH THẺ 200 × ~500", X(-660))
+    callout(X(-B_DU / 2) + 1, Zy(-900), "BẬC DƯỚI: GẠCH THẺ 300 × ~500", X(-660))
+    callout(X(-500), Zy(-1250), "ĐẤT NỀN", X(-660))
+    for z, v in ((0, "±0.000"), (z_g1, "-0.150"), (z_t1, "≈ -0.650"), (z_d1, "≈ -1.150")):
+        y = Zy(z)
+        s.line(X(B_DU / 2) + 24, y, X(B_DU / 2) + 44, y, sw=0.18)
+        s.poly([(X(B_DU / 2) + 28, y), (X(B_DU / 2) + 26.4, y - 2.4), (X(B_DU / 2) + 29.6, y - 2.4)], fill="#000", sw=0)
+        s.text(X(B_DU / 2) + 31, y - 0.8, v, size=2.7, anchor="start", weight="bold")
+    s.text(14, 240, "MẶT CẮT MÓNG TƯỜNG BIÊN – TL 1/10", size=3.4, anchor="start", weight="bold")
+    s.text(14, 245, "Bậc móng 300 tạm đặt đối xứng qua tim tường (nhô 50 mỗi bên); giằng đặt sát cốt nền ±0.000 – chờ XN.", size=2.2, anchor="start")
+
+    # ---- chi tiet lo am duong trong 1 hoc
+    x0, y0 = 250, 45
+    s.text(222, 30, "CHI TIẾT LỖ ÂM DƯƠNG – TL 1/10", size=3.4, anchor="start", weight="bold")
+    s.text(222, 35, "(mặt bằng 1 hộc, nhìn xuống tấm BTCT)", size=2.2, anchor="start")
+    s.rect(x0 - WALL * k, y0 - WALL * k, (HOC_W + 2 * WALL) * k, (HOC_L + 2 * WALL) * k, fill="url(#brick2)", sw=0.35)
+    s.rect(x0, y0, HOC_W * k, HOC_L * k, fill="url(#concrete)", sw=0.35)
+    hx, hy = x0 + (HOC_W - 100) / 2 * k, y0 + (HOC_L - 100) / 2 * k
+    s.rect(hx, hy, 10, 10, fill="#fff", sw=0.4)
+    s.line(hx, hy, hx + 10, hy + 10, sw=0.2); s.line(hx, hy + 10, hx + 10, hy, sw=0.2)
+    s.text(x0 + HOC_W * k / 2, hy - 2, "LỖ 100×100", size=2.2, weight="bold", bg=True)
+    yb = y0 + HOC_L * k + WALL * k
+    hchain(s, [x0, hx, hx + 10, x0 + HOC_W * k], yb, yb + 7, ["140", "100", "140"], size=2.5, bold=True)
+    hchain(s, [x0, x0 + HOC_W * k], yb, yb + 14, ["380 LỌT LÒNG"], size=2.5, bold=True)
+    xr = x0 + HOC_W * k + WALL * k
+    vchain(s, [y0, hy, hy + 10, y0 + HOC_L * k], xr, xr + 7, ["290", "100", "290"], size=2.5, bold=True)
+    vchain(s, [y0, y0 + HOC_L * k], xr, xr + 14, ["680 LỌT LÒNG"], size=2.5, bold=True)
+    s.text(222, 152, "Lỗ âm dương 100 × 100 đặt giữa hộc, xuyên suốt", size=2.3, anchor="start")
+    s.text(222, 156, "tấm BTCT dày 100; không đổ bê tông kín vị trí lỗ.", size=2.3, anchor="start")
+    s.text(222, 160, "6 lỗ / block – tổng 132 lỗ.", size=2.3, anchor="start")
+
+    # ---- dai phai
+    xs_ = 350
+    s.line(xs_, 10, xs_, 287, sw=0.5)
+    s.text(xs_ + 3, 16, "CHÚ THÍCH VẬT LIỆU", size=2.9, anchor="start", weight="bold")
+    yy = 19.5
+    for kk, lab in (("soil", "Đất nền"), ("brickthe", "Gạch thẻ 50×100 (móng)"), ("brick", "Tường xây gạch"),
+                    ("concrete", "Bê tông cốt thép"), ("hole", "Lỗ âm dương 100×100")):
+        legend_item(s, xs_ + 3, yy, kk, lab, size=2.15)
+        yy += 6.4
+    s.line(xs_, yy + 1, 410, yy + 1, sw=0.3)
+    s.text(xs_ + 3, yy + 6.5, "GHI CHÚ", size=2.9, anchor="start", weight="bold")
+    notes = [
+        "1. Kích thước mm, cao độ m.",
+        "2. Móng tường biên xây gạch thẻ 50×100: bậc dưới rộng 300 cao ~500, bậc trên rộng 200 cao ~500.",
+        "3. Giằng móng BTCT dày 150, rộng bằng bậc trên 200.",
+        "4. Tổng chiều sâu móng ~1.150 (150 + 500 + 500) tính từ cốt nền ±0.000.",
+        "5. Chiều dày, chiều cao phần tường biên nổi trên giằng: chờ xác nhận (mặt bằng tạm vẽ 200).",
+        "6. Lỗ âm dương 100×100 tại tâm mỗi hộc, xuyên tấm BTCT chống lún.",
+    ]
+    textblock(s, xs_ + 3, yy + 11, notes, size=2.0, lh=2.8, nchar=50)
+    title_block(s, xs_, 198, 60, 89, "CHI TIẾT MÓNG\nTƯỜNG BIÊN & LỖ ÂM DƯƠNG", "1/10", "03/03", "LM-03", vertical=True, ngay="15/11/2026")
     return s.svg()
 
 
 if __name__ == "__main__":
     import cairosvg, pypdfium2 as pdfium
     from pypdf import PdfWriter
-    pages = [("trang1-mat-bang-tong-the-PB2", mb.page()), ("trang2-chi-tiet-block-mat-cat-PB2", page2())]
+    pages = [("trang1-mat-bang-tong-the-PB2", mb.page()), ("trang2-chi-tiet-block-mat-cat-PB2", page2()),
+             ("trang3-chi-tiet-mong-tuong-bien-PB2", page3())]
     w = PdfWriter()
     for name, svg in pages:
         f = os.path.join(HERE, name + ".svg")

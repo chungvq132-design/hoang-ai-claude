@@ -178,7 +178,7 @@ def page():
     s.line(10, ys0, 410, ys0, sw=0.5)
     s.text(13, ys0 + 5, "GHI CHÚ", size=3.0, anchor="start", weight="bold")
     notes = [
-        "1. Kích thước mm, đo theo mép ngoài phần nổi đã hoàn thiện (trên cốt nền). Khu đất: kích thước lọt lòng; tường biên vẽ tượng trưng (chiều dày chờ bổ sung).",
+        "1. Kích thước mm, đo theo mép ngoài phần nổi đã hoàn thiện (trên cốt nền). Khu đất: kích thước lọt lòng; tường biên tạm vẽ dày 200; móng tường biên gạch thẻ 300/200 + giằng BTCT 150 – xem trang 3.",
         "2. Chiều dài: 1.590 + 11×930 + 10×500 + 1.580 = 18.400.",
         "3. Chiều ngang phía cổng: 300 + 3.050 + 1.160 + 3.050 + 880 = 8.440. Đoạn tóp: 300 + 3.050 + 1.160 + 3.050 + 340 = 7.900.",
         "4. Cạnh Tây thẳng suốt 18.400; cạnh Đông tóp vào 540 tại đoạn trong 3.920 gần am thờ (rộng 8.440 → 7.900). Đoạn ngoài 14.480.",
@@ -222,7 +222,7 @@ def page():
     s.text(xn + 11, ys0 + 54, "phương vị 9°", size=1.9)
     s.text(xn + 11, ys0 + 57, "lệch Đông (B9°Đ)", size=1.9)
     s.text(xn + 11, ys0 + 61, "W trên – E dưới", size=2.0)
-    title_block(s, 322, ys0, 88, 287 - ys0, "MẶT BẰNG TỔNG THỂ (PB2)", "1/60", "01/02", "LM-01", ngay="15/11/2026")
+    title_block(s, 322, ys0, 88, 287 - ys0, "MẶT BẰNG TỔNG THỂ (PB2)", "1/60", "01/03", "LM-01", ngay="15/11/2026")
     return s.svg()
 
 
