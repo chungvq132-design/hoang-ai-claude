@@ -284,7 +284,7 @@ def textblock(svg, x, y, lines, size=2.4, lh=None, nchar=90, weight="normal"):
     return y
 
 
-def title_block(svg, x, y, w, h, ten_bv, tyle, to, kyhieu, vertical=False):
+def title_block(svg, x, y, w, h, ten_bv, tyle, to, kyhieu, vertical=False, ngay="14/11/2026"):
     svg.rect(x, y, w, h, sw=0.6)
     rows = [
         ("CÔNG TRÌNH", "KHU LĂNG MỘ HỌ VÕ", 3.6, True),
@@ -295,7 +295,7 @@ def title_block(svg, x, y, w, h, ten_bv, tyle, to, kyhieu, vertical=False):
         ("THIẾT KẾ", "........................", 2.5, False),
         ("KIỂM TRA", "........................", 2.5, False),
         ("CHỦ ĐẦU TƯ", "........................", 2.5, False),
-        ("NGÀY", "14/11/2026", 2.5, False),
+        ("NGÀY", ngay, 2.5, False),
     ]
     rh = h / len(rows)
     lw = 0.34 * w if not vertical else w

@@ -212,7 +212,7 @@ def page():
     s.text(xn + 11, ys0 + 54, "phương vị 9°", size=1.9)
     s.text(xn + 11, ys0 + 57, "lệch Đông (B9°Đ)", size=1.9)
     s.text(xn + 11, ys0 + 61, "W trên – E dưới", size=2.0)
-    title_block(s, 322, ys0, 88, 287 - ys0, "MẶT BẰNG TỔNG THỂ (PB2)", "1/60", "01/02", "LM-01")
+    title_block(s, 322, ys0, 88, 287 - ys0, "MẶT BẰNG TỔNG THỂ (PB2)", "1/60", "01/02", "LM-01", ngay="15/11/2026")
     return s.svg()
 
 
