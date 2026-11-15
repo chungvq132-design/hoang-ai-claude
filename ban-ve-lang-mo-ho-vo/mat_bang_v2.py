@@ -113,6 +113,10 @@ def page():
             ten, do = c
             cx = P(xl + FIN + W_SIDE + HOC_Y / 2, 0)[0]
             cy = P(0, yt + FIN + W_END + kk * (HOC_X + WALL) + HOC_X / 2)[1]
+            if do == "A":
+                s.text(cx, cy - 1.15, "Tổ tiên", size=1.45, col="#5b4a1a")
+                s.text(cx, cy + 2.3, ten, size=3.0, col="#5b4a1a", weight="bold")
+                continue
             col = "#c00000" if do else "#000"
             sz = 1.75
             maxw = HOC_Y * S - 1.0
@@ -249,7 +253,7 @@ def page():
     xl_ = 238
     s.line(xl_, ys0, xl_, 287, sw=0.4)
     s.text(xl_ + 3, ys0 + 5, "CHÚ THÍCH", size=3.0, anchor="start", weight="bold")
-    s.text(xl_ + 3, 287 - 4.5, "TÊN NGÔI: chữ đỏ = quy hoạch người đang sống", size=2.0, anchor="start", col="#c00000", weight="bold")
+    s.text(xl_ + 3, 287 - 4.5, "TÊN NGÔI: chữ đỏ = quy hoạch người đang sống; T10–T11, P10–P11: ngôi tổ tiên đánh số", size=2.0, anchor="start", col="#c00000", weight="bold")
     items = [("brick", "Xây gạch (tường biên, hộc)"), ("finish", "Hoàn thiện: tô 10 + ốp 10"),
              ("path", "Lối đi giữa 1.160"), ("axis", "Đường tim (gạch chấm)"), ("amtho", "Am thờ rộng 1.420 – sâu 630")]
     yy = ys0 + 8.5
