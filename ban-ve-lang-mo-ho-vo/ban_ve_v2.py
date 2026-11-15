@@ -41,7 +41,7 @@ def page2():
         s.text(cx, cy + 9, "LỖ ÂM DƯƠNG", size=2.0, weight="bold")
         s.text(cx, cy + 11.8, "100 × 100 (giữa hộc)", size=1.8)
     for u0 in (FIN, BL - FIN - W_END):
-        s.text(Pu(u0 + W_END / 2, 0)[0], Pu(0, BT / 2)[1], "TƯỜNG ĐẦU 240", size=2.3, rot=-90, weight="bold", col="#5a1f10", bg=True)
+        s.text(Pu(u0 + W_END / 2, 0)[0], Pu(0, BT / 2)[1], "TƯỜNG GẠCH THẺ", size=2.3, rot=-90, weight="bold", col="#5a1f10", bg=True)
     a = Pu(hoc_u[0] + 40, FIN + W_SIDE)
     vchain(s, [a[1], a[1] + HOC_L * k], a[0] + 1, a[0], ["680"], size=2.6, ext=0, gap=-1, bold=True)
     # duong cat
@@ -57,16 +57,14 @@ def page2():
         s.line(xm, yBm, xm, yBm - 5, sw=0.3); arrow(s, xm, yBm - 5, 0, -1, 1.6)
         s.text(xm, yBm - 7.2, "B", size=3.2, weight="bold")
     # kich thuoc
-    hchain(s, [Pu(u, 0)[0] for u in (0, FIN, BL - FIN, BL)], Y0, Y0 - 5.5, ["20", "3.010 – PHỦ BÌ XÂY", "20"], size=2.5, bold=True)
-    us = [0, FIN]
+    us = []
     for u in hoc_u:
         us += [u, u + HOC_W]
-    us += [BL - FIN, BL]
-    hchain(s, [Pu(u, 0)[0] for u in us], ybot, ybot + 7, [fmt(us[i + 1] - us[i]) for i in range(len(us) - 1)], size=2.5, bold=True)
+    hchain(s, [Pu(u, 0)[0] for u in us], ybot, ybot + 7,
+           [("380 LỌT LÒNG" if i % 2 == 0 else "50") for i in range(len(us) - 1)], size=2.5, bold=True)
     hchain(s, [Pu(0, 0)[0], Pu(BL, 0)[0]], ybot, ybot + 13, ["3.050 – MÉP NGOÀI BLOCK HOÀN THIỆN"], size=2.8, bold=True)
     vs = [0, FIN, FIN + W_SIDE, FIN + W_SIDE + HOC_L, BT - FIN, BT]
-    vchain(s, [Pu(0, v)[1] for v in vs], X0, X0 - 5.5, ["20", "105", "680", "105", "20"], size=2.4, bold=True)
-    vchain(s, [Pu(0, FIN)[1], Pu(0, BT - FIN)[1]], X0, X0 - 12.5, ["890 XÂY"], size=2.4, bold=True)
+    vchain(s, [Pu(0, FIN + W_SIDE)[1], Pu(0, FIN + W_SIDE + HOC_L)[1]], X0, X0 - 8, ["680 LỌT LÒNG"], size=2.4, bold=True)
     vchain(s, [Pu(0, 0)[1], Pu(0, BT)[1]], X0, X0 - 18.5, ["930"], size=2.6, bold=True)
 
     # ======================= MAT CAT A-A =======================
@@ -85,6 +83,12 @@ def page2():
     s.rect(Wa(wc - hole / 2), Zy(-D_AM), hole * k, SLAB * k, fill="#fff", sw=0)
     for w in (wc - hole / 2, wc + hole / 2):
         s.line(Wa(w), Zy(-D_AM) - 1.5, Wa(w), Zy(-D_AM - SLAB) + 1.5, sw=0.25, dash="0.8,0.5")
+    ym = Zy(-D_AM - SLAB / 2)
+    for (x1, x2) in ((-SLAB_OV + 25, wc - hole / 2 - 15), (wc + hole / 2 + 15, BT + SLAB_OV - 25)):
+        s.line(Wa(x1), ym, Wa(x2), ym, sw=0.35, col="#b00000")
+    for xx in range(-SLAB_OV + 40, BT + SLAB_OV - 20, 400):
+        if abs(xx - wc) > hole / 2 + 10:
+            s.circle(Wa(xx), ym, 0.45, fill="#b00000", sw=0)
     for x in (w0, w1 - W_SIDE):
         s.rect(Wa(x), Zy(H_NOI), W_SIDE * k, (H_NOI + D_AM) * k, fill="url(#brick2)", sw=0.35)
     s.rect(Wa(0), Zy(H_NOI), FIN_OP * k, H_NOI * k, fill=TILE, sw=0.15)
@@ -102,11 +106,10 @@ def page2():
     arrow(s, Wa(wc), Zy(-D_AM - 50), 0, 1, 1.6)
     yt = Zy(H_NOI)
     hchain(s, [Wa(w) for w in (0, w0, w0 + W_SIDE, w1 - W_SIDE, w1, BT)], yt, 156.5,
-           ["20", "105", "680 LỌT LÒNG", "105", "20"], size=2.4, bold=True)
-    hchain(s, [Wa(w0), Wa(w1)], yt, 150.5, ["890 PHỦ BÌ XÂY"], size=2.4, bold=True)
+           ["20", "", "680 LỌT LÒNG", "", "20"], size=2.4, bold=True)
     hchain(s, [Wa(0), Wa(BT)], yt, 144.5, ["930 MÉP NGOÀI BLOCK HOÀN THIỆN"], size=2.4, bold=True)
     ys_ = Zy(-D_AM - SLAB)
-    hchain(s, [Wa(-SLAB_OV), Wa(0), Wa(BT), Wa(BT + SLAB_OV)], ys_, ys_ + 4.5, ["150", "930", "150"], size=2.3, bold=True)
+    hchain(s, [Wa(-SLAB_OV), Wa(0), Wa(BT), Wa(BT + SLAB_OV)], ys_, ys_ + 4.5, [fmt(SLAB_OV), "930", fmt(SLAB_OV)], size=2.3, bold=True)
     zs = [H_NOI, 0, -D_AM, -D_AM - SLAB]
     xd = Wa(-SLAB_OV) - 6
     vchain(s, [Zy(z) for z in zs], [Wa(0), Wa(0), Wa(-SLAB_OV), Wa(-SLAB_OV)], xd, ["100", "1.000 – PHẦN ÂM", "100"], size=2.6, bold=True, gap=0.6)
@@ -124,9 +127,10 @@ def page2():
         s.text(x_to, y + size * 0.35, label, size=size, anchor="start")
     callout(Wa(BT) - 0.5, Zy(85), "ỐP GẠCH 10")
     callout(Wa(BT) - 1.5, Zy(30), "TÔ TRÁT 10")
-    callout(Wa(w1) - 5, Zy(-300), "TƯỜNG GẠCH 105")
+    callout(Wa(w1) - 5, Zy(-300), "TƯỜNG GẠCH THẺ 50")
     callout(Wa(BT + 60), Zy(-560), "ĐẤT NỀN")
     callout(Wa(BT + SLAB_OV) - 3, Zy(-D_AM - 50), "TẤM BTCT 100")
+    s.text(Wa(BT + SLAB_OV) + 3, Zy(-D_AM - 50) + 3.4, "lưới Ø6 a400", size=2.0, anchor="start", col="#b00000")
 
     # ======================= MAT CAT B-B =======================
     xb = 252
@@ -153,7 +157,7 @@ def page2():
     s.rect(Ub(hu[0] + HOC_W), Zy(H_NOI), WALL * k, (H_NOI + D_AM) * k, fill="url(#brick2)", sw=0.35)
     s.rect(Ub(0), Zy(H_NOI), FIN_OP * k, H_NOI * k, fill=TILE, sw=0.15)
     s.rect(Ub(FIN_OP), Zy(H_NOI), FIN_TRAT * k, H_NOI * k, fill="url(#render)", sw=0.15)
-    s.text(Ub(FIN + W_END / 2), Zy(-500), "TƯỜNG ĐẦU BLOCK 240", size=2.4, rot=-90, weight="bold", bg=True)
+    s.text(Ub(FIN + W_END / 2), Zy(-500), "TƯỜNG GẠCH THẺ", size=2.4, rot=-90, weight="bold", bg=True)
     for i in range(1):
         c = Ub(hu[i] + HOC_W / 2)
         s.text(c, Zy(-300), f"HỘC {i + 1}", size=3.0, weight="bold")
@@ -165,8 +169,8 @@ def page2():
     xbk = Ub(ubrk)
     s.poly([(xbk, Zy(H_NOI) - 3), (xbk, Zy(-400)), (xbk + 1.8, Zy(-430)), (xbk - 1.8, Zy(-470)), (xbk, Zy(-500)), (xbk, 285)], closed=False, sw=0.3)
     hchain(s, [Ub(u) for u in (0, FIN, FIN + W_END, hu[0] + HOC_W, hu[1])], Zy(H_NOI), 156.5,
-           ["20", "240", "380", "50"], size=2.5, bold=True)
-    hchain(s, [Ub(-SLAB_OV), Ub(0)], ys_, ys_ + 4.5, ["150"], size=2.3, bold=True)
+           ["20", "", "380", "50"], size=2.5, bold=True)
+    hchain(s, [Ub(-SLAB_OV), Ub(0)], ys_, ys_ + 4.5, [fmt(SLAB_OV)], size=2.3, bold=True)
 
     # ======================= DAI PHAI =======================
     xs_ = 350
@@ -181,11 +185,11 @@ def page2():
     s.text(xs_ + 3, yy + 6.5, "GHI CHÚ", size=2.9, anchor="start", weight="bold")
     notes = [
         "1. Kích thước mm. Thân block hoàn thiện 3.050 × 930 (phần nổi, trên cốt nền) là mốc mọi kích thước bố trí.",
-        "2. Chiều 6 hộc: 20 + 240 + 6×380 + 5×50 + 240 + 20 = 3.050.",
-        "3. Chiều dày: 20 + 105 + 680 + 105 + 20 = 930. Phủ bì xây 3.010 × 890.",
-        "4. Hộc lọt lòng 680×380; tường ngăn 50; tường dọc 105, tường đầu 240 (suy ra từ KT chốt – chờ XN).",
+        "2. Hộc lọt lòng 680 × 380 (danh định). Tường xây gạch thẻ dày 50, không có giằng phía trên.",
+        "3. Kích thước tổng thể block 3.050 × 930 theo đo thực tế; chênh lệch với cấu tạo hộc do sai số thi công giữa các block.",
+        "4. Tấm BTCT dày 70÷100 (vẽ 100), lưới thép Ø6 a400 đan 2 chiều; 22 block – 22 tấm.",
         "5. Tô 10 + ốp 10 chỉ ở phần nổi (±0.000 → +0.100); dưới cốt nền không tô.",
-        "6. Tấm BTCT chống lún dày 100, rộng hơn block 150 mỗi bên (1.230 × 3.350); chỉ thể hiện ở mặt cắt.",
+        "6. Tấm BTCT rộng hơn block 100 mỗi bên (3.250 × 1.130); chỉ thể hiện ở mặt cắt.",
         "7. 6 lỗ âm dương 100×100/block, giữa hộc, xuyên tấm; không đổ bê tông kín vị trí lỗ.",
     ]
     textblock(s, xs_ + 3, yy + 11, notes, size=2.0, lh=2.8, nchar=50)

@@ -31,7 +31,7 @@ BT = 930             # 17 block day (doc loi di)
 W_SIDE = (BT - 2 * FIN - HOC_L) / 2                               # tuong doc 2 ben = 105
 W_END = (BL - 2 * FIN - N_HOC * HOC_W - (N_HOC - 1) * WALL) / 2   # tuong dau block = 240
 XAY_L, XAY_T = BL - 2 * FIN, BT - 2 * FIN                         # 3.010 x 890 (phan xay)
-SLAB_OV = 150        # tam BTCT chong lun rong hon block 150 moi ben (chi the hien o mat cat)
+SLAB_OV = 100        # tam BTCT chong lun rong hon block 100 moi ben (chi the hien o mat cat)
 
 D_GATE = L - D_IN - N_ROW * BT - (N_ROW - 1) * GAP      # 14 -> 1.590
 GAP_E = W_G - GAP_W - 2 * BL - PATH                     # 10 -> 880
@@ -180,7 +180,7 @@ def page():
         "2. Chiều dài: 1.590 + 11×930 + 10×500 + 1.580 = 18.400.",
         "3. Chiều ngang phía cổng: 300 + 3.050 + 1.160 + 3.050 + 880 = 8.440. Đoạn tóp: 300 + 3.050 + 1.160 + 3.050 + 340 = 7.900.",
         "4. Cạnh Tây thẳng suốt 18.400; cạnh Đông tóp vào 540 tại đoạn trong 3.920 gần am thờ (rộng 8.440 → 7.900). Đoạn ngoài 14.480.",
-        "5. Thân block hoàn thiện 3.050 × 930 (mốc mọi kích thước bố trí). Hộc 680×380; tường ngăn 50, tường dọc 105, tường đầu 240; tô 10 + ốp 10. Tấm BTCT rộng hơn block 150 mỗi bên – chỉ ở mặt cắt.",
+        "5. Block 3.050 × 930 (mốc mọi kích thước bố trí); hộc lọt lòng 680 × 380; tường gạch thẻ 50; tô 10 + ốp 10. Tấm BTCT Ø6 a400 rộng hơn block 100 mỗi bên – chỉ ở mặt cắt.",
         "6. Cổng 1.270 đặt trùng tim lối đi (cách tường Tây 3.295, tường Đông 3.875); tim cổng = tim lối đi = tim am thờ, hướng B9°Đ.",
         "7. AM THỜ rộng 1.420 (ngang trục), tim trùng tim lối đi; từ mép ngoài am thờ đến mặt trong tường phía trong 630 (am thờ sát tường); cách block đầu 950 (950 + 630 = 1.580).",
     ]
